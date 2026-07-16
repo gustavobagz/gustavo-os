@@ -44,13 +44,16 @@ recorrente.
 
 ## Papel timbrado (OBRIGATÓRIO em toda produção documental desta frente)
 - **Toda petição, manifestação, notificação ou documento do escritório sai no
-  papel timbrado** "Gustavo de Oliveira Advocacia" — nunca gerar DOCX/PDF "limpo".
-- Modelo-base versionado: `Escritorio/Modelos/timbrado-base.docx` (placeholders
-  `[ENDEREÇAMENTO]`, `[NÚMERO DO PROCESSO]`, `[PARTE]`, `[CORPO DA PETIÇÃO]`, data).
-- Origem: `C:\Users\Dell\OneDrive\Documentos\ADVOGADO\RECIBO.docx`. O timbrado é
-  uma imagem JPEG de página inteira no `header1.xml`; para gerar documento novo,
-  descompactar o modelo (skill docx), editar só o `word/document.xml` e repackar
-  — cabeçalho/rodapé ficam intactos.
+  papel timbrado GSO Advogados** — nunca gerar DOCX/PDF "limpo".
+- Modelo oficial versionado: `Escritorio/Modelos/timbrado-gso.docx` (placeholders
+  `[ENDEREÇAMENTO]`, `[NÚMERO DO PROCESSO]`, `[PARTE]`, `[CORPO DA PETIÇÃO]`,
+  `[DIA]`/`[MÊS]`/`[ANO]`). Identidade visual: `Escritorio/Institucional/`.
+- É DOCX nativo (header: logo GSO + fio bronze; footer: endereço QS Tower +
+  contatos). Para gerar documento novo, descompactar o modelo (skill docx),
+  editar só o `word/document.xml` e repackar — cabeçalho/rodapé ficam intactos.
+  Script gerador do modelo: `scripts/build-timbrado-gso.js` (docx-js).
+- Legado: `timbrado-base.docx` ("Gustavo de Oliveira Advocacia", JPEG de página
+  inteira no header) — não usar em documentos novos.
 - Formatação do corpo: Calibri 12 (sz 24), entrelinha 1,5 (line 360), recuo de
   1ª linha 1701, justificado, A4, margens laterais 3cm.
 - Assinatura padrão: GUSTAVO G. SANTOS DE OLIVEIRA · OAB/GO 66.404 ·
