@@ -11,8 +11,9 @@
 - Recomendação: domínio próprio no registro.br (~R$ 40/ano). Sugestões a
   verificar disponibilidade: `vestibularno3ano.com.br` · `matriculanegada.com.br`
   · `aprovadono3ano.com.br`.
-- Enquanto o domínio não sai: publicar na Vercel (conta já conectada) e apontar
-  o domínio depois, sem refazer nada.
+- Publicada na Vercel em 2026-07-16: **https://gso-vestibular.vercel.app**
+  (projeto `gso-vestibular`). Quando o domínio próprio sair, apontar no painel
+  da Vercel, sem refazer nada.
 - Após publicar no domínio definitivo: adicionar `og:image` (URL absoluta) no
   `<head>` da landing.
 
