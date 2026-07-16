@@ -22,3 +22,8 @@
 | Cliente potencial | Escopo | Valor proposto | Enviada em | Status |
 |-------------------|--------|----------------|------------|--------|
 | — | — | — | — | — |
+
+---
+*Referência de precificação: nicho vestibular — ticket padrão de **R$ 2.000/ação**
+(único valor concreto registrado até 2026-07-16). Honorários dos casos ativos
+C-001 a C-007 ainda não registrados — levantar modelo e condições de cada um.*

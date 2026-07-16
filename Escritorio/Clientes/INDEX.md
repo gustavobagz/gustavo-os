@@ -6,4 +6,10 @@
 
 | ID | Cliente | Tipo | Casos ativos | Status |
 |----|---------|------|--------------|--------|
-| — | — | — | — | — |
+| CL-001 | Lucas Andrade Gomes | PF | C-001 (distrato Villa B/Garage 1000) | ativo |
+| CL-002 | Jair | PF | C-002 (trabalhista TRT3) | ativo |
+| CL-003 | Marciel | PF | C-003 (trabalhista) | ativo |
+| CL-004 | Auris Ltda. | PJ | C-004 (execução) | ativo |
+| CL-005 | Irmão de Ana Laura (Brasil Sucatas) | PF | C-006 (a reprotocolar) | prospecção/a reiniciar |
+| CL-006 | Cliente(s) nicho vestibular | PF | C-007 | ativo/recorrente — identificar nominalmente |
+| CL-007 | Coworking Diniz | PJ | — | encerrado |
