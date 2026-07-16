@@ -11,7 +11,7 @@
 | C-001 | Lucas Andrade Gomes (Villa B / Garage 1000) | societário (distrato) | não registrado | não registrado | não registrado | Distrato assinado; faltam cláusulas de execução 4.3 e 4.4; confissão de dívida conferida | ativo |
 | C-002 | Jair Rodrigues de Oliveira Junior × Instituto CEM | trabalhista (IDPJ — polo passivo) | TRT-18 Goiânia (6ª, 9ª, 11ª, 15ª, 16ª, 17ª, 18ª VTs) | 8 processos ativos + 1 ganho — ver dossiê `C-002-jair-instituto-cem.md` | execuções de R$ 27.601,21 a R$ 45.019,67 | Todas as defesas apresentadas (última: Renata, protocolada 2026-07-13) | ativo — acompanhar |
 | C-003 | Marciel | trabalhista | não registrado | não registrado | não registrado | Análise em andamento | ativo |
-| C-004 | Auris Ltda. | execução | não registrado | não registrado | não registrado | Matérias de execução em andamento | ativo |
+| C-004 | Auris Ltda. | execução | Juizados Especiais Cíveis de Anápolis/GO (3º JEC: Gracielle; 1º JEC: Ronilda) | 5915324-96.2025.8.09.0007 (× Gracielle Aparecida da Silva Moura Lemos) · 5414689-41.2026.8.09.0007 (× Ronilda Lemes) | não registrado | Fase de levantamento: dados bancários informados p/ alvará (Gracielle 2026-07-10; Ronilda 2026-07-16) | ativo |
 | C-005 | Locador/locatário — imóvel Jardim do Campo (SP) | consumidor/locação | SP | não registrado | não registrado | Disputa de locação residencial | ativo |
 | C-006 | Brasil Sucatas (irmão de Ana Laura) | cobrança | não registrado | não registrado | não registrado | Desistência por ilegitimidade — refile pelo irmão de Ana Laura | a reprotocolar |
 | C-007 | Cliente do nicho vestibular | vestibular | não registrado | não registrado | R$ 2.000 (ticket padrão) | 1 caso já ganho; nicho validado e escalável (sazonal) | ativo/recorrente |
