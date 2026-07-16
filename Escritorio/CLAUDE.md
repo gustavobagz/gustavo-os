@@ -41,3 +41,18 @@ recorrente.
 ## Lembrete de redação (reforço do CLAUDE.md raiz)
 - Petições endereçadas ao Juízo — nunca "Excelência"/"Vossa Excelência"
 - 1ª instância: "requerente"/"requerida" · 2ª instância: "apelante"/"apelada"
+
+## Papel timbrado (OBRIGATÓRIO em toda produção documental desta frente)
+- **Toda petição, manifestação, notificação ou documento do escritório sai no
+  papel timbrado** "Gustavo de Oliveira Advocacia" — nunca gerar DOCX/PDF "limpo".
+- Modelo-base versionado: `Escritorio/Modelos/timbrado-base.docx` (placeholders
+  `[ENDEREÇAMENTO]`, `[NÚMERO DO PROCESSO]`, `[PARTE]`, `[CORPO DA PETIÇÃO]`, data).
+- Origem: `C:\Users\Dell\OneDrive\Documentos\ADVOGADO\RECIBO.docx`. O timbrado é
+  uma imagem JPEG de página inteira no `header1.xml`; para gerar documento novo,
+  descompactar o modelo (skill docx), editar só o `word/document.xml` e repackar
+  — cabeçalho/rodapé ficam intactos.
+- Formatação do corpo: Calibri 12 (sz 24), entrelinha 1,5 (line 360), recuo de
+  1ª linha 1701, justificado, A4, margens laterais 3cm.
+- Assinatura padrão: GUSTAVO G. SANTOS DE OLIVEIRA · OAB/GO 66.404 ·
+  (Assinado digitalmente). Data no formato "Goiânia/GO, DD de mês de AAAA."
+- Entregar sempre DOCX + PDF em `Escritorio/Peticoes/` (ou pasta do caso).
