@@ -1,1 +1,6 @@
 ~$*
+
+# Logs locais de sincronização/execução — não versionar
+Relatorios/sync-log.txt
+Relatorios/erros*.log
+Relatorios/fechamento-log.md
