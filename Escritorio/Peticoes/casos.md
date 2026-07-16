@@ -23,7 +23,7 @@
 | C-001 | Ajuste do distrato | não registrado | Complementar cláusulas de execução 4.3 e 4.4 | não |
 | C-002 | Contestações (todos os IDPJs) | — | Elaborar e protocolar defesas | **sim — todas apresentadas (última 2026-07-13)** |
 | C-002 | Acompanhamento | contínuo | Monitorar impugnações da exequente e decisões dos IDPJs; acompanhar precatória Renata (Frutal/MG, 0010661-41.2026.5.03.0156) | não |
-| C-002 | Esclarecer | não registrado | Confirmar a que se refere o nº 0010535-88.2026.5.03.0156 (TRT-3) — provável precatória de um dos IDPJs | não |
+| C-002 | Esclarecer | — | ~~Confirmar nº 0010535-88.2026.5.03.0156 (TRT-3)~~ → confirmado: carta precatória (MG) do cluster; vincular ao processo principal ao acompanhar | **sim (2026-07-16)** |
 | C-006 | Reprotocolo | não registrado | Reajuizar com o irmão de Ana Laura como parte legítima | não |
 
 ## Casos encerrados

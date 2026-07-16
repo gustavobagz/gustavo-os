@@ -25,9 +25,12 @@ Ex-empregados tentam redirecionar as dívidas do Instituto para os bens pessoais
 | Renata Araujo dos Santos Freitas | 0012047-95.2024.5.18.0015 | 15ª VT | **protocolado 2026-07-13** — contestação + habilitação + sentença anexa |
 | Eliane Maria Rodrigues | 0011173-31.2024.5.18.0009 | 9ª VT | **GANHO — Jair excluído do polo passivo** (sentença 2026-06-01) |
 
-*Nº avulso a esclarecer: 0010535-88.2026.5.03.0156 (TRT-3) apareceu em registro anterior como
-"Magno×Jair" — provavelmente carta precatória em MG vinculada a um dos IDPJs (como a
-0010661-41.2026.5.03.0156, precatória da Renata em Frutal/MG). Confirmar e vincular.*
+**Cartas precatórias em MG (TRT-3, Frutal — citação/intimação do Jair em Itapagipe/MG):**
+
+| Precatória | Vinculada a | Status |
+|---|---|---|
+| 0010535-88.2026.5.03.0156 | IDPJ do cluster (registro original a associava ao caso Magno — confirmar o principal ao acompanhar) | confirmada como carta precatória em 2026-07-16 |
+| 0010661-41.2026.5.03.0156 | Renata (0012047-95), distribuída 2026-07-08 | ainda não cumprida — edital já autorizado no principal |
 
 ## ⭐ Sentença-chave (ANEXAR em toda defesa futura — `SENTENÇA.pdf` na pasta do caso)
 Proc. **0011173-31.2024.5.18.0009**, 9ª VT Goiânia, Juíza **Rosana Rabello Padovani Messias**,
