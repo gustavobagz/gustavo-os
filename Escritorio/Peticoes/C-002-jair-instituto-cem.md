@@ -99,6 +99,12 @@ secretário). Reforça nomeação sem participação real na gestão. Usada na c
 - Peças: `CONTESTACAO - IDPJ - JAIRxCEM - RENATA (0012047-95...).docx/.pdf` (base Wanessa +
   seção I de tempestividade + acórdão Des. Platon na seção III.7) + `HABILITACAO - JAIR (...)`.
 
+## Modelo para novas contestações
+A contestação da Renata (protocolada 2026-07-13) é a versão mais evoluída da tese e foi
+transcrita como modelo-base com checklist de adaptação:
+`Escritorio/Peticoes/modelos/modelo-contestacao-idpj-jair-cem.md` — usar em qualquer
+novo IDPJ do cluster.
+
 ## Diretoria Executiva do Instituto CEM (ata 2024-02-20)
 Presidente Jeziel Barbosa Ferreira · Administrativo Thadeu de Morais Grembecki ·
 Financeiro Welliton Felipe da Silva Alves · Técnico Luis Henrique Ribeiro Gabriel ·
