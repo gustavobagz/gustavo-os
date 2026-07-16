@@ -74,6 +74,12 @@ Datas nos registros sempre em AAAA-MM-DD. Alterações relevantes → commit.
 - Fechamento semanal: Agendador de Tarefas roda `scripts/fechamento-semanal.ps1`
   (sexta 16:00), que executa `claude -p "/fechamento-semanal"` — a skill grava o
   snapshot em `Relatorios/AAAA/` e commita. Também pode ser rodado manualmente.
+- Briefing jurídico diário (NUVEM — roda mesmo com o PC desligado): rotina
+  `Briefing Juridico Diario` (id `trig_01WScY77LR1WLdZUJ5RaCYXK`) em
+  claude.ai/code/routines, seg–sex 06:30 (BRT). Pesquisa notícias jurídicas do
+  Brasil (24h, WebSearch), gera `Briefing Juridico AAAA-MM-DD.docx`, salva na
+  pasta "Briefings Juridicos" do Google Drive e deixa rascunho no Gmail com o
+  resumo. Gerenciar em https://claude.ai/code/routines
 
 ### Estrutura de pastas
 ```
