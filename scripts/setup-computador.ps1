@@ -1,4 +1,4 @@
-# Setup do Claude Code OS em um computador novo (ou reparo no atual).
+﻿# Setup do Claude Code OS em um computador novo (ou reparo no atual).
 # Idempotente: pode rodar quantas vezes quiser.
 # Uso: com o repo já clonado, rodar:
 #   powershell -ExecutionPolicy Bypass -File .\scripts\setup-computador.ps1

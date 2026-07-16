@@ -1,4 +1,4 @@
-# Sincroniza o OS com o GitHub — executado no logon (e pode ser rodado à mão).
+﻿# Sincroniza o OS com o GitHub — executado no logon (e pode ser rodado à mão).
 # Portátil: descobre a raiz do repo a partir da própria localização (pai de scripts/).
 # Puxa o que as rotinas na nuvem commitaram e publica commits locais pendentes.
 
