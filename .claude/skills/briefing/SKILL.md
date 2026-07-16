@@ -5,6 +5,16 @@ description: Briefing diário de Gustavo — lê os registros do OS (casos, praz
 
 # /briefing — o dia de Gustavo em 30 segundos
 
+## Filtro por frente (argumento opcional)
+- `/briefing` — as duas frentes (padrão)
+- `/briefing h2` — só a frente H2: ler apenas os registros de `H2/`, e-mails
+  da conta/contexto H2 (controladoria@h2saude.com.br, SDBM, diretoria,
+  contrapartes de contratos/licitações). Omitir a seção ⚖️ Escritório.
+- `/briefing escritorio` — só a prática independente: ler apenas os registros
+  de `Escritorio/`, e-mails de clientes/juízos/contrapartes do escritório.
+  Omitir a seção 🏥 H2.
+- A Agenda e o Urgente hoje sempre aparecem, filtrados pela frente escolhida.
+
 ## Fontes (ler nesta ordem; se uma falhar, seguir com as demais e avisar no final)
 
 1. **Registros locais** (sempre disponíveis):
