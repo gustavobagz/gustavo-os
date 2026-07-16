@@ -71,7 +71,9 @@ Datas nos registros sempre em AAAA-MM-DD. Alterações relevantes → commit.
 - Briefing diário: Agendador de Tarefas do Windows roda
   `scripts/briefing-diario.ps1` (seg–sex 07:00), que executa `claude -p "/briefing"`
   e grava em `Relatorios/briefings/AAAA-MM-DD.md`
-- Fechamento semanal: rodar `/fechamento-semanal` (sexta à tarde)
+- Fechamento semanal: Agendador de Tarefas roda `scripts/fechamento-semanal.ps1`
+  (sexta 16:00), que executa `claude -p "/fechamento-semanal"` — a skill grava o
+  snapshot em `Relatorios/AAAA/` e commita. Também pode ser rodado manualmente.
 
 ### Estrutura de pastas
 ```
