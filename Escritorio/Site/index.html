@@ -195,16 +195,15 @@ h2 .fim{background:var(--bronze);width:.16em;height:.16em;display:inline-block;m
 .passos.on::before{transform:scaleY(1)}
 .passo{
   counter-increment:passo;
-  display:grid;grid-template-columns:8.5rem 1fr 2fr;gap:2rem;align-items:baseline;
+  display:grid;grid-template-columns:5.5rem 1fr 2fr;gap:2rem;align-items:baseline;
   padding:1.9rem 0 1.9rem 2rem;border-bottom:1px solid var(--linha-escura);
   transition:padding-left .3s;position:relative;
 }
 .passo:hover{padding-left:2.8rem}
 .passo::before{
-  content:"Coordenada 0" counter(passo);
-  font-family:var(--display);font-weight:600;font-size:.62rem;
-  letter-spacing:.22em;text-transform:uppercase;color:var(--bronze);
-  font-variant-numeric:tabular-nums;
+  content:"0" counter(passo);
+  font-family:var(--display);font-weight:900;font-size:1.05rem;
+  letter-spacing:.05em;color:var(--bronze);font-variant-numeric:tabular-nums;
 }
 .passo::after{ /* ponto de rota */
   content:"";position:absolute;left:0;top:2.35rem;width:.85rem;height:.85rem;
@@ -216,7 +215,7 @@ h2 .fim{background:var(--bronze);width:.16em;height:.16em;display:inline-block;m
 .passo-desc{color:var(--cinza-claro);font-size:.98rem}
 @media(max-width:760px){
   .passos::before,.passo::after{display:none}
-  .passo{padding-left:0;grid-template-columns:6.5rem 1fr;grid-template-rows:auto auto}
+  .passo{padding-left:0;grid-template-columns:3rem 1fr;grid-template-rows:auto auto}
   .passo:hover{padding-left:.8rem}
   .passo-desc{grid-column:2}
 }
@@ -507,8 +506,8 @@ footer{background:var(--grafite);color:var(--cinza);padding:3rem 0;border-top:1p
       <ul class="contato-lista reveal">
         <li><a href="https://wa.me/5562993664193" target="_blank" rel="noopener">
           <span class="k">WhatsApp</span><span class="v">(62) 99366-4193</span></a></li>
-        <li><a href="mailto:ggsoliveira35@gmail.com">
-          <span class="k">E-mail</span><span class="v">ggsoliveira35@gmail.com</span></a></li>
+        <li><a href="mailto:gustavodeoliveira@goadvogados.com.br">
+          <span class="k">E-mail</span><span class="v">gustavodeoliveira@goadvogados.com.br</span></a></li>
         <li><div class="item">
           <span class="k">Endereço</span>
           <span class="v">Ed. QS Tower Office · R. 72, nº 223, Salas 1901/1902 · Jardim Goiás · Goiânia/GO</span></div></li>
