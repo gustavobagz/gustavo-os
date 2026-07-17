@@ -1,29 +1,41 @@
 ---
 name: proposta-h2-tradicional
-description: Gera propostas comerciais da H2 no MODELO TRADICIONAL (documento Word/DOCX + PDF com 9 seções numeradas, tabelas de dimensionamento com faixas teal e zebra). Usar SEMPRE que Gustavo pedir uma proposta H2 "tradicional", "no modelo padrão", "em Word/DOCX", ou uma proposta operacional de plantões/escalas médicas com tabelas extensas de valores por unidade — mesmo que ele diga apenas "faz a proposta para [hospital/cliente]" sem especificar modelo. Se houver dúvida entre tradicional e editorial, perguntar a Gustavo antes de gerar. Esta skill é NORMATIVA — seguir os valores exatos, nunca improvisar formatação.
+description: Gera propostas comerciais da H2 no MODELO TRADICIONAL (documento Word/DOCX + PDF com 9 seções numeradas e tabelas de dimensionamento com faixas teal). Usar SEMPRE que Gustavo pedir uma proposta H2 "tradicional", "no modelo padrão", "em Word/DOCX", ou uma proposta operacional de plantões/escalas médicas com tabelas extensas de valores por unidade — mesmo que ele diga apenas "faz a proposta para [hospital/cliente]" sem especificar modelo. Se houver dúvida entre tradicional e editorial, perguntar a Gustavo antes de gerar. Esta skill é NORMATIVA — seguir os valores exatos, nunca improvisar formatação.
 ---
 
 # Proposta H2 — Modelo Tradicional (DOCX/PDF)
 
-Especificação normativa extraída por engenharia reversa do gabarito aprovado (Hapvida, jun/2026), com correções de dados validadas por Gustavo. Em caso de dúvida, seguir o valor exato descrito aqui. Não interpretar, não "melhorar", não variar.
+Especificação normativa consolidada a partir dos gabaritos aprovados (Hapvida jun/2026; revisões HEMNSL e HRSDA), com correções validadas por Gustavo. Em caso de dúvida, seguir o valor exato descrito aqui. Não interpretar, não "melhorar", não variar.
 
 ## PASSO 0 — OBRIGATÓRIO ANTES DE QUALQUER COISA
 
 1. Ler a skill pública `docx` (/mnt/skills/public/docx/SKILL.md) e criar o documento com docx-js conforme ela manda.
-2. **Baixar o logo do Drive**: `Google Drive:download_file_content` com fileId `1r3DZA-xkeye5K771ZDjbyCcu6UvoKby1` ("Logotipo H2Saude - horizontal 2 - colorido.jpg", conta h2servicosmedicos@gmail.com). O base64 do JPEG vem no campo `content` do JSON retornado — decodificar e salvar. Se falhar, PARAR e pedir a Gustavo que anexe o arquivo. Nunca entregar proposta sem logo ou com logo substituto.
+2. **Logo**: usar PNG já recortado (**170 × 42 px**). Se precisar baixar do zero: `Google Drive:download_file_content` com fileId `1r3DZA-xkeye5K771ZDjbyCcu6UvoKby1` ("Logotipo H2Saude - horizontal 2 - colorido", conta h2servicosmedicos@gmail.com) — esse arquivo é o **ORIGINAL 1080×1080 px com espaço em branco ao redor**: **SEMPRE recortar com PIL antes de usar**, nunca inserir sem recorte. Se falhar o download, PARAR e pedir a Gustavo que anexe o arquivo. Nunca entregar proposta sem logo ou com logo substituto.
 3. Confirmar com Gustavo (se não informado): entidade proponente (S.A. ou Ltda.), cliente, unidades, escopo, valores e regime de remuneração.
 
 ## 1. PÁGINA E TIPOGRAFIA GLOBAL
 
 | Item | Valor exato |
 |---|---|
-| Papel | A4 (11906 × 16838 DXA) |
-| Margens | 1134 DXA (2,0 cm) nos 4 lados |
+| Papel | A4 |
+| Margens | top/bottom **1418 DXA (2,5 cm)** · left/right **1701 DXA (3,0 cm)** |
+| Largura de conteúdo | **8504 DXA** |
 | Distância header/footer | 708 DXA |
 | Fonte | **Arial em TODOS os runs** (nunca Times, nunca Calibri) |
 | Idioma | pt-BR |
-| Corpo de texto | **8 pt** (sz 16), justificado, spacing after 140 DXA |
-| Notas explicativas | 8 pt **itálico**, justificado |
+| Corpo de texto | **9 pt**, justificado |
+
+### Escala tipográfica completa
+| Elemento | Especificação |
+|---|---|
+| Título da capa | **16 pt bold #238078**, caixa alta |
+| Linha de objeto (capa) | 11 pt #555555 |
+| Nome do cliente (capa) | **12 pt bold #333333** |
+| Linha de contexto (capa) | 9 pt itálico #888888, spacing after 400 |
+| Títulos de seção | **13 pt bold #238078**, borda inferior sz 12 space=0, spacing before 320 / after 120 |
+| Corpo, checklist, tabelas, assinatura | 9 pt |
+| Header (texto) | 7 pt #888888 |
+| Footer | 9 pt #888888 |
 
 ## 2. PALETA (NUNCA usar outras cores)
 
@@ -32,117 +44,133 @@ Especificação normativa extraída por engenharia reversa do gabarito aprovado 
 | Teal primário (títulos, bordas, valores, labels) | **#238078** |
 | Teal escuro (faixas de unidade e de especialidade nas tabelas) | **#1A5C54** |
 | Teal claro (células de rótulo das tabelas de dados) | **#D0EDEA** |
-| Zebra das linhas de dados | **#EEF4FB** |
 | Bordas internas de tabela | **#CCCCCC** (single, sz 4 = 0,5 pt) |
-| Subtítulo da capa #555555 · Nome do cliente #333333 · Linha de contexto #888888 | |
+| Subtítulo da capa #555555 · Nome do cliente #333333 · Contexto/header/footer #888888 | |
 | Texto comum | #000000 |
 
-## 3. CABEÇALHO (todas as páginas)
+**SEM ZEBRA** nas linhas de dados — fundo branco uniforme.
 
-- Logo H2 horizontal colorido à esquerda: **1,77" × 0,42"** (~170 × 40 px).
-- À direita, texto pequeno cinza: `Proposta Técnica e Comercial – [Nome do Cliente]`.
-- **Borda inferior**: single, sz 12 (1,5 pt), cor #238078.
+## 3. HEADER E FOOTER (todas as páginas)
 
-## 4. RODAPÉ (todas as páginas)
+- **Um único parágrafo cada (NÃO tabela)**: logo inline + tab + texto, via tab stop em **8504 DXA**; a borda fica **no próprio parágrafo**.
+- **Header**: logo H2 recortado (170×42 px) à esquerda · à direita, 7 pt #888888: `Proposta Técnica e Comercial – [Nome do Cliente]` · borda inferior single sz 12 #238078.
+- **Footer**: 9 pt #888888 — esquerda `Confidencial – Uso restrito` · direita `Página {PAGE} de {NUMPAGES}` (campos dinâmicos, nunca número fixo) · borda superior single sz 12 #238078.
 
-- Esquerda: `Confidencial – Uso restrito` · Direita: `Página {PAGE} de {NUMPAGES}` (campos dinâmicos, nunca número fixo).
-- **Borda superior**: single, sz 12, #238078. Texto 8 pt cinza.
+## 4. BLOCO DE TÍTULO (página 1, tudo centralizado, nesta ordem)
 
-## 5. BLOCO DE TÍTULO (página 1, tudo centralizado, nesta ordem)
+1. `PROPOSTA TÉCNICA E COMERCIAL` — 16 pt bold #238078, caixa alta
+2. Linha de objeto — 11 pt #555555
+3. **Nome do cliente** — 12 pt bold #333333
+4. `Unidade A · Unidade B  |  Mês / Ano` — 9 pt itálico #888888, spacing after 400
 
-1. `PROPOSTA TÉCNICA E COMERCIAL` — **18 pt, bold, #238078**, caixa alta
-2. Linha de objeto — 12 pt, #555555
-3. **Nome do cliente** — 14 pt, bold, #333333
-4. `Unidade A · Unidade B  |  Mês / Ano` — **9 pt, itálico, #888888**
+## 5. AS 9 SEÇÕES OBRIGATÓRIAS (ordem fixa, nunca omitir nem reordenar)
 
-## 6. TÍTULOS DE SEÇÃO
+Entre seções: **parágrafo vazio (spacer)**. Depois da seção 9: frase de cortesia + local e data ("Goiânia/GO, DD de mês de AAAA.") + bloco de assinatura, **tudo com keepNext** (nunca deixar título ou assinatura órfã).
 
-- Formato: `N. TÍTULO EM CAIXA ALTA` — **13 pt, bold, #238078**
-- **Borda inferior** do parágrafo: single, sz 12, #238078
-- Spacing: before **320**, after **120** DXA
+1. **DADOS DA PROPONENTE** — tabela 2 colunas **2377 + 6127 DXA** · margens de célula top/bottom 60, left/right 100 · rótulo fill #D0EDEA bold #238078 / valor fundo branco. Campos: Razão Social, CNPJ, Endereço (Matriz), Filial (SP), Representante Legal, Contato (telefone + e-mail separados por `  |  `).
+2. **APRESENTAÇÃO INSTITUCIONAL** — texto canônico literal (abaixo), nunca reescrever.
+3. **OBJETO DA PROPOSTA** — objeto + referência ao edital/contrato + parágrafo de ciência/concordância ou de início de serviço.
+4. **ESCOPO DOS SERVIÇOS** — checklist ✓; **sem H2 Academy por padrão** (só incluir se Gustavo pedir).
+5. **DIMENSIONAMENTO TÉCNICO E VALORES** — tabela (estrutura na seção 7 desta skill).
+6. **RESPONSABILIDADES DA PROPONENTE** — checklist ✓.
+7. **DOS ENCARGOS E CUSTOS INCLUSOS** — abertura + checklist; **NUNCA incluir frase de exclusão de deslocamento/hospedagem/diárias**.
+8. **VALIDADE DA PROPOSTA** — 60 dias padrão, salvo edital/instrução diversa.
+9. **DADOS BANCÁRIOS PARA PAGAMENTO** — Favorecido, CNPJ, Banco, Agência, Conta Corrente.
 
-## 7. AS 9 SEÇÕES OBRIGATÓRIAS (ordem fixa, nunca omitir nem reordenar)
+### Texto canônico — Seção 2 (literal, nunca reescrever)
 
-1. DADOS DA PROPONENTE
-2. APRESENTAÇÃO INSTITUCIONAL
-3. OBJETO DA PROPOSTA
-4. ESCOPO DOS SERVIÇOS
-5. DIMENSIONAMENTO TÉCNICO E VALORES
-6. RESPONSABILIDADES DA PROPONENTE
-7. DOS ENCARGOS E CUSTOS INCLUSOS
-8. VALIDADE DA PROPOSTA
-9. DADOS BANCÁRIOS PARA PAGAMENTO
+> "A H2 Soluções em Saúde S.A. é uma gestora de serviços médicos especializada na linha de cuidado do paciente crítico, com atuação em hospitais públicos e privados em múltiplos estados brasileiros. Oferecemos um ecossistema plug & play de gestão médica que integra dimensionamento técnico, governança assistencial, educação continuada e comunicação institucional, proporcionando ao hospital contratante segurança jurídica, qualidade assistencial e eficiência operacional."
+>
+> "Além disso, a H2 conta com corpo clínico qualificado, processos padronizados de escalonamento e protocolos de substituição que asseguram cobertura contínua e previsibilidade na gestão de escalas [em X]."
 
-Após a seção 9: frase de cortesia em itálico ("Ficamos à disposição…"), local e data ("Goiânia/GO, DD de mês de AAAA.") e bloco de assinatura.
+Só o final do 2º parágrafo ("[em X]") adapta ao serviço. **Não citar "H2 Talk" nem H2 Academy** neste texto.
 
-## 8. TABELAS DE DADOS (Seções 1 e 9)
+### Texto padrão — Seção 7 (abertura)
 
-- 2 colunas: **2600 + 6700 DXA**
-- Célula de rótulo: fill **#D0EDEA**, texto **bold #238078**, 8 pt
-- Célula de valor: fundo branco, texto preto 8 pt
-- Bordas #CCCCCC sz 4 · Margens de célula: top/bottom 60, left/right 100 DXA
+> "Os valores propostos são globais e incluem todos os custos diretos e indiretos necessários à execução dos serviços, notadamente:"
 
-### Dados canônicos — Seção 1 (proponente = H2 Soluções em Saúde S.A.)
-| Razão Social | H2 SOLUÇÕES EM SAÚDE S.A. |
+seguido do checklist.
+
+### Texto padrão — Seção 8
+
+> "A presente proposta tem validade de 60 (sessenta) dias a contar da data de sua emissão. Após esse prazo, os valores poderão ser revistos em função de variações nos custos operacionais e condições de mercado."
+
+## 6. DADOS CANÔNICOS POR ENTIDADE (nunca misturar)
+
+### H2 Soluções em Saúde S.A.
+| Campo | Valor |
+|---|---|
 | CNPJ | 53.304.656/0001-64 |
 | Endereço (Matriz) | Edifício QS Tower Office, R. 72, nº 223, Salas 1901/1902 – Jardim Goiás, Goiânia/GO – CEP 74.805-480 |
 | Filial (SP) | Av. Açocê, 50 – 1º andar – Indianópolis, São Paulo/SP – CEP 04075-020 |
 | Representante Legal | Dr. Guilherme Ferreira de Almeida – Diretor |
-| Contato | (11) 93292-4187 | contato@h2saude.com.br |
+| CPF do representante | 024.802.861-85 |
+| Contato | (11) 93292-4187  \|  contato@h2saude.com.br |
+| Banco | SICOOB – Cód. 756 · Agência 5004 · CC **1.149.889-7** |
 
-⚠️ O gabarito de origem trazia Matriz/Filial INVERTIDAS e cargo errado. A regra correta é a desta tabela: **Matriz = Goiânia (QS Tower)**, **Filial = São Paulo (Av. Açocê)**. NÃO copiar do gabarito.
+### H2 Ltda.
+| Campo | Valor |
+|---|---|
+| CNPJ | 04.189.941/0001-76 |
+| Banco | SICOOB – Cód. 756 · Agência 5004 · CC **1.063.991-8** |
 
-### Dados canônicos — Seção 9 (conta varia POR ENTIDADE — nunca misturar)
-- **S.A.** (CNPJ 53.304.656/0001-64): SICOOB – Cód. 756 · Agência 5004 · CC **1.149.889-7**
-- **Ltda.** (CNPJ 04.189.941/0001-76): SICOOB – Cód. 756 · Agência 5004 · CC **1.063.991-8**
-- **Favorecido, CNPJ e conta SEMPRE da MESMA entidade.**
+⚠️ **Matriz = Goiânia (QS Tower)**, **Filial = São Paulo (Av. Açocê)** — gabaritos antigos traziam invertido; NÃO copiar de gabarito. **Favorecido, CNPJ e conta SEMPRE da MESMA entidade.**
 
-## 9. TABELAS DE DIMENSIONAMENTO/VALORES (Seção 5)
+## 7. TABELA DE DIMENSIONAMENTO/VALORES (Seção 5)
 
-**A ESTRUTURA DE COLUNAS PODE VARIAR por engajamento** (valor por hora, por plantão 12h/24h, mensal fixo, global; com ou sem coluna de quantidade). O que NUNCA varia é a anatomia visual. Adaptar as colunas ao regime informado por Gustavo, mantendo a última coluna sempre como a de valor.
+- **5 ou 6 colunas somando 8504 DXA** — adaptar ao regime de remuneração informado por Gustavo (por hora, por plantão 12h/24h, mensal fixo, global; com ou sem coluna de quantidade). A anatomia visual NUNCA varia.
+- **Faixa da unidade**: célula única (gridSpan total), fill #1A5C54, **UMA LINHA SÓ**: `Nome – Descrição | Endereço · Contrato nº` (nunca dividir em 2 linhas).
+- **Cabeçalho de colunas**: fill #238078, branco bold.
+- **Faixas de especialidade** (CLÍNICA MÉDICA, PEDIATRIA…): gridSpan total, fill #1A5C54, caixa alta, branco bold, **alinhadas à esquerda**.
+- **Linhas de dados**: fundo branco (sem zebra) · coluna de valor bold #238078 centralizada, formato `R$ N.NNN,00` · demais células preto 9 pt, 1ª coluna à esquerda, demais centralizadas.
+- **Linha de total**: **célula única mesclada** (nunca dividida em 2 células), alinhada à direita: `TOTAL MENSAL ESTIMADO: R$ N.NNN,00`.
+- Nota itálica opcional abaixo da tabela ("valores por hora fixos e independentes do volume", "faturamento segue a produção efetiva").
+- Uma tabela POR UNIDADE; coordenações em linhas próprias com Turno "—" e Carga "Mensal".
 
-- Layout padrão (regime por hora), 4 colunas: **4200 / 2400 / 1300 / 1400 DXA** (Especialidade/Serviço · Turno/Função · Carga Horária · Valor por Hora). Em outros regimes, redistribuir mantendo coluna de valor ~1400 DXA.
-- **Linha 0 — faixa da unidade**: gridSpan total, fill **#1A5C54**, 1ª linha bold branco (`Unidade NN  –  Nome`), 2ª linha menor branca (endereço · funcionamento)
-- **Linha 1 — cabeçalho de colunas**: fill **#238078**, branco bold
-- **Faixas de especialidade** (CLÍNICA MÉDICA, PEDIATRIA…): gridSpan total, fill **#1A5C54**, caixa alta, branco bold
-- **Linhas de dados**: zebra branco/**#EEF4FB**, reiniciando em BRANCO após cada faixa de especialidade
-- **Coluna de valor**: **bold, #238078, centralizado**, formato `R$ N.NNN,00`
-- Demais células: preto 8 pt; 1ª coluna à esquerda, demais centralizadas
-- Uma tabela POR UNIDADE; coordenações em linhas próprias com Turno "—" e Carga "Mensal"
-- Notas itálicas padrão quando aplicável ("valores por hora fixos e independentes do volume", "faturamento segue a produção efetiva")
+## 8. LISTAS DE CHECAGEM (Seções 4, 6 e 7)
 
-## 10. LISTAS DE CHECAGEM (Seções 4-Atribuições e 6)
-
-- NÃO usar numeração nativa do Word. Cada item:
+- NÃO usar numeração/bullet nativos do Word. Cada item:
   - Caractere literal **✓** em **bold #238078** no início
   - Recuo: left 360, hanging 360 DXA · spacing after 100
-  - Texto 8 pt preto
+  - Texto 9 pt preto
 
-## 11. BLOCO DE ASSINATURA
+## 9. BLOCO DE ASSINATURA
 
 ```
-GUILHERME FERREIRA DE ALMEIDA          ← 9 pt bold preto
-Diretor – H2 Soluções em Saúde S.A.    ← 8 pt
-CPF: 024.802.861-85 · CNPJ: 53.304.656/0001-64    ← 8 pt
+GUILHERME FERREIRA DE ALMEIDA                      ← bold preto
+Diretor – H2 Soluções em Saúde S.A.
+CPF: 024.802.861-85 · CNPJ: 53.304.656/0001-64
 ```
+
+Tudo 9 pt, com keepNext junto da cortesia e data.
+
 **REGRA DE CARGO:** **S.A. → Diretor** (não existe "Sócio Administrador" em S.A.). **Ltda. → Sócio Administrador.** Cargo, entidade e CNPJ coerentes na Seção 1 E na assinatura.
 
-## 12. REGRAS DE CONTEÚDO (anti-erro)
+## 10. REGRAS DE CONTEÚDO (anti-erro)
 
 - **NUNCA inventar valores, qualificações, endereços ou prazos** — dado ausente vira placeholder `[DEFINIR]` + aviso a Gustavo.
 - Entidade proponente confirmada por Gustavo a cada proposta; ela determina CNPJ, conta e assinatura.
-- Validade padrão: 60 dias, salvo instrução diversa.
-- Seção 2: usar o texto institucional canônico H2 ("gestora de serviços médicos especializada na linha de cuidado do paciente crítico… ecossistema plug & play… H2 Academy e H2 Talk") — não reescrever criativamente.
+- Validade padrão: 60 dias, salvo edital/instrução diversa (ex.: HRSDA saiu com 90 dias por exceção autorizada).
+
+## 11. ERROS JÁ CORRIGIDOS (nunca reintroduzir)
+
+Margens 2 cm iguais nos 4 lados · corpo 8 pt / capa 18 pt · logo sem recortar · zebra nas linhas de dados · total dividido em 2 células · faixa da unidade em 2 linhas · menção a "H2 Talk" · H2 Academy no escopo padrão · frase de exclusão de deslocamento/hospedagem/diárias · título de seção ou assinatura órfã no fim de página.
+
+## 12. PROPOSTAS JÁ GERADAS (referência)
+
+- HEMNSL — R$ 319.789,00/mês
+- HRSDA — R$ 478.050,00/mês (validade 90 dias, exceção)
 
 ## 13. CHECKLIST FINAL (executar SEMPRE antes de entregar)
 
-1. Logo baixado do Drive e presente no header de todas as páginas?
+1. Logo recortado (170×42 px) presente no header de todas as páginas?
 2. Todas as 9 seções, na ordem, numeração correta?
-3. Cores conferem com a paleta?
+3. Cores conferem com a paleta? Sem zebra?
 4. Entidade × CNPJ × conta × cargo × assinatura coerentes? (S.A. = Diretor; Ltda. = Sócio Administrador)
 5. Matriz = Goiânia (QS Tower) e Filial = São Paulo (Av. Açocê)?
-6. Coluna de valores bold #238078 centralizada?
-7. Zebra correta (reinicia em branco após faixa)?
+6. Faixa da unidade em 1 linha só? Total em célula única mesclada à direita?
+7. Coluna de valores bold #238078 centralizada?
 8. Campos PAGE/NUMPAGES dinâmicos?
-9. Nenhum valor inventado?
-10. Converter para PDF e inspecionar visualmente página a página. Entregar DOCX + PDF.
+9. Texto canônico da Seção 2 literal, sem "H2 Talk" e sem H2 Academy?
+10. Nenhum valor inventado? Nenhuma frase de exclusão de deslocamento/hospedagem/diárias?
+11. Converter para PDF e inspecionar visualmente página a página. Entregar DOCX + PDF.
