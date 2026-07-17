@@ -1,5 +1,5 @@
-// Timbrado GSO Advogados — construído do zero com a identidade nova.
-// Header: logo + fio bronze · Footer: fio bronze + contatos em micro-caps.
+// Timbrado GO Advogados (Gustavo de Oliveira Advogados) — rebrand 2026-07-16.
+// Header: logo GO + fio bronze · Footer: fio bronze + contatos em micro-caps.
 // Corpo: Calibri 12, entrelinha 1,5, recuo 1ª linha 1701, justificado (CLAUDE.md).
 const fs = require("fs");
 const path = require("path");
@@ -8,12 +8,13 @@ const {
   AlignmentType, BorderStyle,
 } = require(path.join(process.env.APPDATA, "npm", "node_modules", "docx"));
 
+const REPO = "c:\\Users\\Gustavo\\gustavo-os";
 const GRAFITE = "1C2127";
 const BRONZE = "A57B45";
 const CINZA = "5A6068";
 
 const LOGO = fs.readFileSync(
-  "c:\\Users\\Dell\\gustavo\\Escritorio\\Institucional\\logo-gso-principal.png"
+  path.join(REPO, "Escritorio", "Institucional", "logo-go-principal.png")
 );
 
 // ---------- helpers ----------
@@ -48,11 +49,11 @@ const header = new Header({
         new ImageRun({
           type: "png",
           data: LOGO,
-          transformation: { width: 158, height: 89 }, // ~4,2 cm, proporção 1,779
+          transformation: { width: 129, height: 89 }, // ~3,4 cm, proporção 1,452
           altText: {
-            title: "GSO Advogados",
-            description: "Logomarca GSO Advogados",
-            name: "logo-gso",
+            title: "GO Advogados",
+            description: "Logomarca Gustavo de Oliveira Advogados",
+            name: "logo-go",
           },
         }),
       ],
@@ -97,6 +98,8 @@ const footer = new Footer({
         micro("CEP 74.805-480"),
         sep(),
         micro("(62) 99366-4193"),
+        sep(),
+        micro("gustavodeoliveira@goadvogados.com.br"),
       ],
     }),
   ],
@@ -189,7 +192,7 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then((buf) => {
-  const out = "c:\\Users\\Dell\\gustavo\\Escritorio\\Modelos\\timbrado-gso.docx";
+  const out = path.join(REPO, "Escritorio", "Modelos", "timbrado-go.docx");
   fs.writeFileSync(out, buf);
   console.log("OK:", out, buf.length, "bytes");
 });

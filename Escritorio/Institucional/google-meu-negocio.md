@@ -1,4 +1,4 @@
-# Google Meu Negócio — GSO Advogados (pacote de cadastro)
+﻿# Google Meu Negócio — Gustavo de Oliveira Advogados (pacote de cadastro)
 
 > Criado em 2026-07-16. Cadastro manual em https://business.google.com com a
 > conta ggsoliveira35@gmail.com. Copiar e colar os campos abaixo na ordem em
@@ -9,7 +9,7 @@
 
 | Campo | Valor |
 |---|---|
-| Nome do negócio | GSO Advogados |
+| Nome do negócio | Gustavo de Oliveira Advogados |
 | Categoria principal | Escritório de advocacia |
 | Categorias secundárias | Advogado · Advogado trabalhista |
 | Endereço | R. 72, nº 223, Salas 1901/1902 — Ed. QS Tower Office, Jardim Goiás, Goiânia — GO, 74805-480 |
@@ -60,7 +60,7 @@ superlativos ("o melhor"), nem promessa de resultado — vedados pela OAB.)*
 
 | Uso | Arquivo | Observação |
 |---|---|---|
-| Logotipo | `Escritorio/Institucional/avatar-gso-claro-1024.png` | quadrado 1024px, atende o mínimo de 720×720 |
+| Logotipo | `Escritorio/Institucional/avatar-go-claro-1024.png` | quadrado 1024px, atende o mínimo de 720×720 |
 | Foto de capa | — | **pendente**: foto real do escritório/recepção em 16:9 (mín. 1024×576). Google prioriza fotos reais; não usar só logo |
 | Fotos adicionais | — | fachada do QS Tower, sala de reunião, equipe (3+ fotos reais melhoram o ranqueamento) |
 
@@ -69,7 +69,7 @@ superlativos ("o melhor"), nem promessa de resultado — vedados pela OAB.)*
 O Google vai exigir verificação do endereço. Para escritórios de advocacia o
 método mais comum hoje é **verificação por vídeo** (gravar pelo celular
 mostrando: fachada do prédio com número, entrada da sala com identificação
-GSO, e um comprovante — conta de energia/contrato de locação da sala). Ter em
+Gustavo de Oliveira Advogados, e um comprovante — conta de energia/contrato de locação da sala). Ter em
 mãos antes de iniciar. Alternativas: postal (código por carta, ~14 dias) ou
 telefone, quando oferecidas.
 
@@ -89,7 +89,7 @@ telefone, quando oferecidas.
 ## Passo a passo do cadastro
 
 1. Acessar https://business.google.com logado em ggsoliveira35@gmail.com.
-2. "Adicionar empresa" → nome **GSO Advogados** → categoria **Escritório de advocacia**.
+2. "Adicionar empresa" → nome **Gustavo de Oliveira Advogados** → categoria **Escritório de advocacia**.
 3. "Você quer adicionar um local que os clientes possam visitar?" → **Sim** → endereço da tabela.
 4. Área de cobertura → adicionar as cidades da tabela (opcional).
 5. Telefone + site (pular site por ora).

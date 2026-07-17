@@ -7,7 +7,15 @@
 ## A prática
 Advocacia empresarial com carteira própria, fora da H2: empresarial,
 trabalhista, consumidor, eleitoral e regulatório em saúde. Mais de 300
-casos ajuizados. E-mail da frente: ggsoliveira35@gmail.com.
+casos ajuizados.
+
+## Marca e contatos (rebrand 2026-07-16)
+- Marca: **GO·** · Nome por extenso: **Gustavo de Oliveira Advogados**
+  (substituiu "GSO Advogados"; usar SEMPRE a marca nova em qualquer material)
+- E-mail institucional da frente: **gustavodeoliveira@goadvogados.com.br**
+  (ggsoliveira35@gmail.com segue como conta Google para rotinas/agenda)
+- Identidade visual completa: `Escritorio/Institucional/` (README com paleta,
+  arquivos e regras de uso) · Site: https://gso-advogados.vercel.app
 
 ## Escopo e prioridades
 - Cobrança / execução de valores inadimplentes — priorizada como porta de
@@ -44,16 +52,18 @@ recorrente.
 
 ## Papel timbrado (OBRIGATÓRIO em toda produção documental desta frente)
 - **Toda petição, manifestação, notificação ou documento do escritório sai no
-  papel timbrado GSO Advogados** — nunca gerar DOCX/PDF "limpo".
-- Modelo oficial versionado: `Escritorio/Modelos/timbrado-gso.docx` (placeholders
+  papel timbrado GO Advogados** — nunca gerar DOCX/PDF "limpo".
+- Modelo oficial versionado: `Escritorio/Modelos/timbrado-go.docx` (placeholders
   `[ENDEREÇAMENTO]`, `[NÚMERO DO PROCESSO]`, `[PARTE]`, `[CORPO DA PETIÇÃO]`,
   `[DIA]`/`[MÊS]`/`[ANO]`). Identidade visual: `Escritorio/Institucional/`.
-- É DOCX nativo (header: logo GSO + fio bronze; footer: endereço QS Tower +
-  contatos). Para gerar documento novo, descompactar o modelo (skill docx),
-  editar só o `word/document.xml` e repackar — cabeçalho/rodapé ficam intactos.
-  Script gerador do modelo: `scripts/build-timbrado-gso.js` (docx-js).
-- Legado: `timbrado-base.docx` ("Gustavo de Oliveira Advocacia", JPEG de página
-  inteira no header) — não usar em documentos novos.
+- É DOCX nativo (header: logo GO + fio bronze; footer: endereço QS Tower +
+  telefone + e-mail institucional). Para gerar documento novo, descompactar o
+  modelo (skill docx), editar só o `word/document.xml` e repackar —
+  cabeçalho/rodapé ficam intactos.
+  Script gerador do modelo: `scripts/build-timbrado-go.js` (docx-js).
+- Legado (não usar em documentos novos): `timbrado-base.docx` ("Gustavo de
+  Oliveira Advocacia", JPEG de página inteira) e o modelo GSO removido no
+  rebrand (recuperável no git).
 - Formatação do corpo: Calibri 12 (sz 24), entrelinha 1,5 (line 360), recuo de
   1ª linha 1701, justificado, A4, margens laterais 3cm.
 - Assinatura padrão: GUSTAVO G. SANTOS DE OLIVEIRA · OAB/GO 66.404 ·
