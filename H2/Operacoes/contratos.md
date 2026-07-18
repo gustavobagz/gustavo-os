@@ -32,5 +32,6 @@
 
 ## Alertas operacionais
 
+- **Renovar documentação no site da SBCD** (contratante) — prazo **2026-07-20** (segunda, 08h). Lembrete no Google Calendar.
 - SLAs de contratos vencidos com **cobranças em atraso** — detalhamento no painel jurídico.
 - Compliance **NR-1 (risco psicossocial): vencido desde 2026-05-26**.
