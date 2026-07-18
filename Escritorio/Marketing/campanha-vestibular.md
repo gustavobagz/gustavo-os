@@ -1,6 +1,14 @@
+---
+tags: [escritorio, marketing, vestibular, google-ads]
+tipo: procedimento
+frente: Escritorio
+---
+
 # Campanha — Matrícula negada / aprovado no 3º ano
 
-> Frente: Escritório (GSO Advogados). Criado em 2026-07-16.
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[00-Home|🏠 Home]] — [[honorarios|Honorários]] · [[google-meu-negocio|Google Meu Negócio]]
+
+> Frente: Escritório (GO Advogados). Criado em 2026-07-16.
 > Landing: `Escritorio/Site/vestibular/index.html`
 > Tese: aluno do 3º ano do ensino médio aprovado no vestibular → conclusão
 > antecipada (avanço escolar / certificação) + medida judicial com urgência.
@@ -86,7 +94,7 @@ Diferenciar pela mensagem pré-preenchida do `wa.me`:
 
 ## 5. Roteiro de triagem — WhatsApp (responder em minutos, não horas)
 
-1. **Abertura:** "Olá! Aqui é do GSO Advogados. Para eu analisar seu caso, me
+1. **Abertura:** "Olá! Aqui é do escritório Gustavo de Oliveira Advogados. Para eu analisar seu caso, me
    responde rapidinho: você é o(a) candidato(a) ou responsável?"
 2. **Dados-chave (uma mensagem só):**
    - Idade e série atual do aluno

@@ -1,4 +1,12 @@
+---
+tags: [h2, cadastro, referencia]
+tipo: referencia
+frente: H2
+---
+
 # Dados Cadastrais — Grupo H2 (referência normativa)
+
+> ⬅️ [[00-Mapa-H2|🩺 H2]] · [[00-Home|🏠 Home]] — [[contratos|Contratos]] · [[pendencias|Governança]] · [[sistemas|Sistemas]]
 
 > **Como usar (Claude):** fonte da verdade para qualificação das empresas e
 > representantes em contratos, propostas, procurações e atos societários.

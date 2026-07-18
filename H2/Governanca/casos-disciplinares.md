@@ -1,4 +1,12 @@
+---
+tags: [h2, disciplinar, regulatorio, registro]
+tipo: registro
+frente: H2
+---
+
 # Casos Disciplinares / Regulatórios — H2
+
+> ⬅️ [[00-Mapa-H2|🩺 H2]] · [[00-Home|🏠 Home]] — [[pendencias|Governança]] · [[contratos|Contratos]] · [[dados-cadastrais|Dados cadastrais]]
 
 > **Como usar (Claude):** registro dos casos disciplinares e regulatórios pontuais
 > da H2 (eventos em hospitais, conselhos de classe, sindicâncias). O `/briefing`

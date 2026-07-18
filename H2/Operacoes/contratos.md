@@ -1,4 +1,12 @@
+---
+tags: [h2, contratos, licitacoes, registro]
+tipo: registro
+frente: H2
+---
+
 # Contratos e Operações — H2 Soluções em Saúde
+
+> ⬅️ [[00-Mapa-H2|🩺 H2]] · [[00-Home|🏠 Home]] — [[pendencias|Governança]] · [[sistemas|Sistemas]] · [[dados-cadastrais|Dados cadastrais]] · [[casos-disciplinares|Disciplinares]]
 
 > **Como usar (Claude):** registro central de contratos, licitações e propostas da H2.
 > O `/briefing` alerta vigências a vencer em 30 dias e certames com sessão marcada.

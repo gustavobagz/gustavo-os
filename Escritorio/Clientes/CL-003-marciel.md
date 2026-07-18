@@ -1,4 +1,13 @@
+---
+tags: [escritorio, cliente, trabalhista]
+tipo: cliente
+id: CL-003
+frente: Escritorio
+---
+
 # Marciel
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[INDEX|Clientes]] — Casos: [[casos|C-003]] · [[honorarios|Honorários]]
 
 - **ID:** CL-003
 - **Tipo:** PF

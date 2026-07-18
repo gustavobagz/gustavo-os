@@ -1,4 +1,12 @@
+---
+tags: [escritorio, institucional, marca, identidade-visual]
+tipo: referencia
+frente: Escritorio
+---
+
 # Identidade visual — GO Advogados (Gustavo de Oliveira Advogados)
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[00-Home|🏠 Home]] — [[google-meu-negocio|Google Meu Negócio]] · [[campanha-vestibular|Campanha vestibular]]
 
 Logomarca oficial do escritório: conceito "contemporâneo — GO ponto"
 (rebrand aprovado em 2026-07-16; evolução do lockup GSO de mesma data,

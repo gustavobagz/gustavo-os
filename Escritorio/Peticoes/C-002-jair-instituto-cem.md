@@ -1,4 +1,13 @@
+---
+tags: [escritorio, caso, trabalhista, idpj, jair]
+tipo: caso
+id: C-002
+frente: Escritorio
+---
+
 # C-002 — Jair × Instituto CEM (IDPJs trabalhistas, TRT-18)
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[casos|Casos]] — Cliente: [[CL-002-jair|Jair (CL-002)]] · Modelo: [[modelo-contestacao-idpj-jair-cem|Contestação-base IDPJ]]
 
 > Dossiê do cluster de processos. Atualizado em 2026-07-16 (base: resumo de 2026-07-13).
 

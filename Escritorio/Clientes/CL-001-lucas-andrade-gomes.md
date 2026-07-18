@@ -1,4 +1,13 @@
+---
+tags: [escritorio, cliente]
+tipo: cliente
+id: CL-001
+frente: Escritorio
+---
+
 # Lucas Andrade Gomes
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[INDEX|Clientes]] — Casos: [[casos|C-001]] · [[honorarios|Honorários]]
 
 - **ID:** CL-001
 - **Tipo:** PF

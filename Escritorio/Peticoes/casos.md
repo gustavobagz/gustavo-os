@@ -1,4 +1,12 @@
+---
+tags: [escritorio, casos, registro]
+tipo: registro
+frente: Escritorio
+---
+
 # Registro de Casos — Prática Independente
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[00-Home|🏠 Home]] — Clientes: [[CL-001-lucas-andrade-gomes|Lucas]] · [[CL-002-jair|Jair]] · [[CL-003-marciel|Marciel]] · [[CL-004-auris-ltda|Auris]] · [[CL-005-irmao-ana-laura-brasil-sucatas|Brasil Sucatas]] · Dossiê [[C-002-jair-instituto-cem|C-002]] · [[honorarios|Honorários]]
 
 > **Como usar (Claude):** toda entrada de caso novo (via `/novo-caso`) adiciona uma linha aqui.
 > Prazos ficam na tabela de prazos. O `/briefing` lê este arquivo diariamente e alerta

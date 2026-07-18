@@ -1,4 +1,12 @@
-﻿# Google Meu Negócio — Gustavo de Oliveira Advogados (pacote de cadastro)
+﻿---
+tags: [escritorio, institucional, marketing, seo-local]
+tipo: procedimento
+frente: Escritorio
+---
+
+# Google Meu Negócio — Gustavo de Oliveira Advogados (pacote de cadastro)
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[00-Home|🏠 Home]] — [[Escritorio/Institucional/README|Identidade visual]] · [[campanha-vestibular|Campanha vestibular]]
 
 > Criado em 2026-07-16. Cadastro manual em https://business.google.com com a
 > conta ggsoliveira35@gmail.com. Copiar e colar os campos abaixo na ordem em

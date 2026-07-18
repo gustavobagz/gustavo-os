@@ -1,4 +1,12 @@
+---
+tags: [h2, governanca, societario, registro]
+tipo: registro
+frente: H2
+---
+
 # Governança H2 — Pendências do Pilar Jurídico
+
+> ⬅️ [[00-Mapa-H2|🩺 H2]] · [[00-Home|🏠 Home]] — [[contratos|Contratos]] · [[sistemas|Sistemas]] · [[dados-cadastrais|Dados cadastrais]] · [[casos-disciplinares|Disciplinares]]
 
 > **Como usar (Claude):** frentes do roadmap de 90 dias (decidido em 2026-05-05) e
 > pendências de governança. O `/briefing` mostra itens da faixa em curso; o

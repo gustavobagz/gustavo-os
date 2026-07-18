@@ -1,4 +1,12 @@
+---
+tags: [h2, sistemas, tecnologia, registro]
+tipo: registro
+frente: H2
+---
+
 # Sistemas H2 em Produção (Vercel)
+
+> ⬅️ [[00-Mapa-H2|🩺 H2]] · [[00-Home|🏠 Home]] — [[contratos|Contratos]] · [[pendencias|Governança]] · [[dados-cadastrais|Dados cadastrais]]
 
 > **Como usar (Claude):** inventário das ferramentas internas mantidas por Gustavo.
 > Stack padrão: Next.js / Vercel / Neon / Supabase · Claude API · MCP h2-mcp.

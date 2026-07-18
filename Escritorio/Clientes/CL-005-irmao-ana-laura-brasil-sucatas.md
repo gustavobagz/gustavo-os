@@ -1,4 +1,13 @@
+---
+tags: [escritorio, cliente, cobranca]
+tipo: cliente
+id: CL-005
+frente: Escritorio
+---
+
 # Irmão de Ana Laura (Brasil Sucatas)
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[INDEX|Clientes]] — Casos: [[casos|C-006]] · [[honorarios|Honorários]]
 
 - **ID:** CL-005
 - **Tipo:** PF

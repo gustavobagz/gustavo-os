@@ -1,4 +1,12 @@
+---
+tags: [escritorio, clientes, indice]
+tipo: indice
+frente: Escritorio
+---
+
 # Índice de Clientes — Prática Independente
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[00-Home|🏠 Home]] — Fichas: [[CL-001-lucas-andrade-gomes|CL-001]] · [[CL-002-jair|CL-002]] · [[CL-003-marciel|CL-003]] · [[CL-004-auris-ltda|CL-004]] · [[CL-005-irmao-ana-laura-brasil-sucatas|CL-005]] · [[casos|Casos]] · [[honorarios|Honorários]]
 
 > **Como usar (Claude):** cada cliente tem um arquivo próprio nesta pasta
 > (`CL-001-nome-do-cliente.md`, criado a partir de `_template-cliente.md` via `/novo-cliente`).

@@ -1,4 +1,13 @@
+---
+tags: [escritorio, cliente, trabalhista]
+tipo: cliente
+id: CL-002
+frente: Escritorio
+---
+
 # Jair Rodrigues de Oliveira Junior
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[INDEX|Clientes]] — Dossiê: [[C-002-jair-instituto-cem|C-002 × Instituto CEM]] · [[casos|Casos]] · [[honorarios|Honorários]]
 
 - **ID:** CL-002
 - **Tipo:** PF — médico, CRM 26958/GO

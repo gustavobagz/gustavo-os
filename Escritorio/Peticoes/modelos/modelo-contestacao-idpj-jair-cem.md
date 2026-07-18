@@ -1,4 +1,12 @@
+---
+tags: [escritorio, modelo, peticao, trabalhista, idpj]
+tipo: modelo
+frente: Escritorio
+---
+
 # MODELO — Contestação IDPJ (Jair × Instituto CEM)
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] — Dossiê: [[C-002-jair-instituto-cem|C-002 × Instituto CEM]] · Cliente: [[CL-002-jair|Jair]]
 
 > **Base:** contestação protocolada em 2026-07-13 no proc. 0012047-95.2024.5.18.0015
 > (Renata, 15ª VT Goiânia) — a versão mais evoluída da tese. Usar como base de

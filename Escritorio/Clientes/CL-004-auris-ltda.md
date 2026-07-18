@@ -1,4 +1,13 @@
+---
+tags: [escritorio, cliente, execucao]
+tipo: cliente
+id: CL-004
+frente: Escritorio
+---
+
 # Auris Ltda.
+
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[INDEX|Clientes]] — Casos: [[casos|C-004]] · [[honorarios|Honorários]]
 
 - **ID:** CL-004
 - **Tipo:** PJ
