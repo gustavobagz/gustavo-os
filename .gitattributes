@@ -1,0 +1,10 @@
+# Padroniza fim-de-linha em LF no repositório, evitando ruído CRLF↔LF
+# (ex.: Obsidian no Windows reescrevendo .md). Binários ficam de fora.
+* text=auto eol=lf
+
+*.docx binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.svg  text eol=lf
