@@ -11,23 +11,24 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231E222B'/%3E%3Ctext x='7' y='45' font-family='Georgia,serif' font-weight='700' font-size='34' fill='%23EDEAE3'%3EGO%3C/text%3E%3Crect x='49' y='33' width='9' height='9' fill='%23C9955C'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F3F1EC;
-  --paper-2:#F9F8F4;
+  --paper:#F0F1F3;
+  --paper-2:#E7E9EC;
   --ink:#1E222B;
-  --ink-soft:#575C65;
-  --mute:#7C8189;
-  --nav:#6E6450;
+  --ink-soft:#4A505C;
+  --mute:#676D78;
+  --nav:#545B68;
   --bronze:#A5793E;
+  --bronze-ink:#7E5A24;
   --ouro:#C9955C;
-  --marfim:#EDEAE3;
+  --marfim:#ECEDEF;
   --marfim-soft:#9BA1A8;
-  --linha:#DCD9D1;
-  --linha-2:#C2BEB3;
+  --linha:#D7DAE0;
+  --linha-2:#C2C6CE;
   --linha-escura:#323844;
-  --display:"Cormorant Garamond",Georgia,serif;
+  --display:"Archivo",system-ui,sans-serif;
   --serif:"Source Serif 4",Georgia,serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -38,7 +39,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 ::selection{background:var(--bronze);color:var(--paper)}
-a{color:var(--bronze)}
+a{color:var(--bronze-ink)}
 .wrap{max-width:76rem;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
 section[id]{scroll-margin-top:5rem}
 img{max-width:100%}
@@ -46,62 +47,94 @@ img{max-width:100%}
 /* eyebrow / rótulos de seção */
 .eyebrow{
   font-weight:600;font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;
-  color:var(--bronze);
+  color:var(--ouro);
 }
 .eyebrow.rule{display:flex;align-items:center;gap:1rem;font-size:.72rem}
-.eyebrow.rule::before{content:"";width:2.6rem;height:1px;background:var(--bronze);display:inline-block}
+.eyebrow.rule::before{content:"";width:2.6rem;height:1px;background:var(--ouro);display:inline-block}
 .sec-head{display:grid;gap:1.2rem;margin-bottom:4rem}
 h2{
-  font-family:var(--display);font-weight:600;
-  font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.08;
-  letter-spacing:-.01em;text-wrap:balance;
+  font-family:var(--display);font-weight:700;
+  font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.1;
+  letter-spacing:-.02em;text-wrap:balance;
 }
-em{font-style:italic;color:var(--bronze)}
+em{font-style:normal;color:var(--ouro)}
 
 /* ---------- header ---------- */
 header{
   position:fixed;inset:0 0 auto 0;z-index:50;
-  background:rgba(243,241,236,.94);
+  background:rgba(240,241,243,.94);
   backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   border-bottom:1px solid var(--linha);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:4.5rem}
 .nav .logo{display:inline-flex;align-items:center}
 .nav .logo img{height:3.1rem;width:auto;display:block}
+.nav-main{display:flex;align-items:center;gap:2rem}
 .nav-links{display:flex;gap:2.4rem;align-items:center;list-style:none}
 .nav-links a{
   font-weight:600;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
   text-decoration:none;color:var(--nav);transition:color .25s;
 }
-.nav-links a:hover,.nav-links a:focus-visible{color:var(--bronze)}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--bronze-ink)}
 .nav-cta{
-  color:var(--paper)!important;background:var(--bronze);
+  color:var(--paper)!important;background:var(--bronze-ink);
   padding:.7rem 1.3rem;letter-spacing:.2em!important;transition:background .25s;
 }
 .nav-cta:hover,.nav-cta:focus-visible{background:var(--ink)}
-@media(max-width:1080px){.nav-links li.hide-mobile{display:none}}
+.nav-toggle{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  width:2.75rem;height:2.75rem;padding:0 .6rem;
+  border:1px solid var(--linha-2);background:transparent;cursor:pointer;
+}
+.nav-toggle span{display:block;height:1.5px;width:100%;background:var(--ink);transition:transform .3s ease,opacity .2s ease}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+@media(max-width:1080px){
+  .nav-main{gap:.9rem}
+  .nav-toggle{display:flex}
+  .nav-links{
+    position:fixed;top:4.5rem;left:0;right:0;z-index:49;
+    flex-direction:column;align-items:stretch;gap:0;
+    background:rgba(240,241,243,.98);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--linha);
+    padding:.25rem clamp(1.25rem,5vw,3rem) 1rem;
+    transform:translateY(-14px);opacity:0;visibility:hidden;pointer-events:none;
+    transition:opacity .3s ease,transform .35s cubic-bezier(.22,.6,.2,1),visibility .3s;
+  }
+  .nav-links.open{transform:none;opacity:1;visibility:visible;pointer-events:auto}
+  .nav-links li{border-bottom:1px solid var(--linha)}
+  .nav-links li:last-child{border-bottom:none}
+  .nav-links a{display:block;padding:1.05rem 0;font-size:.8rem}
+}
 
 /* ---------- hero ---------- */
-.hero{padding:12rem 0 6.5rem;border-bottom:1px solid var(--linha)}
+.hero{background:var(--ink);color:var(--marfim);padding:12rem 0 6.5rem}
 .hero h1{
-  font-family:var(--display);font-weight:600;
-  font-size:clamp(2.9rem,7vw,5.6rem);line-height:1.04;
-  letter-spacing:-.01em;text-wrap:balance;max-width:18ch;
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2.9rem,7vw,5.6rem);line-height:1.02;
+  letter-spacing:-.02em;text-wrap:balance;max-width:18ch;
 }
 .hero-lower{display:grid;grid-template-columns:3fr 2fr;gap:3rem;align-items:end;margin-top:3.2rem}
-.hero-sub{font-size:clamp(1.08rem,1.6vw,1.28rem);color:var(--ink-soft);max-width:36rem}
+.hero-sub{font-size:clamp(1.08rem,1.6vw,1.28rem);color:var(--marfim-soft);max-width:36rem}
 .hero-acoes{display:flex;gap:1rem;flex-wrap:wrap;justify-content:flex-end}
 .btn{
   font-weight:600;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;
   text-decoration:none;padding:1.05rem 1.9rem;display:inline-block;transition:.25s;
 }
-.btn-cheio{background:var(--bronze);color:var(--paper)}
-.btn-cheio:hover,.btn-cheio:focus-visible{background:var(--ink)}
-.btn-linha{border:1px solid var(--linha-2);color:var(--ink)}
-.btn-linha:hover,.btn-linha:focus-visible{border-color:var(--bronze);color:var(--bronze)}
+.btn-linha{border:1px solid var(--linha-escura);color:var(--marfim)}
+.btn-linha:hover,.btn-linha:focus-visible{border-color:var(--ouro);color:var(--ouro)}
+.hero-baixo{
+  margin-top:4.6rem;padding-top:1.5rem;border-top:1px solid var(--linha-escura);
+  display:flex;flex-wrap:wrap;gap:.6rem 2.4rem;align-items:baseline;justify-content:space-between;
+}
 .hero-oab{
-  margin-top:4.6rem;padding-top:1.5rem;border-top:1px solid var(--linha);
-  font-weight:600;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);
+  font-weight:600;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--marfim-soft);
+}
+.hero-coord{
+  font-family:var(--display);font-weight:600;font-size:.72rem;letter-spacing:.08em;
+  font-variant-numeric:tabular-nums;color:var(--ouro);white-space:nowrap;
 }
 @media(max-width:1080px){
   .hero{padding:9.5rem 0 5rem}
@@ -119,26 +152,24 @@ header{
   border-right:1px solid var(--linha);border-bottom:1px solid var(--linha);
   padding:2.8rem 2.5rem 3rem;background:var(--paper-2);
 }
-.area-num{font-family:var(--display);font-weight:600;font-style:italic;font-size:1.2rem;color:var(--bronze);margin-bottom:1.1rem}
 .area h3{font-family:var(--display);font-weight:700;font-size:1.7rem;line-height:1.15;margin-bottom:.9rem}
 .area p.desc{color:var(--ink-soft);font-size:1rem;max-width:38ch}
 .area-rota{
   margin-top:1.4rem;font-weight:600;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--mute);display:flex;align-items:center;gap:.6rem;
+  color:var(--ink-soft);display:flex;align-items:center;gap:.6rem;
 }
 .area-rota::before{content:"";width:1.3rem;height:1px;background:var(--linha-2);display:inline-block;flex-shrink:0}
 @media(max-width:1080px){.areas-grid{grid-template-columns:1fr}}
 
 /* ---------- método ---------- */
 .metodo{background:var(--ink);color:var(--marfim);padding:6.5rem 0}
-.metodo .eyebrow{color:var(--ouro)}
-.metodo-intro{color:var(--marfim-soft);max-width:38rem;margin:-2.2rem 0 4rem;font-size:1.1rem}
+.metodo-intro{color:var(--marfim-soft);max-width:38rem;margin-top:-1.2rem;margin-bottom:4rem;font-size:1.1rem}
 .passos{list-style:none;border-top:1px solid var(--linha-escura)}
 .passo{
   display:grid;grid-template-columns:5rem 1fr 2fr;gap:2rem;align-items:baseline;
   padding:1.8rem 0;border-bottom:1px solid var(--linha-escura);
 }
-.passo-rn{font-family:var(--display);font-weight:600;font-style:italic;font-size:1.5rem;color:var(--ouro)}
+.passo-rn{font-family:var(--display);font-weight:700;font-size:1.15rem;font-variant-numeric:tabular-nums;letter-spacing:.02em;color:var(--ouro)}
 .passo-nome{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1.2}
 .passo-desc{color:var(--marfim-soft);font-size:.98rem}
 @media(max-width:1080px){
@@ -162,7 +193,7 @@ header{
 }
 .sobre-fatos .k{font-weight:600;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--mute)}
 .sobre-fatos .v{font-family:var(--display);font-weight:700;font-size:1.1rem;text-align:right}
-.sobre-fatos .v.br{color:var(--bronze)}
+.sobre-fatos .v.br{color:var(--bronze-ink)}
 @media(max-width:1080px){
   .sobre-grid{grid-template-columns:1fr;gap:3rem}
   .sobre-card{position:static}
@@ -185,10 +216,8 @@ header{
 
 /* ---------- contato ---------- */
 .contato{background:var(--ink);color:var(--marfim);padding:6.5rem 0}
-.contato .eyebrow{color:var(--ouro);margin-bottom:1.6rem}
 .contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .contato h2{max-width:14ch}
-.contato h2 em{color:var(--ouro)}
 .contato-sub{color:var(--marfim-soft);margin:1.8rem 0 2.6rem;max-width:30rem}
 .btn-ouro{background:var(--ouro);color:var(--ink)}
 .btn-ouro:hover,.btn-ouro:focus-visible{background:var(--marfim)}
@@ -210,10 +239,14 @@ header{
 }
 
 /* ---------- footer ---------- */
-footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px solid var(--linha-escura)}
+footer{background:var(--ink);color:var(--marfim-soft);padding:3rem 0;border-top:1px solid var(--linha-escura)}
 .foot{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
 .foot .logo img{height:3.4rem;width:auto;display:block}
 .foot-info{font-weight:500;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;text-align:right;line-height:2}
+.foot-social{display:flex;gap:1.1rem}
+.foot-social a{color:var(--marfim-soft);transition:color .2s}
+.foot-social a:hover,.foot-social a:focus-visible{color:var(--ouro)}
+.foot-social svg{width:1.4rem;height:1.4rem;display:block}
 @media(max-width:640px){.foot{flex-direction:column;align-items:flex-start}.foot-info{text-align:left}}
 
 /* ---------- reveal ---------- */
@@ -234,7 +267,7 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal,.areas-grid .area,.passos .passo{opacity:1;transform:none;transition:none}
-  .faq summary .sinal{transition:none}
+  .faq summary .sinal,.nav-links,.nav-toggle span{transition:none}
 }
 </style>
 </head>
@@ -243,15 +276,19 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
 <header>
   <div class="wrap nav">
     <a class="logo" href="#topo" aria-label="Gustavo de Oliveira Advogados, início">
-      <img src="assets/logo-go-principal.png" alt="GO. Advogados" width="1589" height="1094">
+      <img src="assets/logo-go-principal.png" alt="GO· Advogados" width="1589" height="1094">
     </a>
-    <nav aria-label="Principal">
-      <ul class="nav-links">
-        <li class="hide-mobile"><a href="#areas">Atuação</a></li>
-        <li class="hide-mobile"><a href="#metodo">Método</a></li>
-        <li class="hide-mobile"><a href="#sobre">O escritório</a></li>
-        <li><a class="nav-cta" href="#contato">Fale conosco</a></li>
+    <nav class="nav-main" aria-label="Principal">
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#areas">Atuação</a></li>
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#sobre">O escritório</a></li>
       </ul>
+      <a class="nav-cta" href="#contato">Fale conosco</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu"
+        aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </div>
 </header>
@@ -268,11 +305,14 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
         trabalhista, consumerista e recuperação de crédito, com o risco de cada decisão
         mapeado antes de você assumi-lo.</p>
         <div class="hero-acoes">
-          <a class="btn btn-cheio" href="#contato">Agendar diagnóstico</a>
+          <a class="btn btn-ouro" href="#contato">Agendar diagnóstico</a>
           <a class="btn btn-linha" href="#areas">Áreas de atuação</a>
         </div>
       </div>
-      <p class="hero-oab">Gustavo G. Santos de Oliveira · OAB/GO 66.404 · Est. 2024 · Goiânia, Brasil</p>
+      <div class="hero-baixo">
+        <p class="hero-oab">Gustavo G. Santos de Oliveira · OAB/GO 66.404 · Est. 2024</p>
+        <p class="hero-coord">16°40'S 49°15'W — Goiânia, GO</p>
+      </div>
     </div>
   </section>
 
@@ -280,37 +320,32 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
   <section class="areas" id="areas" aria-labelledby="areas-titulo">
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">I · Atuação</p>
         <h2 id="areas-titulo">Quatro territórios, uma única bússola.</h2>
       </div>
       <div class="areas-grid">
         <article class="area">
-          <p class="area-num">i.</p>
           <h3>Direito Empresarial &amp; Societário</h3>
           <p class="desc">Estruturação de sociedades, acordos de sócios, dissoluções e
           distratos, contratos comerciais e proteção patrimonial.</p>
           <p class="area-rota">Do aperto de mão ao acordo assinado</p>
         </article>
         <article class="area">
-          <p class="area-num">ii.</p>
           <h3>Contencioso Trabalhista</h3>
           <p class="desc">Defesa de empresas em reclamações trabalhistas, prevenção de
           passivo e orientação em rotinas de RH.</p>
-          <p class="area-rota">Da rotina de RH à defesa em juízo</p>
+          <p class="area-rota">Prevenção no dia a dia, defesa quando é preciso</p>
         </article>
         <article class="area">
-          <p class="area-num">iii.</p>
           <h3>Direito do Consumidor</h3>
           <p class="desc">Defesa de empresas e prestadores de serviço em demandas
           consumeristas, com foco em redução de exposição e repetição de litígio.</p>
-          <p class="area-rota">Da demanda isolada à gestão do contencioso</p>
+          <p class="area-rota">Cada caso resolvido, o próximo evitado</p>
         </article>
         <article class="area">
-          <p class="area-num">iv.</p>
           <h3>Cobrança &amp; Execução</h3>
           <p class="desc">Recuperação de valores inadimplentes e execução de títulos,
           com estratégia voltada a resultado, não apenas ao protocolo.</p>
-          <p class="area-rota">Da inadimplência ao título executado</p>
+          <p class="area-rota">Cobrar sem perder o cliente</p>
         </article>
       </div>
     </div>
@@ -320,19 +355,18 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
   <section class="metodo" id="metodo" aria-labelledby="metodo-titulo">
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">II · Método</p>
         <h2 id="metodo-titulo">As sete coordenadas de toda análise.</h2>
       </div>
       <p class="metodo-intro reveal">Nenhum parecer sai do escritório sem cumprir as sete
       etapas abaixo, nesta ordem. É o que separa uma opinião de uma recomendação.</p>
       <ol class="passos">
-        <li class="passo"><span class="passo-rn">i.</span><span class="passo-nome">Diagnóstico</span><span class="passo-desc">O problema real, separado do problema aparente.</span></li>
-        <li class="passo"><span class="passo-rn">ii.</span><span class="passo-nome">Premissas explícitas</span><span class="passo-desc">Tudo o que a análise assume fica escrito e pode ser revisado.</span></li>
-        <li class="passo"><span class="passo-rn">iii.</span><span class="passo-nome">Prevenção</span><span class="passo-desc">Os movimentos prováveis da outra parte, antecipados para que a estratégia não dependa de reação.</span></li>
-        <li class="passo"><span class="passo-rn">iv.</span><span class="passo-nome">Risco ponderado</span><span class="passo-desc">Probabilidade e severidade, não adjetivos.</span></li>
-        <li class="passo"><span class="passo-rn">v.</span><span class="passo-nome">Impacto</span><span class="passo-desc">Efeito no caixa, na operação e na reputação, antes do efeito nos autos.</span></li>
-        <li class="passo"><span class="passo-rn">vi.</span><span class="passo-nome">Soluções no plural</span><span class="passo-desc">Sempre mais de um caminho, com custo e prazo de cada um.</span></li>
-        <li class="passo"><span class="passo-rn">vii.</span><span class="passo-nome">Gatilhos de revisão</span><span class="passo-desc">O que precisa acontecer para a estratégia mudar, definido desde o início.</span></li>
+        <li class="passo"><span class="passo-rn">01</span><span class="passo-nome">Diagnóstico</span><span class="passo-desc">O problema real, separado do problema aparente.</span></li>
+        <li class="passo"><span class="passo-rn">02</span><span class="passo-nome">Premissas explícitas</span><span class="passo-desc">Tudo o que a análise assume fica escrito e pode ser revisado.</span></li>
+        <li class="passo"><span class="passo-rn">03</span><span class="passo-nome">Prevenção</span><span class="passo-desc">Os movimentos prováveis da outra parte, antecipados para que a estratégia não dependa de reação.</span></li>
+        <li class="passo"><span class="passo-rn">04</span><span class="passo-nome">Risco ponderado</span><span class="passo-desc">Probabilidade e severidade, não adjetivos.</span></li>
+        <li class="passo"><span class="passo-rn">05</span><span class="passo-nome">Impacto</span><span class="passo-desc">Efeito no caixa, na operação e na reputação, antes do efeito nos autos.</span></li>
+        <li class="passo"><span class="passo-rn">06</span><span class="passo-nome">Soluções no plural</span><span class="passo-desc">Sempre mais de um caminho, com custo e prazo de cada um.</span></li>
+        <li class="passo"><span class="passo-rn">07</span><span class="passo-nome">Gatilhos de revisão</span><span class="passo-desc">O que precisa acontecer para a estratégia mudar, definido desde o início.</span></li>
       </ol>
     </div>
   </section>
@@ -341,7 +375,6 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
   <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">III · O escritório</p>
         <h2 id="sobre-titulo">Advocacia de banca, agilidade de boutique.</h2>
       </div>
       <div class="sobre-grid">
@@ -385,7 +418,6 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
   <section class="faq" id="faq" aria-labelledby="faq-titulo">
     <div class="wrap">
       <div class="sec-head reveal">
-        <p class="eyebrow">IV · Perguntas</p>
         <h2 id="faq-titulo">Antes de entrar em contato.</h2>
       </div>
       <div class="faq-lista reveal">
@@ -416,7 +448,6 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
   <section class="contato" id="contato" aria-labelledby="contato-titulo">
     <div class="wrap contato-grid">
       <div class="reveal">
-        <p class="eyebrow">V · Contato</p>
         <h2 id="contato-titulo">Primeiro o diagnóstico. <em>Depois a estratégia.</em></h2>
         <p class="contato-sub">A primeira conversa serve para entender o problema e
         dizer, com franqueza, se e como podemos ajudar.</p>
@@ -427,6 +458,8 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
           <span class="k">WhatsApp</span><span class="v">(62) 99366-4193</span></a></li>
         <li><a href="mailto:gustavodeoliveira@goadvogados.com.br">
           <span class="k">E-mail</span><span class="v">gustavodeoliveira@goadvogados.com.br</span></a></li>
+        <li><a href="https://www.instagram.com/gustavodeoliveira.adv" target="_blank" rel="noopener">
+          <span class="k">Instagram</span><span class="v">@gustavodeoliveira.adv</span></a></li>
         <li><div class="item">
           <span class="k">Endereço</span>
           <span class="v">Ed. QS Tower Office · R. 72, nº 223, Salas 1901/1902 · Jardim Goiás · Goiânia/GO</span></div></li>
@@ -447,11 +480,36 @@ footer{background:var(--ink);color:var(--mute);padding:3rem 0;border-top:1px sol
       Gustavo G. Santos de Oliveira · OAB/GO 66.404<br>
       © <span id="ano">2026</span> Gustavo de Oliveira Advogados · Goiânia/GO
     </p>
+    <div class="foot-social">
+      <a href="https://www.instagram.com/gustavodeoliveira.adv" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://wa.me/5562993664193" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.16L2 22l4.95-1.6A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 0 1 6.86 12.4l.44 1.6-1.65-.43a8.1 8.1 0 1 1-5.65-13.57Zm-3.1 4.3c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34 1 2.5c.12.16 1.7 2.7 4.2 3.68 2.08.82 2.5.66 2.96.62.46-.04 1.48-.6 1.69-1.2.2-.58.2-1.08.15-1.19-.06-.1-.22-.16-.46-.28-.24-.12-1.48-.73-1.7-.81-.23-.09-.4-.13-.56.12-.16.24-.64.8-.78.97-.14.16-.29.18-.53.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.15.16-.25.24-.41.08-.16.04-.3-.02-.42-.06-.12-.54-1.36-.76-1.85-.2-.48-.4-.42-.55-.42Z"/></svg>
+      </a>
+    </div>
   </div>
 </footer>
 
 <script>
 document.getElementById('ano').textContent = new Date().getFullYear();
+
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+if (navToggle && navMenu) {
+  const setOpen = (open) => {
+    navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    navMenu.classList.toggle('open', open);
+  };
+  navToggle.addEventListener('click', (e) => { e.stopPropagation(); setOpen(navToggle.getAttribute('aria-expanded') !== 'true'); });
+  navMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+  document.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('open') && !navMenu.contains(e.target)) setOpen(false);
+  });
+}
+
 const io = new IntersectionObserver((entries) => {
   entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
 }, { threshold: 0.08 });
