@@ -11,3 +11,6 @@ Relatorios/fechamento-log.md
 
 # Saídas de teste das skills de proposta — não versionar
 Proposta-TESTE-*
+
+# Cache local de ferramentas (paths de máquina/sessão, não versionar)
+.impeccable/
