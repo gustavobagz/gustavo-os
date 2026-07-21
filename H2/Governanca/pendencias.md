@@ -29,7 +29,7 @@ frente: H2
 | LGPD (adequação) | Alta | em coordenação com SDBM | definir escopo do diagnóstico |
 | Código de Conduta | Alta | pendente | minuta-base |
 | Mapeamento de contencioso | Alta | pendente | levantamento de passivo |
-| Livros societários | Média | regularização em andamento (H2 S.A., 1.600+ acionistas) | coordenar com BVA/SDBM |
+| Livros societários | Alta | **Livro de 19/05/2026 descartado** (rascunho de sessão anterior, nunca levado à contabilidade). Reconstruído em 2026-07-21 a partir do livro de 28/02/2025 + `TERMOS SA.xlsx` + CPF cruzado com 4 fontes (`TESTE_backup_antes_MHC.xlsx`, `ATT-CPF_CNPJ_Socios_H2_ATUALIZADA.xlsx`, 3 exports do h2-termos-web): minuta com 2.232 acionistas / 23.170 ações, mas **658 sem CPF/CNPJ** — ver `H2/Governanca/livro-acionistas.md` | **Gustavo: (1) achar CPF dos 658 restantes (exportar cadastro completo do h2-termos-web?); (2) confirmar os 2 CPFs com dígito inválido (Jucelio Lima Martins, Phellipe Di Monaco Lima) + CPF certo de Marta de Pinho Alcântara e Ianara Janaina de Araujo Tavares Xavier; (3) resolver duplicidade RV Medcare; só então fechar/assinar o livro novo** |
 | Exposição CARF | Média | análise em andamento — Acórdão 2201-012.484 | memorando BVA em revisão pela Confirp e Amaral e Puga |
 | NR-1 (risco psicossocial) | Alta | **vencido desde 2026-05-26** | regularizar compliance |
 
@@ -48,7 +48,7 @@ frente: H2
 
 | Data | Caso | Status | Prazo |
 |------|------|--------|-------|
-| 2026-07-16 | Apuração — Dr. Vitor Migatão (CRM 223523), UPA Putim/SJC: alegação de ofensa verbal a paciente (André Pereda Santos, atend. 2026-07-15, pront. S 32390, ep. 64004). Notificação emitida: `H2/Notificacoes/2026-07-16-notificacao-dr-vitor-migatao.docx` | notificado — aguardando manifestação | 24h do recebimento |
+| 2026-07-16 | Apuração — Dr. Vitor Migatão (CRM 223523), UPA Putim/SJC: alegação de ofensa verbal a paciente (André Pereda Santos, atend. 2026-07-15, pront. S 32390, ep. 64004). Notificação emitida: `H2/Notificacoes/2026-07-16-notificacao-dr-vitor-migatao.docx` · **encaminhada ao médico em 2026-07-17** | notificação encaminhada — aguardando manifestação | 24h do recebimento (contar a partir de 2026-07-17) |
 
 ## Roadmap 90 dias (3 faixas)
 - **Faixa 1 (0–30d):** —

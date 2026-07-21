@@ -37,6 +37,7 @@ E-mail da frente H2: controladoria@h2saude.com.br.
 |----------|---------|
 | Contratos, licitações e propostas | `H2/Operacoes/contratos.md` |
 | Governança / roadmap 90 dias | `H2/Governanca/pendencias.md` |
+| Livro de acionistas (movimentações) | `H2/Governanca/livro-acionistas.md` |
 | Sistemas em produção | `H2/Ferramentas/sistemas.md` |
 | Propostas geradas | `H2/Propostas/` |
 
