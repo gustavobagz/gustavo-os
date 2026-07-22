@@ -1,0 +1,1 @@
+- [Painel Jurídico — código e deploy](painel-juridico-deploy.md) — fonte no GitHub gustavobagz/paineldopilarjuridico, publica na Vercel via push na main; conta do MCP é outra (vazia)
