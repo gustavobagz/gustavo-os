@@ -775,6 +775,40 @@ e a grande maioria de PJ (empresas/CNPJ), que é uma busca de natureza
 diferente (não está no escopo desta varredura por pasta de médico no
 Drive).
 
+### Rodada 9 (2026-07-22, mesmo dia) — últimos nomes de HEMU/HEI/HEJA/HEMNSL/HRP
+
+Troquei `title contains` por `fullText contains` na busca ampla — pega o
+nome mesmo quando ele só aparece dentro do conteúdo do documento (CNH,
+diploma, certidão), não no título do arquivo/pasta. Resolveu 5 dos 9
+nomes que tinham ficado sem solução na rodada 8.
+
+**5 CPFs novos confirmados e já lançados na minuta:**
+
+Andrielle Nunes Santos Gardia (019.955.441-24 — Drive: "Andrielle Nunes
+Santos Gadia"), John Pitter Macaelles Duarte Pereira (042.354.641-40 —
+Drive: "Macalles"), Jullyana Ricielly Dias Silva (033.904.091-22 —
+Drive: "Ricelly"), Ludymilla Candido Ribeiro da Silva (005.814.351-33 —
+Drive: "Candida"), Cristiana de Souza Luz Santos (012.951.783-62 —
+confirmado em 3 documentos diferentes: Dados Bancários, Certidão de
+Casamento e Diploma).
+
+⚠️ **4 nomes seguem sem CPF pessoa física confirmável**: Itallo de
+Almeida Pinheiro e Manoel Estevam de Avila Filho (HEMU, nenhuma pasta
+localizada), Ana Luisa Peres (HMDAB, nenhuma pasta localizada),
+Guilherme Pinto Camargo (SÓCIO — aparece em vários extratos bancários da
+H2 Tecnologia recebendo Pix, mas nenhum documento com CPF dele foi
+localizado). Mateus Félix Lopes (HEMU) também não fechado: a busca
+achou uma pasta "Mateus de Oliveira Lopes" com sobrenome igual mas nome
+do meio diferente — não é seguro assumir que é a mesma pessoa, fica como
+pendência.
+
+**Total acumulado (rodadas 1+2+3+4+5+6+7+8+9): 275 dos 533 pendentes
+resolvidos (~51,6%)**. Restam essencialmente: os ~18 nomes PF
+documentados como sem pasta/sem CPF localizável (rodadas 6+7+8+9) e a
+grande maioria de PJ (empresas/CNPJ), que é uma busca de natureza
+diferente (não está no escopo desta varredura por pasta de médico no
+Drive).
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
