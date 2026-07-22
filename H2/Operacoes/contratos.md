@@ -65,6 +65,7 @@ frente: H2
 |---------|-------|--------|----------------|--------|
 | Edital 020/2026 | SBCD | não registrado | não registrado | em andamento |
 | Edital 002/2026 | Uruçuí | não registrado | não registrado | em andamento |
+| Edital 021/2026 | HMTJ (HEAPA) | Infectologia clínica + SCIH, 20h/sem, teto R$ 237.000,00/ano | **31/07/2026 23h59** (portal Fluig) | **em análise — RT com RQE em infectologia e certidões fiscais a levantar** |
 | — | HEMNSL | Pediatria | prazo próximo (data exata não registrada) | monitorado — **prazo se aproximando** |
 
 ## Propostas comerciais H2 em aberto
