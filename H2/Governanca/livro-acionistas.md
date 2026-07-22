@@ -478,17 +478,25 @@ CPF documentado mesmo assim) ou uma readmissão posterior com novo Termo de
 Adesão; qualquer uma das duas leituras é compatível com o CPF agora
 lançado, mas vale conferir com o Guilherme/contábil antes de fechar o livro.
 
-⚠️ **2 nomes ainda não resolvidos:**
+⚠️ **1 nome ainda não resolvido:**
 
 - Igor Pinheiro Lima (Região Noroeste) — pasta localizada
   (`1PEF5thqKRO6SAYcyZXKhIVnQl4By6RIS`), mas o único arquivo disponível é uma
   Certidão de Inscrição do CREMEGO sem CPF visível no texto. Precisa
   paginar a pasta em busca de outro documento (RG, CRM, dados bancários).
-- Caio Eduardo Faidiga de Barros (UPA Pinhais) — a pasta que eu tinha como
-  dele (`1vF14-lOIZyQVruFqZqTTZyVdrycsLrvE`) na verdade continha os
-  documentos de outra médica (Sissy Valéria Pérez Salas, boliviana, CRM-PR);
-  o mapeamento de pasta→pessoa desse nome estava errado. Não lancei nada
-  pra ele — precisa localizar a pasta correta.
+
+**Correção pós-rodada 3, mesma sessão:** Caio Eduardo Faidiga de Barros
+(UPA Pinhais) foi inicialmente reportado como "pasta errada" — o
+`parentId` que eu tinha associado ao nome dele na verdade pertencia a outra
+médica (Sissy Valéria Pérez Salas). Gustavo forneceu o link direto da
+pasta correta
+(`https://drive.google.com/drive/u/2/folders/1LL07wjgRP214WRvWjeBGqMaLzD3t7YaY`),
+onde o CPF `107.806.929-85` foi confirmado por CNH, contrato social (PJ
+"Caio Faidiga Serviços Médicos Ltda"), certidão de antecedentes criminais e
+dados bancários — todos consistentes. **Erro era meu (mapeamento de pasta
+incorreto), não ausência real do documento** — lançado na minuta (linha
+1356, que também tinha erro de grafia "FADIGA" em vez de "FAIDIGA",
+corrigido junto).
 
 Duas fontes de CPF adicionais precisam de correção de grafia na minuta em
 si (não no cruzamento): "Amanda Tatiele Carneiro Carneiro Alves" (palavra
