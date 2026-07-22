@@ -864,6 +864,51 @@ próximo passo é uma comparação mais tolerante (fuzzy) contra a mesma
 base de ~636 nomes já extraída, antes de partir para buscas
 individuais.
 
+Testei o fuzzy match por sobrenome distintivo contra a base de 636
+nomes: só 2 dos 21 candidatos batidos automaticamente eram confiáveis
+(Marina Belucio Loquette Ltda, João Tadeu F Cruz Servicos Medicos Ltda —
+aplicados). Os outros 19 eram falsos positivos claros: iniciais da razão
+social não batiam com o nome completo achado (ex.: "VB GARCIA" casou com
+"Steffano Alexsander Garcia de Paula" só pelo sobrenome comum). Concluí
+que abreviação de razão social é território de risco alto demais pra
+automação — decisão do usuário: seguir com busca individual por
+empresa, uma a uma, como nas rodadas de CPF.
+
+### Rodada 12 (2026-07-22, mesmo dia) — busca individual por empresa, unidade HMA
+
+Retomei a busca por nome/empresa individual (mesma técnica das rodadas
+7-10, agora aplicada a razão social) para os 34 pendentes de HMA,
+priorizando por ser a maior unidade restante.
+
+**20 CNPJs/CPFs novos confirmados e já lançados na minuta:** William
+Kutney Serviços Médicos Ltda (50.856.829/0001-69), Wilhan Wizniesk
+Munari Ltda (63.353.491/0001-74 — Drive: "Wilhan Wizniesk" sem o "i"
+final), Debora C S P Santana Serviços Médicos (59.502.281/0001-23),
+Eduardo Adriano Ramos Ltda (52.953.303/0001-22), Mariana Fogaça Serviços
+Médicos Ltda (62.615.313/0001-01), Kuljis-Kovacevic Serviços Médicos
+Ltda (52.226.075/0001-99 — Drive: "Kulis-Kovacevic", um só "L"), Marcos
+Antonio Chorates (28.578.106/0001-96), Cardoso & Almeida Atendimentos
+Ltda (63.921.601/0001-57), Muraro e Rodrigues Clínica Médica Ltda
+(45.392.450/0001-05), A H Ruzzon Martins Ltda (59.206.584/0001-07), Abu
+Adiya Saúde Ltda (64.653.626/0001-80), Beatriz Garcia Rocha Ltda
+(63.200.271/0001-00), Maria Carolina Campos (61.602.459/0001-50),
+Carvalho Rodrigues Ltda (62.208.028/0001-76), Gabriel Santos Costa Ltda
+(61.606.175/0001-31), L T A Nogueira Clínica Ltda (42.431.024/0001-45),
+Carolina de Lima Bolzon Ltda (58.866.321/0001-53), A S F Feitosa AFMED
+(55.485.317/0001-57), Proctoseptímio Serviços Médicos Ltda
+(65.751.056/0001-23), Sangalli Serviços Médicos Ltda (CPF pessoal
+009.662.839-10, Matheus Leonardo Sangalli).
+
+⚠️ Casos que ficaram de fora desta rodada (ambiguidade genuína, sem
+confirmação segura): Maria Y R dos Santos Serviços Médicos Ltda e
+Policlínica São José dos Pinhais S/S (ambos com sobrenome/nome comum
+demais na base extraída para confirmar sem risco de erro).
+
+**Total acumulado (rodadas 1-12): 345 dos 533 pendentes resolvidos
+(~64,7%)**. Restam ~14 nomes PF sem pasta/CPF localizável e ~189 PJ,
+a maioria em UPA Pinhais (21), HRE (19) e ~30 unidades pequenas com 1-3
+nomes cada — seguindo unidade por unidade com a mesma técnica.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
