@@ -478,12 +478,13 @@ CPF documentado mesmo assim) ou uma readmissão posterior com novo Termo de
 Adesão; qualquer uma das duas leituras é compatível com o CPF agora
 lançado, mas vale conferir com o Guilherme/contábil antes de fechar o livro.
 
-⚠️ **1 nome ainda não resolvido:**
+⚠️ **1 nome sem CPF localizável — pasta sem documento com o dado:**
 
-- Igor Pinheiro Lima (Região Noroeste) — pasta localizada
-  (`1PEF5thqKRO6SAYcyZXKhIVnQl4By6RIS`), mas o único arquivo disponível é uma
-  Certidão de Inscrição do CREMEGO sem CPF visível no texto. Precisa
-  paginar a pasta em busca de outro documento (RG, CRM, dados bancários).
+- Igor Pinheiro Lima (Região Noroeste) — pasta existe
+  (`1PEF5thqKRO6SAYcyZXKhIVnQl4By6RIS`), mas contém só uma Certidão de
+  Inscrição do CREMEGO, sem CPF no texto. Confirmado com o Gustavo que não
+  há outro documento na pasta. Precisa de outra fonte (não o Drive de
+  `contato@h2saude.com.br`) para fechar este nome.
 
 **Correção pós-rodada 3, mesma sessão:** Caio Eduardo Faidiga de Barros
 (UPA Pinhais) foi inicialmente reportado como "pasta errada" — o
@@ -512,6 +513,47 @@ HRCM, HEJA, HEI, HRE, UPA São Vicente de Paulo, entre ~20 outras com 1-3
 pendentes cada). Os ~240 nomes "(SEM UNIDADE IDENTIFICADA)" — majoritariamente
 PJ/empresa — não têm estratégia por unidade aplicável; precisam de busca
 direta por nome/razão social.
+
+### Rodada 4 (2026-07-22, mesmo dia) — RN, MHC, HMDAB e UPA Pinhais concluídos
+
+Identifiquei as pastas-raiz reais (por `title`, sem `parentId`) de REGIÃO
+NOROESTE, MHC, HMDAB, UPA Pinhais, HEMU, MNC e HMNSLP e paginei o conteúdo
+das quatro primeiras (listagem completa da HMDAB — 150 pastas, sem mais
+páginas; RN, MHC e UPA Pinhais só a primeira página de ~200, ainda com
+`nextPageToken`). Cruzei os títulos de pasta contra os pendentes de cada
+unidade e extraí CPF de todos os matches encontrados nessa primeira
+varredura.
+
+**Resultado da rodada 4: 30 CPFs novos confirmados e já lançados na
+minuta** (nome pareado a documento oficial):
+
+Filippe Ferreira Morais, Pabliny Stefany de Lima Gomes, Lucas Gomes de
+Souza, Christe Ellen Batista Fanzlau, Renata Bueno Bucci Py, Bruna Morais
+Cordeiro, Dayton Douglas da Silva, Eduardo Mendes Stoffels, Antônia Vaz
+Messias Lopes, Driele Cunha de Paiva Almeida, Paula Alves Ferreira,
+Cantionil Alves Borges Neto, Luís Felipe Pires Fontana, Bruna Marques
+Vilarinho Ribeiro, Daniela Bruna Martins Abreu, Vitor Hermano Vilarins
+Brito Oliveira, Isabela Costa Borges, Gilene Luiza de Oliveira, Juliana
+Alves Teixeira, Maria de Fátima Lopes de Oliveira, Ana Carolina Castro
+Matos, Luiza Lopes de Almeida, Rafael Guimarães de Santana Caires, Sarah
+Rafaela Mascarenhas Santos, Thaís Magalhães de Faria, Gabriela Spolon de
+Freitas, Larissa de Queiroz Mamede, Angélica Medeiros Freitas, Lara Bendo
+Eyng, Evellyn Gabriela Chaves da Silva.
+
+(Corrigidas mais duas grafias na minuta que impediam o match automático:
+"Thais Magalhães​​​ de Faria" tinha caracteres invisíveis embutidos no
+nome, linha 1848.)
+
+⚠️ **1 nome sem CPF localizável nesta rodada:** Gustavo Machado Trigueiro
+(Região Noroeste) — pasta existe, mas o único arquivo disponível é uma
+Certidão de Antecedentes Éticos, sem CPF no texto. Mesmo padrão de Igor
+Pinheiro Lima: precisa de outra fonte.
+
+**Total acumulado (rodadas 1+2+3+4): 107 dos 533 pendentes resolvidos
+(~20,1%)**. RN, MHC, HMDAB e UPA Pinhais têm mais páginas por paginar
+(exceto HMDAB, já esgotada); HEMU/MNC/HMNSLP (101 nomes) seguem como maior
+bloco intocado — pastas de médico ficam dentro de subpastas por
+especialidade dentro de cada hospital, ainda não abertas.
 
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
