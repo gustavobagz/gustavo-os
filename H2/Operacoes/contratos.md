@@ -74,6 +74,7 @@ frente: H2
 |--------------|-------------------------------|------------|-------|--------|
 | HEMNSL (HMTJ) — Pediatria/Neonatologia | tradicional | 2026-07 | R$ 319.789,00/mês | enviada |
 | HRSDA (SBCD) — Clínica/UTI/Especialidades (Concorrência 002/2026) | tradicional | não registrado | R$ 478.050,00/mês | enviada — validade 90 dias (exigência do edital) |
+| HEAPA (HMTJ) — Infectologia Clínica e SCIH (Edital 021/2026) | tradicional | 2026-07-22 | R$ 19.750,00/mês (R$ 237.000,00/ano — teto do edital) | gerada — validade 60 dias — **pendente envio via portal Fluig até 31/07/2026 23h59, condicionado a RT com RQE em infectologia + certidões fiscais** |
 
 ## Alertas operacionais
 
