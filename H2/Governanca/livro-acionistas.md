@@ -628,6 +628,60 @@ assinado) se o CPF for necessário.
 de RN, MHC e UPA Pinhais (nextPageToken pendente) e ~20 unidades menores
 com 1-3 nomes pendentes cada, ainda não buscadas.
 
+### Rodada 6 (2026-07-22, mesmo dia) — Região Noroeste concluída + início de UPA Pinhais/HMA
+
+Reidentifiquei as pastas-raiz de RN, UPA Pinhais, MHC e HRE (IDs não haviam
+sido salvos das rodadas anteriores) e busquei diretamente por nome dentro
+de cada pasta-raiz — mais eficiente que paginar centenas de pastas por
+unidade. Fechei toda a Região Noroeste (15 de 17 nomes pendentes; os outros
+2 — Gustavo Machado Trigueiro e Igor Pinheiro Lima — já documentados em
+rodada anterior como sem CPF localizável) e mais 5 nomes entre
+UPA Pinhais/HMA.
+
+**Resultado da rodada 6: 20 CPFs novos confirmados e já lançados na
+minuta:**
+
+**Região Noroeste (15):** Alice Alves Resende Dorneles, Vitoria Morais
+Monteiro Lamim, Daniella Coimbra Cordeiro, Carlos Henrique Porto de
+Barros, Ana Carolina Tocantins Albuquerque, Admilson Barbosa Queiroz,
+Lucas Soares Teixeira, Valdeci Justino da Silva Junior, Áurea Gomes Pidde,
+Milena Pereira de Araújo Oliveira, Cynthia Nichigaki Sericaku, Juliana
+Veras de Mesquita, Larissa Jacob Rakowski, Natã Lopes Fernandes, Gabriela
+Costa Santos.
+
+**UPA Pinhais / HMA (5):** Bruna Bail Bacila, Laís Christine Marcos
+Burtet, Masataka Noji, Isadora Drews Brenny (achada fisicamente na pasta
+do HMA, listada como pendente da UPA Pinhais — CPF confirmado de qualquer
+forma), Bruna Schuster Franco de Oliveira.
+
+**6 grafias divergentes corrigidas manualmente** (nome na minuta não batia
+com o nome no Drive por variação ortográfica — Monteira/Monteiro,
+Oliviera/Oliveira, Christiane/Christine, Massataka/Masataka,
+Brews/Drews, Frande/Franco): aplicado o CPF certo à linha da minuta com
+nota explicando a divergência.
+
+⚠️ **9 nomes da Região Noroeste sem pasta localizável nesta rodada**
+(busca por nome dentro da pasta-raiz não retornou resultado — pode ser
+grafia muito diferente ou pasta inexistente, precisa de nova tentativa):
+Laura Rohlfs Taquary, Daniela Pereira Espanã, William Borges de Menezes
+Filho, Bruna de Castro Oliveira, Letícia Dias Faria Nava, Italo Leonel
+Fernandes Silva, Thiago Marçal Costa, Gabriela Alves Louzada Flávio,
+Larissa Mello Brandão.
+
+⚠️ **4 nomes de UPA Pinhais sem pasta localizável nesta rodada:** Luis
+Gabriel Souza Peres, Gabriela Micheten Dias, Silvia Sayuri Takahashi,
+Khaterine Paz Oliva.
+
+**Total acumulado (rodadas 1+2+3+4+5+6): 219 dos 533 pendentes resolvidos
+(~41,1%)**. Região Noroeste fechada (com 11 exceções documentadas: 2 sem
+CPF localizável + 9 sem pasta localizável). UPA Pinhais, MHC, HRE e HMA
+seguem parcialmente abertos — pastas-raiz já identificadas nesta rodada
+(ver IDs no scratchpad da sessão), faltando concluir a busca por nome
+dos pendentes restantes de cada uma. Também restam ~20 unidades menores
+(HRE, HRCM, HRP, HSM, HRSDA, Itapuí, UPA Rio Doce, etc.) com 1-3 nomes
+pendentes cada, ainda não buscadas — em sua maioria PJ (CNPJ), fora do
+escopo desta busca por pasta de médico.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
