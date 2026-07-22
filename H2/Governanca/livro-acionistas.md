@@ -682,6 +682,47 @@ dos pendentes restantes de cada uma. Também restam ~20 unidades menores
 pendentes cada, ainda não buscadas — em sua maioria PJ (CNPJ), fora do
 escopo desta busca por pasta de médico.
 
+### Rodada 7 (2026-07-22, mesmo dia) — retry dos 13 nomes sem pasta localizável
+
+Em vez de paginar a pasta-raiz de cada unidade, troquei a estratégia para
+busca ampla por sobrenome distintivo em todo o Drive (`title contains
+'<sobrenome>'`, sem `parentId`) — resolveu a maioria dos casos que a
+rodada 6 não tinha encontrado por restringir a busca à pasta-raiz errada
+ou por variação de grafia.
+
+**12 CPFs novos confirmados e já lançados na minuta:**
+
+Laura Rohlfs Taquary (703.616.231-78), Thiago Marçal Costa
+(729.399.661-68), Gabriela Alves Louzada Flávio (700.896.301-73), Luis
+Gabriel Souza Peres (098.201.259-44 — Drive: "Luís Gabriel Souza Perez"),
+Gabriela Micheten Dias (084.297.479-23 — Drive: "Gabriella Micheten
+Dias"), Silvia Sayuri Takahashi (098.219.719-54), Khaterine Paz Oliva
+(083.945.211-00 — Drive: "Khaterine Paz Oliveira"), Narjara Barreto
+Santana (959.326.745-04), Marta de Pinho Alcântara (758.571.195-34),
+Luiz Serra Azul Bahia (914.268.475-72), Flávio Moreira Figueiredo
+(025.085.815-00 — Drive: "Flávio Moreira Figueredo"), Talita Ribeiro da
+Silva (017.003.991-95 — pasta do HMA, fecha o último pendente dessa
+unidade).
+
+Vários desses vieram direto do texto do Termo de Transferência de Ações
+(nome + CPF do cessionário aparecem no próprio termo já assinado),
+sem precisar abrir "Dados Bancários" — mais rápido quando o termo já
+existe no Drive.
+
+⚠️ **7 nomes seguem sem pasta localizável mesmo com busca ampla** (podem
+ter grafia muito divergente, pasta em outro e-mail/Drive, ou
+simplesmente não existir pasta física): Daniela Pereira Espanã, William
+Borges de Menezes Filho, Bruna de Castro Oliveira, Letícia Dias Faria
+Nava, Italo Leonel Fernandes Silva, Larissa Mello Brandão, Valéria Rossi
+Duarte.
+
+**Total acumulado (rodadas 1+2+3+4+5+6+7): 231 dos 533 pendentes
+resolvidos (~43,3%)**. UPA Pinhais, MHC, HRE e HMA agora fechados (exceto
+os 7 nomes acima, que ficam como pendência documentada). Resta: os 7
+nomes acima (tentar de novo com paginação completa da pasta-raiz, já que
+a busca por título não encontrou) + ~20 unidades menores com 1-3 nomes
+cada, majoritariamente PJ (fora do escopo de busca por pasta de médico).
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
