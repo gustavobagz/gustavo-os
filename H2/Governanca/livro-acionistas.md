@@ -831,6 +831,39 @@ resolvidos (~52,0%)**. Restam ~16 nomes PF documentados como sem
 pasta/sem CPF localizável e a grande maioria de PJ (empresas/CNPJ) —
 fora do escopo desta varredura por pasta de médico no Drive.
 
+### Rodada 11 (2026-07-22, mesmo dia) — início da varredura de PJ/CNPJ
+
+Mudança de estratégia: em vez de buscar pasta por pasta de médico
+(esgotado na rodada 10), passei a varrer diretamente a pasta única onde
+ficam **todos** os Termos de Transferência de Ações já assinados
+(tanto de pessoa física quanto de pessoa jurídica) — CNPJ desta pasta:
+`170onQ-hGEF68NO5GILqCw_HNrFLUGfZ8`. Paginei ~1.000 arquivos (10 páginas
+de 100), extraí automaticamente por regex o nome do
+cessionário/cedente e o CPF ou CNPJ do texto de cada termo, e cruzei
+contra os nomes ainda pendentes na minuta.
+
+Início manual: **Elian Chiarello Sabbag Ltda** — CNPJ 67.793.213/0001-99
+(sócio responsável Elian Chiarello Sabbag, CPF 114.729.099-76),
+confirmado diretamente pelo usuário.
+
+**47 CPFs/CNPJs novos confirmados via varredura automática e já
+lançados na minuta** — na maioria PJ (empresas), extraídos direto do
+texto do termo assinado. Destaque: **Isabella Luanna de Oliveira
+Martins** (linha 1071), antes marcada como "sem documentos" (pasta
+pessoal vazia), teve o CPF 053.292.261-12 encontrado no Termo de
+Transferência já assinado — que fica em local separado da pasta
+pessoal do médico no Drive. Isso resolve o caso e mostra que a
+varredura pela pasta de termos complementa (não substitui) a busca por
+pasta de médico.
+
+**Total acumulado (rodadas 1+2+3+4+5+6+7+8+9+10+11): 325 dos 533
+pendentes resolvidos (~61,0%)**. Restam 209 pendentes — a maioria PJ
+cujo nome na minuta diverge o suficiente do nome no termo (abreviações,
+pontuação, ordem de palavras) para não bater na comparação exata;
+próximo passo é uma comparação mais tolerante (fuzzy) contra a mesma
+base de ~636 nomes já extraída, antes de partir para buscas
+individuais.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
