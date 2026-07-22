@@ -939,6 +939,39 @@ Abraham Salinas Torrez Ltda (65.660.864/0001-85), REP Medicina Ltda
 (~68,7%)**. Restam ~14 nomes PF sem pasta/CPF localizável e ~168 PJ,
 concentrados em HRE (19) e ~30 unidades pequenas com 1-3 nomes cada.
 
+### Rodada 14 (2026-07-22, mesmo dia) — HRE fechada (18 de 19)
+
+Mesma técnica, agora na unidade HRE. **Fechei 18 dos 19 pendentes desta
+unidade.**
+
+CNPJs/CPFs confirmados: Centro Médico Doctor KC Ltda (44.226.313/0001-38),
+Roberta Correia Serviços Médicos (55.893.909/0001-08), Angélica Gusmão
+Rocha Ltda (58.317.068/0001-89), Barra Atendimento Intensivo da Saúde
+Ltda (19.275.925/0001-73), MPrado Clínica Médica Ltda
+(37.949.396/0001-28), LHM Serviços Médicos Ltda (48.688.747/0001-00),
+JBC Assistência Médica Ltda (52.284.785/0001-75), FN Serviços Médicos
+Ltda (37.712.127/0001-43), B M Viana Serviços em Saúde
+(50.392.103/0001-12 — sócio Bruno Martins Viana, diferente do "Ygor
+Vicente Viana Silva" que um fuzzy-match anterior tinha sugerido
+erroneamente), RCVF Serviços Médicos Ltda (55.558.923/0001-55), Dois
+Irmãos Serviços Médicos Ltda (45.786.147/0001-97), Opta Empreendimentos
+Médicos Ltda (58.890.134/0001-05), Roni Serviços Médicos Ltda
+(59.053.955/0001-50), BMAS Serviços Médicos Ltda (58.938.027/0001-00),
+Teddy Serviços Médicos Ltda (24.341.451/0001-50), Letticia Rocha
+Serviços Médicos Ltda (CPF pessoal 045.226.955-51, Letticia Hellen Rocha
+Silva — havia duas candidatas com nome parecido, escolhida pela grafia
+idêntica "Letticia" com dois T), Edinélia F da Silva (CPF pessoal
+778.294.845-20 — o termo mostra que ela transferiu as ações
+pessoalmente, sem CNPJ; provavelmente cadastrada como PJ na minuta por
+engano), Dra Fernanda Fernandes Ltda (26.469.414/0001-58).
+
+⚠️ Único que ficou de fora: **A V Serviços Médicos Ltda** — nenhuma
+menção encontrada na varredura (iniciais genéricas demais).
+
+**Total acumulado (rodadas 1-14): 384 dos 533 pendentes resolvidos
+(~72,0%)**. Restam ~14 nomes PF sem pasta/CPF localizável e ~150 PJ,
+principalmente nas ~30 unidades pequenas com 1-3 nomes cada.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
