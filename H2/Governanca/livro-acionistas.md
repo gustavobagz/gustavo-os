@@ -1043,6 +1043,42 @@ possível buscar no Drive sem mais contexto identificador.
 **Total acumulado (rodadas 1-16): 430 dos 533 pendentes resolvidos
 (~80,7%)**. Restam 100 pendentes.
 
+### Rodada 17 — HMA (2ª leva) + HSM (2026-07-22)
+
+Mesma metodologia. 13 confirmados:
+
+**HMA**: Maria Y. R. dos Santos Serviços Médicos Ltda (60.820.729/0001-36),
+MFB Saúde e Bem Estar Ltda (54.249.087/0001-64), Luca Med Ltda
+(46.279.120/0001-70), Policlínica São José dos Pinhais S/S
+(03.842.090/0001-56), ALDN Serviços Médicos Ltda (56.306.839/0001-07),
+Marcela Silva Serviços Médicos Ltda (62.667.114/0001-47 — confirma que o
+fuzzy-match anterior, rejeitado por prudência, de fato teria sido incorreto),
+CP Serviços Médicos Ltda (64.777.498/0001-86), AP Clínica Cirúrgica Ltda
+(64.619.814/0001-91), Kloster Neumann Serviços Médicos Ltda
+(35.786.941/0001-87), CR Castilho Serviços Médicos Ltda (36.397.752/0001-85).
+
+**HSM**: Archanjo Serviços Médicos Ltda (56.082.026/0001-80), Isabella Silva
+Pelúcio Falcão Ltda (60.475.210/0001-68), Rafaelle Preto Ltda
+(55.566.931/0001-43).
+
+⚠️ Não resolvidos nesta rodada: **VB Garcia** (HMA, iniciais genéricas
+demais — mesmo problema já documentado), **V.O.R. Sant'Ana Ltda** (HMA, erro
+de sintaxe na busca impediu retorno de resultado, não houve tempo de
+retentar), **Castilho Serviços Médicos Ltda** (HMA — localizada a sócia Ana
+Paula Vasconcelos de Castilho e o contrato social da empresa, mas o CNPJ da
+pessoa jurídica não apareceu nos documentos indexados; ela também tem uma
+conta bancária pessoal separada, o que sugere possível duplicidade
+PF/PJ — precisa nova busca dedicada), **I C S Amaral Ltda** (HSM, não
+localizada), **Gustavo Machado Costa G.M.C. Assistência Médica Ltda** (HSM —
+localizado o contrato de constituição, mas o número de CNPJ não apareceu no
+trecho indexado), **BRMB Serviços Médicos Ltda** (HSM — encontrada apenas
+"BRM - Serviços Médicos Ltda" de Horley de Sousa Barros, CNPJ
+08.711.663/0001-26; nome não bate exatamente com o da minuta — "BRMB" vs
+"BRM" — não aplicado por falta de confirmação segura).
+
+**Total acumulado (rodadas 1-17): 443 dos 533 pendentes resolvidos
+(~83,1%)**. Restam 90 pendentes.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
