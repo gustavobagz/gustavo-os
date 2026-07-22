@@ -809,6 +809,28 @@ grande maioria de PJ (empresas/CNPJ), que é uma busca de natureza
 diferente (não está no escopo desta varredura por pasta de médico no
 Drive).
 
+### Rodada 10 (2026-07-22, mesmo dia) — confirmações diretas do usuário
+
+O usuário (Gustavo) confirmou diretamente 2 dos 4 nomes que ficaram em
+aberto na rodada 9:
+
+- **Guilherme Pinto Camargo** (SÓCIO): CPF 326.902.808-33.
+- **Ana Luisa Peres** (HMDAB, linha 816): o usuário não achou pasta com
+  esse nome exato, mas identificou que o CPF 078.029.779-24 (já
+  presente na minuta na linha 42, sob "ANA LUISA PIRES") provavelmente
+  pertence à mesma pessoa — grafia divergente entre "Peres" e "Pires".
+  Aplicado o mesmo CPF à linha 816, com nota cruzando as duas entradas
+  (mesmo padrão do caso Penedo/Panedo da rodada 5).
+
+Confirmado que **Itallo de Almeida Pinheiro** e **Manoel Estevam de
+Avila Filho** (ambos HEMU) seguem sem pasta localizável no Drive — não
+há mais tentativa de busca prevista para esses dois nesta frente.
+
+**Total acumulado (rodadas 1+2+3+4+5+6+7+8+9+10): 277 dos 533 pendentes
+resolvidos (~52,0%)**. Restam ~16 nomes PF documentados como sem
+pasta/sem CPF localizável e a grande maioria de PJ (empresas/CNPJ) —
+fora do escopo desta varredura por pasta de médico no Drive.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
