@@ -909,6 +909,36 @@ demais na base extraída para confirmar sem risco de erro).
 a maioria em UPA Pinhais (21), HRE (19) e ~30 unidades pequenas com 1-3
 nomes cada — seguindo unidade por unidade com a mesma técnica.
 
+### Rodada 13 (2026-07-22, mesmo dia) — UPA Pinhais fechada (21 de 21)
+
+Mesma técnica da rodada 12, agora na unidade UPA Pinhais. **Fechei
+100% dos 21 pendentes desta unidade em uma única rodada** — quase todos
+confirmados direto no texto do Termo de Transferência já assinado.
+
+CNPJs/CPFs confirmados: Matheus Hanna Medicina Ltda (55.153.664/0001-82),
+G.Andretta Medicina Ltda (62.411.720/0001-05 — sócia Giulli Andretta),
+Yuri Augusto Moreira Pena Ltda (58.989.084/0001-18), Maria Fernanda
+Vicentine Sovierzoski Ltda (63.535.093/0001-79), Bossei Ltda
+(64.478.461/0001-57 — sócia Carolina Bossei), Marina Bueno Serviços
+Médicos Ltda (64.527.140/0001-03), João Pedro da Silva Munhoz Ltda
+(63.982.679/0001-81), Tammy Shiroma Atividades Médicas Ltda (CPF pessoal
+088.710.479-74, termo não usa CNPJ), Karina Matter Sociedade Médica Ltda
+(64.500.927/0001-73), Giovana Saliba Serviços Médicos Ltda
+(61.217.515/0001-32), Priscila Mitie Nakamura Ltda (63.988.239/0001-31),
+Aneli Soluções Médicas Ltda (61.734.481/0001-53 — sócia Maria Laura
+Correa Aneli), Giovana Naomi W Ito Médica (65.224.234/0001-68), Rhauana
+Munhoz Bertão Ltda (63.288.689/0001-11), Maio, Santos e Antonelli Filho
+Clínica Médica Ltda (10.202.533/0001-00), Danielly Carolina Maia Ltda
+(65.466.644/0001-15), Rafa Kowalski Ltda (63.332.992/0001-74 — sócia
+Rafaela Luisa Kowalski), Luiz Mendonça Serviços Médicos Ltda
+(65.507.826/0001-97 — sócio Luiz Felipe Mendonça Cavalheiro), Sergio
+Abraham Salinas Torrez Ltda (65.660.864/0001-85), REP Medicina Ltda
+(64.680.789/0001-51), APH Medicina Integrada Ltda (66.913.933/0001-88).
+
+**Total acumulado (rodadas 1-13): 366 dos 533 pendentes resolvidos
+(~68,7%)**. Restam ~14 nomes PF sem pasta/CPF localizável e ~168 PJ,
+concentrados em HRE (19) e ~30 unidades pequenas com 1-3 nomes cada.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
