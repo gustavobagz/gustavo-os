@@ -428,6 +428,83 @@ por trás dos ~477 nomes ainda sem CPF, usando o mapeamento nome→unidade já
 feito em `pendentes_com_unidade.json` (scratchpad) para escolher qual
 pasta-raiz de hospital vasculhar primeiro.
 
+### Rodada 3 (2026-07-22, mesmo dia) — busca organizada por unidade
+
+A pedido do Gustavo, mudei o método: em vez de continuar a varredura ampla
+sem critério, separei os ~478 pendentes restantes (533 − 56 já resolvidos nas
+rodadas 1+2) por unidade de vínculo (usando o cruzamento nome→unidade contra
+`TERMOS SA.xlsx`, salvo em `pendentes_por_unidade.json` no scratchpad) e
+busquei pasta-raiz por pasta-raiz, maior concentração primeiro: REGIÃO
+NOROESTE (54 pendentes), HEMU (39), MNC (33), HMNSLP (29), MHC (16), HMDAB
+(10), UPA Pinhais (10).
+
+Nesta rodada, dei conta de mapear e extrair CPF em REGIÃO NOROESTE, MHC,
+HMDAB e UPA Pinhais (só a primeira página de cada pasta-raiz — todas têm
+`nextPageToken`, ainda não esgotadas). HEMU, MNC e HMNSLP têm uma estrutura
+diferente — as pastas de médico ficam dentro de subpastas por
+especialidade/categoria (ex. "Ginecologia e Obstetrícia", "Pediatria",
+"Termos de Adesão - UTI Neonatal", "Mutirão HEMU - Cardiologistas") em vez de
+direto na raiz do hospital — ainda não vasculhadas, então **zero matches
+nessas 3 unidades por enquanto**, apesar de somarem 101 pendentes.
+
+**Resultado da rodada 3: 21 CPFs novos confirmados e já lançados na minuta**
+(nome pareado a documento oficial — RG/CNH/CRM/certidão do conselho
+regional/diploma):
+
+Gabriela Milhomem Ferreira, Inajá de Figueiredo Martins Escarião, Gabriela
+Assunção Godinho, Mariana Akemy Lopes Iuasse, Yan Ikeda Fonseca, Amanda
+Tatiele Carneiro Alves, Érica Lopes Castilho, Carla Cristina Ferreira Costa,
+Vanessa Ribeiro Costa Santana, Andrea dos Santos Carvalho, Diana Araújo dos
+Santos, Hiléia Santana Lopes Ferreira Silva, Ana Cristina Heine e Silva,
+Isabela Chagas Freitas de Andrade Aguiar, Ariane Tamires Freitas Costa,
+Leonardo Faidiga, Arthur Ribeiro Barros Ferreira, Gabriela Schiavo Salata,
+Ádamo Santos de Almeida, Laís Christine Marcos Burtet, Sâmeque Iagla Belai.
+
+(Vanessa Ribeiro Costa Santana, Andrea dos Santos Carvalho, Diana Araújo dos
+Santos e Hiléia Santana Lopes Ferreira Silva eram justamente os 4 nomes da
+MHC deixados pendentes ao final da rodada 2. Gabriela Schiavo Salata e Ádamo
+Santos de Almeida também já tinham aparecido na rodada 1 como "sem documento
+com CPF legível" — desta vez, com as pastas compartilhadas por completo,
+apareceram documentos adicionais com o CPF/CNPJ visível.)
+
+⚠️ **Achado a conferir:** pelo menos 7 dos 21 nomes acima (Gabriela Milhomem
+Ferreira, Inajá de Figueiredo Martins Escarião, Gabriela Assunção Godinho,
+Mariana Akemy Lopes Iuasse, Yan Ikeda Fonseca, Amanda Tatiele Carneiro Alves,
+Carla Cristina Ferreira Costa, Érica Lopes Castilho) também constam na
+tabela de saídas confirmadas mais acima nesta mesma página (Termo de Saída
+arquivado/registrado, todos entre 2024 e 2025). Não investiguei se é a mesma
+adesão zerada (regra de ouro — linha mantida com 0 ações, mas precisa de
+CPF documentado mesmo assim) ou uma readmissão posterior com novo Termo de
+Adesão; qualquer uma das duas leituras é compatível com o CPF agora
+lançado, mas vale conferir com o Guilherme/contábil antes de fechar o livro.
+
+⚠️ **2 nomes ainda não resolvidos:**
+
+- Igor Pinheiro Lima (Região Noroeste) — pasta localizada
+  (`1PEF5thqKRO6SAYcyZXKhIVnQl4By6RIS`), mas o único arquivo disponível é uma
+  Certidão de Inscrição do CREMEGO sem CPF visível no texto. Precisa
+  paginar a pasta em busca de outro documento (RG, CRM, dados bancários).
+- Caio Eduardo Faidiga de Barros (UPA Pinhais) — a pasta que eu tinha como
+  dele (`1vF14-lOIZyQVruFqZqTTZyVdrycsLrvE`) na verdade continha os
+  documentos de outra médica (Sissy Valéria Pérez Salas, boliviana, CRM-PR);
+  o mapeamento de pasta→pessoa desse nome estava errado. Não lancei nada
+  pra ele — precisa localizar a pasta correta.
+
+Duas fontes de CPF adicionais precisam de correção de grafia na minuta em
+si (não no cruzamento): "Amanda Tatiele Carneiro Carneiro Alves" (palavra
+duplicada, linha 758) e "Sâmeque Lagla Belai" (LAGLA em vez de IAGLA, linha
+1417) — já corrigidas nesta rodada, direto por número de linha.
+
+**Total acumulado (rodadas 1+2+3): 77 dos 533 pendentes resolvidos
+(~14,4%)**. Restam ~456, com HEMU/MNC/HMNSLP (101 nomes, pastas por
+especialidade ainda não abertas) como maior bloco não tocado, seguido das
+páginas seguintes de REGIÃO NOROESTE/MHC/HMDAB/UPA Pinhais (nextPageToken
+ainda não paginado) e das unidades menores ainda não buscadas (HRP, HEMNSL,
+HRCM, HEJA, HEI, HRE, UPA São Vicente de Paulo, entre ~20 outras com 1-3
+pendentes cada). Os ~240 nomes "(SEM UNIDADE IDENTIFICADA)" — majoritariamente
+PJ/empresa — não têm estratégia por unidade aplicável; precisam de busca
+direta por nome/razão social.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
