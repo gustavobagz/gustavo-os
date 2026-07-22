@@ -723,6 +723,61 @@ nomes acima (tentar de novo com paginação completa da pasta-raiz, já que
 a busca por título não encontrou) + ~20 unidades menores com 1-3 nomes
 cada, majoritariamente PJ (fora do escopo de busca por pasta de médico).
 
+### Rodada 8 (2026-07-22, mesmo dia) — varredura das ~40 unidades pequenas restantes
+
+Depois de isolar as linhas PF (individuais) ainda pendentes de todas as
+unidades pequenas (script `list_pf_only.mjs` — filtra por marcadores de
+empresa como "LTDA", "(PJ)", "S/S", "CLINICA" etc.), restavam 64 nomes
+individuais. Fiz busca ampla por sobrenome distintivo no Drive inteiro
+para todos eles.
+
+**37 CPFs novos confirmados e já lançados na minuta** (a maioria direto
+do texto do Termo de Transferência de Ações já assinado, sem precisar
+abrir "Dados Bancários"): Luciana Adorno Sattin Rodrigues, Rogério
+Scialo, Luciana Costa Bueno de Almeida, Felipe Stutz Piretti Lopes
+Franco, Márcia Marolina Dias Ferreira, Sandra Marcia Ramos Pimentel
+Afiune, Eduardo Miguel Guerra Fernández, Lúcio Moreira, Luana da Silva
+Tonetti, Pablo Freitas Barbosa, Juliana Queiroz Xavier Simão, Larissa
+Pires Leite Bringel, Odilon Ibarraz Emery Flores, Marjorie Coelho
+Domingues, Maria Gabriela Rego Montanha Rebello, Antonio Evangelista
+Apolônio Neto, Eliza Marielle Lopes Araújo, Isabel Karoline de Sousa
+Carvalho Costa, Robson Vettore Nogueira Petrin, Francisco Irineu de
+Alencar Neto, Marcus Araújo Rodrigues Barros, Arthur de Albuquerque
+Barbosa Holanda, Julia Pessoa Portela de Sá, Paulo Fernando Sandes
+Soares, Gabriel Mascarenhas Bergholz Sahium, Bruce Bezerra Carvalho
+Sousa, Gabriella Mendes Dias Santos, João Victor Oliveira Prado, Walter
+Guimarães da Costa Neto, Paula Pacheco Pereira, José Ademário dos Santos
+Junior, Catarina Leiliany Pereira Guerra, Vitor Mateus de Araújo Bastos
+Teles, Anderson Meneses Almeida, Yosvani Pérez Guerra, Amanda Aguiar
+Tonon, Karolinne Kassia Silva Barbosa.
+
+⚠️ **Luana da Silva Tonetti**: o documento "Dados Bancários" mostrou o
+CPF como "055.490.621-000" (3 dígitos finais em vez de 2) — lançado como
+055.490.621-00 na minuta, mas **precisa verificação com documento
+oficial antes de qualquer uso em contrato**.
+
+⚠️ **2 casos ambíguos, não lançados** (encontrados no Drive mas pagos via
+CNPJ de empresa própria, sem CPF pessoa física localizado nos
+documentos): Marcelo Rocha Scaramussa (UNIMED, CNPJ da Boto Med MML
+Ltda) e Emilene Speltri (Itapuí, CNPJ "Emilene Speltri Clínica ME").
+Diferente do caso de Pablo Freitas Barbosa (que também tem conta via
+CNPJ mas tinha CPF pessoal na carteira do CRM) — nestes dois não foi
+possível achar o CPF pessoal nos documentos disponíveis.
+
+⚠️ **9 nomes seguem sem pasta localizável ou sem CPF pessoa física
+achado**: Itallo de Almeida Pinheiro, Mateus Félix Lopes, Manoel Estevam
+de Avila Filho, Andrielle Nunes Santos Gardia (HEMU), John Pitter
+Macaelles Duarte Pereira (HEI), Jullyana Ricielly Dias Silva (HEJA),
+Ludymilla Candido Ribeiro da Silva (HEMNSL), Ana Luisa Peres (HMDAB),
+Guilherme Pinto Camargo (SÓCIO), Cristiana de Souza Luz Santos (HRP).
+
+**Total acumulado (rodadas 1+2+3+4+5+6+7+8): 268 dos 533 pendentes
+resolvidos (~50,3%)** — passou da metade. Restam essencialmente: os ~16
+nomes PF documentados como sem pasta/sem CPF localizável (rodadas 6+7+8)
+e a grande maioria de PJ (empresas/CNPJ), que é uma busca de natureza
+diferente (não está no escopo desta varredura por pasta de médico no
+Drive).
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
