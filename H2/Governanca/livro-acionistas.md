@@ -751,18 +751,15 @@ Junior, Catarina Leiliany Pereira Guerra, Vitor Mateus de Araújo Bastos
 Teles, Anderson Meneses Almeida, Yosvani Pérez Guerra, Amanda Aguiar
 Tonon, Karolinne Kassia Silva Barbosa.
 
-⚠️ **Luana da Silva Tonetti**: o documento "Dados Bancários" mostrou o
-CPF como "055.490.621-000" (3 dígitos finais em vez de 2) — lançado como
-055.490.621-00 na minuta, mas **precisa verificação com documento
-oficial antes de qualquer uso em contrato**.
+✅ **Luana da Silva Tonetti**: CPF 055.490.621-00 confirmado pelo usuário
+em 2026-07-22 (a fonte "Dados Bancários" mostrava "-000" com um dígito a
+mais, mas o CPF correto é mesmo 055.490.621-00).
 
-⚠️ **2 casos ambíguos, não lançados** (encontrados no Drive mas pagos via
-CNPJ de empresa própria, sem CPF pessoa física localizado nos
-documentos): Marcelo Rocha Scaramussa (UNIMED, CNPJ da Boto Med MML
-Ltda) e Emilene Speltri (Itapuí, CNPJ "Emilene Speltri Clínica ME").
-Diferente do caso de Pablo Freitas Barbosa (que também tem conta via
-CNPJ mas tinha CPF pessoal na carteira do CRM) — nestes dois não foi
-possível achar o CPF pessoal nos documentos disponíveis.
+✅ **2 casos que pareciam ambíguos, resolvidos pelo usuário**: Marcelo
+Rocha Scaramussa (UNIMED, CPF 014.605.196-39) e Emilene Speltri (Itapuí,
+CPF 366.980.138-38) — ambos pagos via CNPJ de empresa própria no Drive,
+mas o CPF pessoa física foi confirmado diretamente pelo usuário
+(Gustavo) em 2026-07-22 e já lançado na minuta.
 
 ⚠️ **9 nomes seguem sem pasta localizável ou sem CPF pessoa física
 achado**: Itallo de Almeida Pinheiro, Mateus Félix Lopes, Manoel Estevam
@@ -771,8 +768,8 @@ Macaelles Duarte Pereira (HEI), Jullyana Ricielly Dias Silva (HEJA),
 Ludymilla Candido Ribeiro da Silva (HEMNSL), Ana Luisa Peres (HMDAB),
 Guilherme Pinto Camargo (SÓCIO), Cristiana de Souza Luz Santos (HRP).
 
-**Total acumulado (rodadas 1+2+3+4+5+6+7+8): 268 dos 533 pendentes
-resolvidos (~50,3%)** — passou da metade. Restam essencialmente: os ~16
+**Total acumulado (rodadas 1+2+3+4+5+6+7+8): 270 dos 533 pendentes
+resolvidos (~50,7%)** — passou da metade. Restam essencialmente: os ~14
 nomes PF documentados como sem pasta/sem CPF localizável (rodadas 6+7+8)
 e a grande maioria de PJ (empresas/CNPJ), que é uma busca de natureza
 diferente (não está no escopo desta varredura por pasta de médico no
