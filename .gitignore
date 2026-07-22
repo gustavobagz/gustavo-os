@@ -14,3 +14,6 @@ Proposta-TESTE-*
 
 # Cache local de ferramentas (paths de máquina/sessão, não versionar)
 .impeccable/
+
+# Config pessoal do Claude Code (permissões locais) — não versionar
+.claude/settings.local.json

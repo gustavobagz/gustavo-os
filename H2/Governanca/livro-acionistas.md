@@ -22,7 +22,7 @@ fiscalização/disputa societária/due diligence).
 |---------------------|---------------|----------|---------|------------|
 | 2025-02-28 | ~700 (não fechado formalmente — controle digital contínuo) | — | `LIVRO DE REGISTRO DE AÇÕES ATÉ 28-02-2025.pdf` | assinado por Jair (sócio presidente) + Wellington (MedFiscal, contador) — **única versão com respaldo contábil real até hoje** |
 | ~~2026-05-19~~ | ~~1.393~~ | ~~16.810~~ | `Livro_Registro_Acoes_Nominativas_H2_SA_19052026.pdf` | **DESCARTADA (2026-07-21)** — Gustavo confirmou que essa versão foi montada com Claude numa sessão anterior e nunca foi levada à contabilidade/Guilherme. Não usar como referência. Substituída pela reconstrução abaixo. |
-| 2026-07-21 (minuta, não fechada) | 2.232 | 23.170 | `2026-07-21-MINUTA-livro-acionistas-reconstruido.xlsx` / `.pdf` | Reconstruída do zero a partir do livro de 28/02/2025 (única base confiável) + todos os Termos de Adesão/Saída confirmados na `TERMOS SA.xlsx` + CPF/CNPJ cruzado com 4 fontes (ver metodologia abaixo). **Ainda não é o livro oficial** — falta CPF/CNPJ de 658 pessoas e algumas pendências pontuais (ver double-check abaixo). |
+| 2026-07-21 (minuta, não fechada) | 2.232 | 23.170 | `2026-07-21-MINUTA-livro-acionistas-reconstruido.xlsx` / `.pdf` | Reconstruída do zero a partir do livro de 28/02/2025 (única base confiável) + todos os Termos de Adesão/Saída confirmados na `TERMOS SA.xlsx` + CPF/CNPJ cruzado com 5 fontes (ver metodologia abaixo). **Ainda não é o livro oficial** — falta CPF/CNPJ de 533 pessoas e algumas pendências pontuais (ver double-check abaixo). |
 
 ## Movimentações (entradas/saídas) — lançar a cada operação
 
@@ -254,6 +254,14 @@ todas as movimentações confirmadas na `TERMOS SA.xlsx` desde então.
       médico — fonte mais confiável) — 380 registros, 97 encontrados (1
       CPF inválido na própria fonte, ignorado: Ianara Janaina de Araujo
       Tavares Xavier).
+   4. `2026-07-21-termos-gerados-h2-termos-web-nome-cpf.xlsx` — extração em
+      lote de 1.054 termos em PDF do h2-termos-web (Adesão PF/PJ, Alteração
+      PF→PJ, e também Saída PF/PJ — essas últimas ainda não cruzei contra a
+      lista de saída, só usei pra CPF por enquanto) — 125 encontrados (12
+      CPF/CNPJ inválidos na própria fonte, ignorados: Ianara Janaina de
+      Araujo Tavares Xavier, Caroline Urzedo Severino, Kelly Vieira Prates,
+      Julia Ceconello Coelho, Andrea dos Santos Carvalho, Leonardo Furno
+      Petraglia).
 5. Removidas 5 duplicidades reais que só apareceram depois do cruzamento de
    CPF/CNPJ (mesmo documento, grafia do nome diferente entre as fontes —
    ver double-check abaixo).
@@ -301,18 +309,147 @@ livros anteriores capturava.
   CPF/CNPJ encontrado — pode ser a mesma assinatura duplicada ou dois
   médicos distintos usando a mesma PJ. Não resolvi sozinho — precisa
   conferência.
-- 📋 **658 dos 1.530 novos entrantes continuam sem CPF/CNPJ** — cruzados
-  contra 4 fontes (`TESTE_backup_antes_MHC.xlsx`,
-  `ATT-CPF_CNPJ_Socios_H2_ATUALIZADA.xlsx` e os 3 exports do
-  `h2-termos-web`) e ainda não encontrados em nenhuma. **O livro não pode
-  ser fechado/assinado enquanto isso não for resolvido** — falta
-  identificação do titular é o requisito central do art. 100, I, da Lei
-  6.404/76. Lista completa (com nome, ações, origem/status do termo) na
-  planilha, coluna `cpf_cnpj = "A CONFIRMAR"`.
+- 📋 **533 dos 1.530 novos entrantes continuam sem CPF/CNPJ** (já eram 1.531
+  novos entrantes, um foi mesclado na duplicidade da Femme) — cruzados
+  contra 5 fontes (`TESTE_backup_antes_MHC.xlsx`,
+  `ATT-CPF_CNPJ_Socios_H2_ATUALIZADA.xlsx`, os 3 exports do `h2-termos-web`
+  e o lote de 1.054 termos em PDF extraídos) e ainda não encontrados em
+  nenhuma. **O livro não pode ser fechado/assinado enquanto isso não for
+  resolvido** — falta identificação do titular é o requisito central do
+  art. 100, I, da Lei 6.404/76. Lista completa (com nome, ações,
+  origem/status do termo) na planilha, coluna `cpf_cnpj = "A CONFIRMAR"`.
 
 Arquivo de dados: [`2026-07-21-MINUTA-livro-acionistas-reconstruido.xlsx`](2026-07-21-MINUTA-livro-acionistas-reconstruido.xlsx).
 Documento formatado (minuta, não assinável ainda):
 [`2026-07-21-MINUTA-livro-acionistas-reconstruido.pdf`](2026-07-21-MINUTA-livro-acionistas-reconstruido.pdf).
+
+## Drive de contato@h2saude.com.br — cruzamento dos 533 pendentes (2026-07-22)
+
+Gustavo pediu para checar se o Drive de `contato@h2saude.com.br` (pastas
+individuais por médico, com CNH/RG/CRM) resolvia os 533 nomes ainda sem
+CPF/CNPJ na minuta. Resultado: **cobre só 23 dos 533 (~4%)**.
+
+**Por quê:** esse Drive é um sistema de credenciamento por hospital, criado a
+partir de meados/final de 2025 (pastas-raiz "Hospital - Itapuí", "HREP -
+Hospital Regional Eustáquio Portela / Hospital de Valença", "UPA Putim" —
+todos SP/RJ), com ~243 pastas de médico ao todo. Os 533 pendentes são
+majoritariamente adesões de 2023-2025 em outras unidades (REGIÃO NOROESTE,
+MNC, HEMU, HMNSLP, MHC, HMDAB, HRE, UPA Pinhais — Piauí/Goiás e outras
+regiões). São duas populações de médicos diferentes, quase sem sobreposição.
+Nem o próprio Guilherme Ferreira de Almeida tem pasta lá.
+
+**Metodologia:** paginei as ~243 pastas do Drive (owner `contato@h2saude.com.br`,
+até esgotar `nextPageToken`) e cruzei os títulos (nome normalizado) contra os
+533 pendentes. Para as pastas com filiação a uma pasta-raiz de hospital (têm
+`parentId` navegável), a busca `parentId = '<id>'` retorna os arquivos de
+dentro — inclusive o texto já extraído (OCR) pelo próprio Google Drive, então
+na maioria dos casos deu pra pegar o CPF sem precisar baixar/abrir o arquivo.
+Pastas compartilhadas só por link público (sem `parentId` navegável) não dão
+pra listar o conteúdo por essa via.
+
+**Resultado dos 23 batidos:**
+- ✅ **14 CPFs confirmados e já lançados na minuta** (nome pareado claramente
+  ao documento — RG/CNH/CRM): Fernanda Sobral Soares, Izadora Martins da
+  Silva Cabral, Cássia de Souza Rebouças, Giovana de Heberson Souza, Nayara
+  Pereira de Almeida Oliveira, Pedro Canuto Pimentel Neto, Thiago José
+  Barroso Martins, Frederico de Souza Chaveiro, Marcelo Ferreira de Oliveira
+  Filho, Luisa Rezende Barros, Gabriela Moret, Aline Turini (PJ), Helber José
+  de Moura dos Anjos, Rhaissa Vasconcelos Melo.
+- ⚠️ **3 parciais, não lançados** (dado encontrado na pasta mas não
+  100% pareado nome↔documento no trecho disponível — conferir manualmente
+  antes de usar): Emília Katrine Macedo Coelho Moussa (CPF provável
+  726.366.451-87), Maria Gabriela Rego Montanha Rebello (CPF provável
+  072.010.739-31), Felipe Oliveira Vieira Neto — PJ (CNPJ confirmado
+  56.086.271/0001-66, CPF pessoal só parcialmente visível).
+- ❌ **6 sem documento com CPF legível** nos arquivos disponíveis na pasta:
+  Sibele Leite Lee Galvão, Gabriela Schiavo Salata, Ádamo Santos de Almeida,
+  Beatriz França do Vale, Emilene Speltri, Anderson Meneses Almeida.
+
+**Restam ~516-519 dos 533 sem CPF** — esse Drive não é a fonte pra fechar
+essa lacuna. Próximo passo sugerido: perguntar a quem geria o cadastro médico
+das unidades REGIÃO NOROESTE/MNC/HEMU/HMNSLP/MHC/HMDAB na época (2023-2025)
+se existe outro repositório equivalente daquele período.
+
+### Rodada 2 (2026-07-22, mesmo dia) — Gustavo compartilhou todas as pastas
+
+Após o resultado acima (só 4% de cobertura), Gustavo compartilhou
+**todas** as pastas do Drive `contato@h2saude.com.br` diretamente com a conta
+conectada (`ggsoliveira35@gmail.com`), o que desbloqueou navegação
+`parentId` em dezenas de pastas-raiz de hospital que antes só eram
+acessíveis por link público (não listáveis). Isso revelou uma árvore muito
+maior do que a rodada 1 mapeou: pastas-raiz adicionais de RN, HEMU, HMNSLP,
+MHC, HMDAB, HRE, UPA Pinhais, HEI, HEJA, HESLMB, HRCM, HRSDA, HRJL, UPA
+Picos, UPA SRN, CDP, HSM, HEJ, HEAPA, HEAL, HRDLEM, HEMNSL, CHL, SCROO,
+Hospital Salvalus, MNC, HRP, ESTÂNCIA, HMA, HMC, HSPPD, UPA São Vicente de
+Paulo, Hospital Vitória, UPA Putim, entre outras.
+
+Ao invés de reprocessar a árvore inteira (mais de 800 nomes de pasta
+coletados numa amostragem parcial), Gustavo optou por: **extrair CPF dos
+novos nomes já identificados como pasta de médico pendente e parar por
+aqui** — não continuar a varredura exaustiva nesta sessão.
+
+**Resultado da rodada 2: 42 CPFs novos confirmados e já lançados na
+minuta** (nome pareado a documento oficial — RG/CNH/CRM/certidão do
+conselho regional):
+
+Guilherme Augusto da Costa, Ulisses Tavares de Arruda, Amanda de Moraes
+Ribeiro Leite, Silvio José de Oliveira Júnior, Mauro Moreira Marques, Lucas
+Felipe Silva Pina, Eduarda Viana Trajano, Cássio Raniere Cardoso dos
+Santos, Isabella Gomes Alves, Bruna Spilborghs Haun Amaral Teixeira,
+Sayonara da Silva Paniago, Robson Vettore Nogueira Petrin, Guilherme
+Gontijo Guimarães, Joaquim Neto dos Santos (PJ), Alexander Negrelli Reis,
+Rafael Messias de Oliveira (PJ), Arthur Melo Santos, Carla Ludmilla
+Canário Serrão, Lauro Alves Brasileiro Júnior, Marcelo Possidente
+Campanário, José Victor Bolotari Spadácio, Jemima Chaves de Ataíde (PJ),
+Laila da Silva Almeida, Gabriel Alves Pinto, Álvaro Ribeiro dos Santos
+Sobrinho Segundo, Henrique Gonçalo Pereira de Moura, Bárbara Aparecida
+Barcelos Carvalho, João Paulo Siqueira de Aguiar, Vergílio Freitas Queiroz
+Neto, Ana Cristina Queiroz da Silva, Idelânio Barreto Sampaio, Stephanie
+Evelin Queiroz de Freitas Araújo, Ana Laura do Patrocínio Ramos,
+Alessandra de Oliveira Ferreira Barros Farias, Edmar Santana Oliveira
+Filho, Carlos Henrique Lisboa Freire, Lavínia Juvenal Nicodemos, Tássia
+Dominguez de Souza, Maria Fernanda Simas Souza, Thalita Cairo Souza,
+Daniella Fiuza Peruna Silva, Maria da Penha Barros.
+
+**Ainda pendentes** (matches encontrados na varredura parcial mas sem
+tempo de extrair CPF nesta sessão — folder já localizado, retomar
+buscando `parentId` das pastas dos hospitais indicados entre parênteses):
+Antônio Evangelista Apolônio Neto (HRCM), Vanessa Ribeiro Costa Santana
+(MHC), Andrea dos Santos Carvalho (MHC), Paulo Fernando Sandes Soares
+(HRSDA), Diana Araújo dos Santos (MHC), Hiléia Santana Lopes Ferreira
+Silva (MHC), Eliza Marielle Lopes Araújo (HRCM), Isabel Karoline de Sousa
+Carvalho Costa (HRCM).
+
+**Total acumulado (rodada 1 + rodada 2): 56 dos 533 pendentes resolvidos
+(~10,5%)**. A árvore do Drive segue maior do que o mapeado — a varredura
+NÃO foi exaustiva (parou por decisão do Gustavo, não por esgotamento da
+árvore). Continuar em sessão futura, mirando especificamente as unidades
+por trás dos ~477 nomes ainda sem CPF, usando o mapeamento nome→unidade já
+feito em `pendentes_com_unidade.json` (scratchpad) para escolher qual
+pasta-raiz de hospital vasculhar primeiro.
+
+## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
+
+Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
+(tabela `termGenerations`, 15 lotes reais de geração em massa) e do texto de
+cada PDF gerado (regex sobre "CPF/CNPJ n.º", excluindo os dados fixos da H2/
+Guilherme como representante). Resultado: **1.054 termos com nome + CPF/CNPJ**,
+mais completo que os 3 exports manuais usados na reconciliação de 20/07.
+Arquivo:
+[`2026-07-21-termos-gerados-h2-termos-web-nome-cpf.xlsx`](2026-07-21-termos-gerados-h2-termos-web-nome-cpf.xlsx).
+
+**Ressalvas a considerar antes de usar isso pra fechar o livro:**
+- Lotes 6 e 7 (mesmo dia, 2026-06-05) geraram o mesmo número de termo (3187)
+  pra mesma pessoa — parecem duas rodadas do mesmo upload; não deduplicado,
+  precisa decisão manual de qual é a válida.
+- 1 termo (lote 1, nº 3000) saiu com nome literal "Nome" — sobra de
+  placeholder dentro de um lote real, marcado na coluna Observação.
+- Nota técnica: o `h2-termos-web` em produção roda em Postgres/Neon com uma
+  tabela `termGenerations` (um lote por upload de planilha, sem tabela
+  normalizada por pessoa) — diferente do código-fonte recuperado localmente
+  em `C:\Users\Dell\h2-termos-recuperado`, que assume MySQL e uma tabela
+  `termos` por pessoa. Esse código recuperado está desatualizado/diferente
+  do que está no ar — não usar como referência do estado atual do sistema.
 
 ## Próxima versão do livro
 Antes de fechar a próxima versão (novo Termo de Encerramento), reconciliar:
