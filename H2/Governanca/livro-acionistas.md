@@ -1015,6 +1015,34 @@ confirmação segura).
 **Total acumulado (rodadas 1-15): 411 dos 533 pendentes resolvidos
 (~77,1%)**. Restam 119 pendentes, distribuídos por ~28 unidades.
 
+### Rodada 16 — Itapuí + MHC (2026-07-22)
+
+Mesma metodologia. 19 confirmados:
+
+**Itapuí**: Bacellar Serviços Médicos Ltda (61.562.048/0001-88), Higor Victor
+Alexandre de Deus Ltda (63.007.200/0001-96), Felipe Oliveira Vieira Neto -
+Serviços Médicos (56.086.271/0001-66), Karen Luísa Parra de Barros Oliveira
+Ltda (61.857.901/0001-99), Barbara Rosa Rizato Ltda (63.607.263/0001-83), DML
+Serviços Médicos Ltda (53.259.608/0001-00), Instituto de Medicina e
+Fonoaudiologia Ocupacional Ltda (01.694.578/0001-58), ACCGS Serviços Médicos
+Ltda (61.632.595/0001-92), Alexandre Loury França Serviços Médicos Ltda
+(66.764.745/0001-35), Lara Leoni Regodanço Ltda (62.579.410/0001-96).
+
+**MHC**: MDCB Med Serviços Médicos Ltda (37.033.464/0001-04), New Med
+Serviços Médicos Ltda (27.679.040/0001-68), FARB Aliança Médica Ltda
+(65.798.470/0001-98), Guadiana Serviços Médicos Ltda (11.074.874/0001-00),
+Uniangio Serviços Médicos Ltda (37.934.849/0001-42), Maltamed Serviços
+Médicos Ltda (50.154.193/0001-03), 2KR Serviços Médicos Ltda
+(46.379.846/0001-85), LCA Campodonio Serviços Médicos Ltda
+(63.664.119/0001-89), Nauramed Clínica Ltda (09.348.313/0001-00).
+
+⚠️ Um não resolvido: **Solution** (MHC) — nome claramente incompleto/artefato
+de digitação na minuta original (sem sobrenome, sem sufixo Ltda), não foi
+possível buscar no Drive sem mais contexto identificador.
+
+**Total acumulado (rodadas 1-16): 430 dos 533 pendentes resolvidos
+(~80,7%)**. Restam 100 pendentes.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
