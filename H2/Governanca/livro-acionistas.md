@@ -972,6 +972,49 @@ menção encontrada na varredura (iniciais genéricas demais).
 (~72,0%)**. Restam ~14 nomes PF sem pasta/CPF localizável e ~150 PJ,
 principalmente nas ~30 unidades pequenas com 1-3 nomes cada.
 
+### Rodada 15 — UPA Pinhais (2ª leva) + HMDAB (2026-07-22)
+
+Mesma metodologia (busca individual no Drive por fragmento distintivo do
+nome, extração de CNPJ/CPF via Cartão CNPJ / Dados Bancários / Contrato
+Social / Termo de Transferência de Ações). 27 confirmados:
+
+**UPA Pinhais**: Clinica Chiesa Ltda (42.369.434/0001-03), Natalie S. Fogaça
+Serviços Médicos Ltda (60.979.330/0001-00), Ranieri Ltda (55.856.479/0001-54),
+Matheus Berwanger Ltda (58.048.705/0001-69), 55.984.803 Kimberly Massiel
+(55.984.803/0001-10), Desiree Medicina Ltda (47.424.683/0001-78), Isabella
+Krause Ltda (60.781.483/0001-30), Mariana Vicentini Tzi Lindorfer Ltda
+(44.827.922/0001-42), Naira Hurmus Serviços Médicos Ltda (60.052.429/0001-54),
+Dra Cecília Zappa Ltda (60.418.234/0001-85), Clinica Médica Faidiga Ltda
+(04.511.162/0001-45), I4M Serviços Médicos Ltda (61.347.739/0001-69), D.S.
+Medicine Service Ltda (60.623.328/0001-96).
+
+**HMDAB**: VR Lima (49.317.529/0001-22 — pessoa jurídica "VR Lima – Serviços
+Médicos Ltda"), Maria Fernanda Urzedo Ribeiro Ltda (56.899.356/0001-63), L
+Castilho Simão Serviços Médicos Ltda (61.571.553/0001-99), Miotto & Lima Ltda
+(56.430.961/0001-90), Julia Gaioto Serviços Médicos Ltda (63.910.763/0001-90),
+Maria Victoria Vilela Perroni Castrechini 12230794655 (65.509.165/0001-39),
+Talita Naiara Henrique Ltda (64.307.514/0001-77), Clinica TUF Ltda
+(65.611.228/0001-63), NFM Serviços Médicos Ltda (65.220.570/0001-32), Nunes
+Assistência Médica Ltda (52.868.227/0001-57), CO Castro Serviços Médicos Ltda
+(58.396.695/0001-52), Neisse Serviços Médicos Ltda (54.467.021/0001-40).
+
+Duas exceções tratadas como PF (CPF pessoal aplicado, não CNPJ), seguindo o
+mesmo padrão do caso Edinélia (rodada 14): **Sophia Kohler Ltda** — só há
+Dados Bancários/documentos com o CPF pessoal dela (098.054.469-64), nenhum
+CNPJ localizado; **Vilmar Rosa Lima** — linha distinta de "VR Lima" na
+minuta, mas o Contrato Social da "VR Lima Serviços Médicos Ltda" identifica
+Vilmar Rosa de Lima como o sócio pessoa física, CPF 965.529.566-49.
+
+⚠️ Dois não resolvidos nesta rodada: **Intelligen Serviços de Saúde Ltda**
+(UPA Pinhais, nenhuma pasta/documento localizado) e **Maia e Magalhães
+Serviços Médicos Ltda** (HMDAB — encontrada apenas "Maia & Maia Serviços
+Médicos Ltda" de outra titular, Mariana Maia Magalhães, CNPJ 24.821.909/0001-79,
+mas o nome empresarial não bate com o da minuta; não aplicado por falta de
+confirmação segura).
+
+**Total acumulado (rodadas 1-15): 411 dos 533 pendentes resolvidos
+(~77,1%)**. Restam 119 pendentes, distribuídos por ~28 unidades.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
