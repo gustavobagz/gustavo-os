@@ -555,6 +555,79 @@ Pinheiro Lima: precisa de outra fonte.
 bloco intocado — pastas de médico ficam dentro de subpastas por
 especialidade dentro de cada hospital, ainda não abertas.
 
+### Rodada 5 (2026-07-22, mesmo dia) — HEMU, MNC e HMNSLP concluídos
+
+Fechei o bloco que ficou intocado na rodada 4: HEMU, MNC e HMNSLP têm as
+pastas de médico organizadas dentro de subpastas por especialidade (não na
+raiz do hospital como nas outras unidades). Mapeei essas subpastas, achei o
+`parentId` de cada médico pendente das três unidades e extraí o CPF de
+cada pasta individualmente.
+
+**Resultado da rodada 5: 92 CPFs novos confirmados e já lançados na
+minuta** (nome pareado a documento oficial — CRM, RG/CNH, dados bancários
+ou certidões):
+
+**HEMU (33 de 34):** Barbara Santos Nogueira Pacheco, Karolina Carvalhaes
+Simoes de Lima, Sibele Leite Lee Galvao, Beatriz Franca do Vale, Emilia
+Katrine Macedo Coelho Moussa, Brunna Felipe Conti, Julia Loyola Caldas,
+Maria Carolina Padovani Guerra, Andressa Lorrany Batista Almeida, Rafael
+Mamede Pereira, Maria Jose Carvalho Souza, Leticia de Castro Silva, Isabela
+Borges de Freitas, Taynara Tenorio Bezerra, Gabriela da Silva Teixeira,
+Beatriz Marins Carneiro, Fabiana Calaca de Moraes, Bruna Ferreira Santana,
+Oxana Gaiao dos Reis, Victoria Coelho Jacome Queiroz, Isabela Leao
+Portilho, Larissa de Carvalho Silva, Eline Louise Souza Oliveira, Valeria
+Martins Pereira, Andressa Lacerda da Silva Morais, Fernando Goncalves
+Borges, Rafaela Wander Almeida Braga, Amanda Pereira da Costa, Paula
+Danielli Silva Souza, Helcio Lopes Martins, Pedro Henrique Fernandes
+Penedo, Janio Alves Teodoro, Eduardo Henrique Vieira Araujo.
+
+**MNC (30 de 33):** Aminy Maria do Carmo Souza, Lafaiete de Godoi Neto, Ana
+Julia Modesto Lima, Isabelle Silva Diniz Alves Borges, Natalia Silva
+Rodrigues, Hillary Stefanny Neias Ribeiro, Thais de Jesus Brasil Borges,
+Ana Leticia Xavier Amaral, Julliano Moraes e Silva, Jessica Castro Gomes
+Gerais, Mariana Ludovico de Almeida, Marcella Marinho Ribeiro, Larissa
+Alves Marcelino, Fernanda Cabral Piancastelli, Karla Tortato, Lorena da
+Mata Alves, Ana Carla Martins Rodrigues, Vanessa Cristina Guedes Silveira,
+Gyovanna Lourenco Luz Alves, Ana Luiza Boni, Patricia Karla Vilarinho
+Santana Ribeiro, Mariana Matias de Lima Holdefer, Fabiana Fernandes
+Marajo, Friedman do Brasil Lima, Lara Queiroz Musse, Deborah Carneiro
+Nunes de Lima, Adrielly Joice Mendes Santana Brandao, Cinthia Bernardo
+Queiroz Borges, Leandro Pires Silva Filho, Flaviano Augusto Dias (achado
+fisicamente na subpasta de UTI Pediátrica/Neonatal do HEMU, mas listado
+como pendente do MNC — CPF confirmado de qualquer forma).
+
+**HMNSLP (29 de 29 — unidade fechada):** Karoliny Maria Torres Pilatti
+Ross, Claudia Cardoso Mares de Souza, Elisete Yurie Murata, Leila Palhano
+Pontes, Valentina Spinello Correia, Tatiana Francinne Regis Navarro, Tiago
+Wollmeister Muller, Amanda de Lima Szlichta, Camila Cescatto Goncalves,
+Flavia Centenaro de Oliveira, Gabriela Wensing Raimann, Hannelyze Wagner,
+Fabiano dos Santos Martins, Juliana Sopchaki Fagundes, Mariana Mendes
+Teixeira, Alessandro Nassar do Nascimento, Amanda Giuberti Poltronieri,
+Daniel Rodrigues Mendes, Anthony Augusto Carmona, Ana Karolina Ferreira
+Goncalves Romano, Christiane Paludo Chiochetta, Anne Caroline Broska,
+Daniel Proenca Malaquias, Elisa Moreira Vieira Lobo, Bianca Ferreira
+Bazzo, Renan Felipe Paraguai Jardim, Isabella Chagas Leli Jordao, Anik
+Baptista Bairral Rosa, Fernanda Hellinger.
+
+**Duplicidade de grafia corrigida na minuta:** "PEDRO HENRIQUE FERNANDES
+PANEDO" (linha 803) é a mesma pessoa que "PEDRO HENRIQUE FERNANDES PENEDO"
+(linha 568, já resolvido em rodada anterior) — grafia divergente na
+planilha original. Apliquei o mesmo CPF (025.305.131-20) à linha 803 com
+nota explicando a duplicidade, em vez de tratar como pendente separado.
+
+⚠️ **4 nomes confirmados como "pasta sem documentos"** (mesmo padrão de
+Igor Pinheiro Lima/Gustavo Machado Trigueiro — pasta existe no Drive mas
+está vazia, sem nenhum arquivo): Isabella Luanna de Oliveira Martins
+(HEMU), Eddy Marcos da Silveira (MNC), Martina Ascari (MNC), Elisangela
+Ferreira Pires (MNC). Marcados na minuta como confirmado/sem documentos,
+não como pendente de busca — precisam de outra fonte (RH, contrato
+assinado) se o CPF for necessário.
+
+**Total acumulado (rodadas 1+2+3+4+5): 199 dos 533 pendentes resolvidos
+(~37,3%)**. HEMU, MNC e HMNSLP agora fechados. Restam: páginas adicionais
+de RN, MHC e UPA Pinhais (nextPageToken pendente) e ~20 unidades menores
+com 1-3 nomes pendentes cada, ainda não buscadas.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
