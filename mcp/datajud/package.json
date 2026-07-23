@@ -1,0 +1,16 @@
+{
+  "name": "datajud-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Servidor MCP para a API Publica do DataJud (CNJ) — consulta de metadados e movimentacoes processuais.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node scripts/validar-aliases.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  }
+}

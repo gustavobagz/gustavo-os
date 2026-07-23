@@ -18,3 +18,9 @@ Proposta-TESTE-*
 
 # Instaladores de extensao (nao versionar)
 *.vsix
+
+# Dependencias de Node (servidores MCP etc.) — reinstalaveis via package.json
+node_modules/
+
+# Dependencias de MCP servers locais
+node_modules/
