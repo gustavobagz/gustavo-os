@@ -6,7 +6,7 @@ frente: Escritorio
 
 # Honorários — Prática Independente
 
-> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[00-Home|🏠 Home]] — [[casos|Casos]] · [[INDEX|Clientes]] · [[campanha-vestibular|Nicho vestibular]]
+> ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[00-Home|🏠 Home]] — [[casos|Casos]] · [[INDEX|Clientes]] · [[campanha-vestibular|Nicho vestibular]] · [[renda-recorrente|Renda recorrente (consolidado)]]
 
 > **Como usar (Claude):** `/novo-caso` e `/proposta-honorarios` alimentam "A receber".
 > Ao receber, mover a linha para "Recebidos" do mês correspondente.
