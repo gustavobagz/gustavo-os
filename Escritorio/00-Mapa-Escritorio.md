@@ -3,7 +3,7 @@ aliases: [Mapa-Escritorio]
 tags: [moc, escritorio]
 tipo: mapa
 frente: Escritorio
-atualizado: 2026-07-17
+atualizado: 2026-07-22
 ---
 
 # ⚖️ Mapa — Escritório / Prática Independente

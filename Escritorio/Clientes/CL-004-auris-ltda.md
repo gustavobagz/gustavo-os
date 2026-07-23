@@ -22,8 +22,13 @@ frente: Escritorio
 | C-004 | Execução | matérias de execução em andamento |
 
 ## Honorários
-- **Modelo:** não registrado
-- **Condições:** não registrado
+- **Modelo:** misto — fixo por ação + percentual
+- **Condições:** **R$ 500 por ação** + **15% dos honorários** (base a esclarecer: sobre o
+  valor recuperado ou sobre a sucumbência?). Duas ações em curso (Gracielle e Ronilda)
+  → R$ 1.000 fixos + percentual.
+- ⚠️ **Revisar precificação:** valor praticado por relação de amizade; o próprio Gustavo
+  avalia como abaixo do mercado. Comparar com o piso da Tabela OAB/GO antes do próximo
+  contrato. Ver [[honorarios|registro financeiro]].
 
 ## Notas
 -

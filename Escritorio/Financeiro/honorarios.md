@@ -16,7 +16,19 @@ frente: Escritorio
 
 | Cliente | Caso/Serviço | Valor | Vencimento | Situação |
 |---------|--------------|-------|------------|----------|
-| — | — | — | — | — |
+| [[CL-004-auris-ltda\|Auris Ltda.]] | C-004 — execuções (2 ações: Gracielle + Ronilda) | R$ 500/ação (R$ 1.000) + 15% dos honorários (**base a esclarecer**) | não registrado | contratado — alvarás em levantamento |
+| [[CL-001-lucas-andrade-gomes\|Lucas Andrade Gomes]] | C-001 — distrato Villa B / Garage 1000 | R$ 500 | não registrado | contratado (valor de amigo) |
+| [[CL-002-jair\|Jair Rodrigues de Oliveira Junior]] | C-002 — 8 contestações IDPJ + 1 êxito (TRT-18) | **permuta — pagamento em viagem** (valor não arbitrado) | — | acordado verbalmente — ⚠️ sem valor monetário atribuído |
+
+> ⚠️ **Alertas de precificação (2026-07-22):**
+> - Toda a carteira ativa está precificada em valor de amizade/família (R$500, R$500, permuta).
+>   É a causa de o registro financeiro estar zerado — **não é falta de cobrança, é subprecificação**.
+> - **Auris:** conferir a base dos 15% (sobre o recuperado? sobre a sucumbência?) e comparar
+>   com o piso da **Tabela de Honorários da OAB/GO** — cobrar muito abaixo do piso pode
+>   configurar aviltamento de honorários (infração disciplinar), além do prejuízo econômico.
+> - **Jair:** permuta (serviço × viagem) precisa de (i) valor monetário atribuído para fins
+>   fiscais (ISS/IR incidem sobre permuta) e (ii) registro escrito. Ver nota de conflito em
+>   [[CL-002-jair]].
 
 ## Recebidos — 2026
 

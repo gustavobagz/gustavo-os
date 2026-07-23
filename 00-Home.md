@@ -2,7 +2,7 @@
 aliases: [Home]
 tags: [home, moc, os]
 tipo: mapa
-atualizado: 2026-07-17
+atualizado: 2026-07-22
 ---
 
 # 🏠 Home — Gustavo OS

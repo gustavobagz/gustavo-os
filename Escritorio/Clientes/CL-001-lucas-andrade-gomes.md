@@ -22,8 +22,11 @@ frente: Escritorio
 | C-001 | Societário — distrato Villa B / Garage 1000 | ativo |
 
 ## Honorários
-- **Modelo:** não registrado
-- **Condições:** não registrado
+- **Modelo:** fixo
+- **Condições:** **R$ 500** (valor de amizade — cliente é amigo pessoal).
+- ⚠️ **Revisar precificação:** o distrato envolve confissão de dívida e cláusulas de
+  execução (4.3/4.4 pendentes); o escopo real é de estruturação societária, não de
+  serviço de R$ 500. Reprecificar se houver fase de execução. Ver [[honorarios|registro financeiro]].
 
 ## Notas
 - Distrato assinado, mas faltam cláusulas de execução (4.3 e 4.4).
