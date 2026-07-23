@@ -34,7 +34,7 @@ Impacto → Soluções no plural → Gatilhos de revisão
 
 ## SISTEMA OPERACIONAL (Claude Code OS)
 
-Este repositório (`C:\Users\Dell\gustavo`) é o centro de operações das duas
+Este repositório (`C:\Users\Gustavo\gustavo-os`) é o centro de operações das duas
 frentes. Funciona em 4 camadas:
 
 ### Camada 1 — Núcleo
@@ -96,6 +96,18 @@ e fazem push no main. Horários em BRT:
 - Tarefas locais antigas `GustavoOS-BriefingDiario` e `GustavoOS-FechamentoSemanal`
   ficaram DESATIVADAS no Agendador (reativar só se sair da nuvem, para não duplicar).
 - Gerenciar/pausar rotinas: https://claude.ai/code/routines
+
+### Camada 5 — Guardas locais (hooks do Claude Code)
+Configurados em `.claude/settings.json`, scripts em `scripts/hooks/` (Node puro,
+sem dependências). Rodam sozinhos, sem depender de eu lembrar:
+
+| Evento | Script | O que faz |
+|--------|--------|-----------|
+| `SessionStart` | `sessao-start.js` | `git pull --rebase --autostash` — puxa o que as rotinas da nuvem commitaram antes de a sessão local começar a escrever. Aborta se houver rebase/merge pela metade. |
+| `PreToolUse` (Write\|Edit) | `guarda-frente.js` | **Trava de frente.** Grava a primeira frente (H2 ou Escritorio) tocada na sessão; se um write posterior mirar a outra frente, pede confirmação. Não bloqueia — obriga decisão consciente. Materializa a regra de ouro. |
+| `Stop` | `sync-registros.js` | Commita e dá push nos **registros** alterados: só `.md` em `Escritorio/`, `H2/`, `Relatorios/`, `memory/`. Commit com pathspec — nunca leva junto o que outra sessão deixou no índice. Código, skills e config seguem com commit manual. |
+
+Ver/editar/desligar: `/hooks`.
 
 ### Estrutura de pastas
 ```
