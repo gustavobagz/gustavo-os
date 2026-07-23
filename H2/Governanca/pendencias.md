@@ -117,6 +117,12 @@ Conferir no cartão CNPJ de cada filial antes de usar em qualquer habilitação.
 | Filiais Araucária/PR e Salvador/BA | formalização em curso | concluir |
 | D&O (Sompo/Wiz — Jacqueline Gorgati) | análise pendente do **balanço 2025, atrasado na Rissi Contabilidade** | cobrar Rissi — a mesma pendência trava o RC Profissional Médica |
 
+## Reuniões agendadas
+
+| Data | Assunto | Com | Onde |
+|------|---------|-----|------|
+| 2026-07-28, 14h | Governança e Compliance | SDBM (Vivian Camargo) | Teams — link no Google Calendar |
+
 ## Apurações internas em curso
 
 | Data | Caso | Status | Prazo |
