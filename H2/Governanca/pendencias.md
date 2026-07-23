@@ -121,6 +121,7 @@ Conferir no cartão CNPJ de cada filial antes de usar em qualquer habilitação.
 
 | Data | Assunto | Com | Onde |
 |------|---------|-----|------|
+| 2026-07-24, 9h | Faturamento e desenquadramento do lucro presumido — preparar informações antes | Amaral e Puga | Google Calendar |
 | 2026-07-28, 14h | Governança e Compliance | SDBM (Vivian Camargo) | Teams — link no Google Calendar |
 
 ## Apurações internas em curso
