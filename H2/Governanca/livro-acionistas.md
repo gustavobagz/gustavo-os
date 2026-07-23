@@ -1456,21 +1456,46 @@ outros documentos da H2 precisem do mesmo timbrado no futuro.
 
 **Livro de Transferência de Ações Nominativas** (art. 100, II):
 [`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
-— reúne as 76 saídas históricas (pré-fev/2025) já reconciliadas + 5 Termos de
-Transferência/Cessão individuais achados incidentalmente no Drive nesta
-sessão (nº 240, 577, 2972, 3011, 3075).
+— reúne as 76 saídas históricas (pré-fev/2025) já reconciliadas + os Termos de
+Transferência/Cessão levantados no Drive (ver Rodada 28 abaixo).
 
-⚠️ **Achado que vira pendência nova**: os 5 termos achados têm numeração
-sequencial própria da Companhia indo de nº 240 (jan/2024) a nº 3075
-(mai/2026) — ou seja, a H2 S.A. já emitiu **~3.075 Termos de
-Transferência/Cessão**, dos quais este controle cataloga apenas 5. Há
-aparentemente **~2.400 termos emitidos entre jul/2024 (nº 577) e mai/2026
-(nº 2972) sem registro neste governança**. Um levantamento completo (varrer
-o Drive por "TERMO DE TRANSFERÊNCIA"/"TERMO DE CESSÃO", extrair
-cedente/cessionário/data/ações de cada um, numerar e reconciliar) é um
-projeto à parte — **não fazer o Livro de Transferência passar por "completo"
-sem esse levantamento**. Registrado como pendência nova em
-`H2/Governanca/pendencias.md`.
+### Rodada 28 — levantamento em massa dos Termos de Transferência/Cessão (2026-07-23)
+
+Rodei um workflow com 44 agentes em paralelo (um por mês, jan/2023 a
+jul/2026) varrendo o Drive por "TRANSFERÊNCIA DE AÇÕES NOMINATIVAS" (pega as
+duas convenções de nome) e extraindo número, data, cedente, cessionário e
+ações de cada Termo. Resultado consolidado (deduplicado por número):
+**562 Termos únicos**, numerados de **nº 4 a nº 3435**.
+
+Breakdown por natureza: 524 "entrada — H2 cede" (companhia distribuindo
+lotes de 10 ações a novos médicos), 18 "saída — H2 adquire" (recompra), 12
+cessão direta entre pessoas físicas/jurídicas, 8 não classificados.
+
+⚠️ **AINDA NÃO É COMPLETO — cobertura estimada em ~16% (562 de ~3.435)**.
+Gaps identificados nesta própria rodada, não são "termos que não existem":
+
+- **1 mês inteiro falhou tecnicamente** (abril/2026 — a resposta do agente
+  excedeu o limite de tamanho da ferramenta) — zero cobertura nesse mês.
+- **Pelo menos 2 janelas de tempo tiveram busca incompleta** — os próprios
+  agentes reportaram "amostra parcial, busca não chegou ao fim da
+  paginação" (prováveis dias de upload em massa de termos históricos, com
+  volume alto demais pra uma busca só terminar).
+- **Maior buraco na sequência numérica**: nº 1161 a nº 1503 (342 números
+  sem termo correspondente) — quase certamente busca incompleta, não
+  ausência real.
+- A maioria dos meses de 2023-2025 retornou 0 resultados **pela data de
+  criação do arquivo no Drive** (`createdTime`), mesmo havendo Termos com
+  data de operação nesse período — porque muitos foram enviados ao Drive
+  em lotes de upload posteriores (ex.: 2025-07-21, 2025-07-25), não na
+  data em que a operação de fato ocorreu. Fatiar por `createdTime` cobre
+  tudo matematicamente, mas concentra volume em poucas janelas — é
+  exatamente aí que a paginação ficou incompleta.
+
+**Para fechar de verdade**: nova rodada com fatias mais finas (semanais ou
+diárias) cobrindo abril/2026 por inteiro e as janelas de upload em massa
+identificadas. Até lá, tratar os 562 como **piso confirmado**, não como o
+total real. Arquivo com o levantamento bruto por agente (antes do dedupe):
+journal do workflow `wf_1c96d99e-dd8` (ver transcript dir da sessão).
 
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
