@@ -1227,6 +1227,69 @@ Lopes, Manoel Estevam de Avila Filho (HEMU); Valéria Rossi Duarte (HRE).
 **Total acumulado (rodadas 1-22): 498 dos 533 pendentes resolvidos
 (~93,4%)**. Restam 35 pendentes.
 
+### Rodada 23 — Fechamento da versão atual do livro (2026-07-23)
+
+Com 498/533 pendentes resolvidos, decisão (Gustavo): não continuar a busca
+individual dos 35 restantes por ora — extraí-los para planilha à parte e
+montar a versão fechada do livro com o que já está confirmado, em vez de
+manter tudo represado numa minuta.
+
+**35 pendentes extraídos** para
+[`2026-07-23-PENDENTES-35-livro-acionistas.xlsx`](2026-07-23-PENDENTES-35-livro-acionistas.xlsx),
+uma linha por pendente com unidade, ações e o motivo específico documentado
+(cada um rastreável a uma rodada 1-22 acima). Não fazem parte do livro
+fechado abaixo.
+
+**2 CPFs com dígito verificador inválido, resolvidos:**
+
+- **Jucélio Lima Martins** (linha 327) — o Termo de Transferência nº 240
+  (Drive) trazia 136.532.271-15 (dígito inválido, confirmado por cálculo).
+  Duas fontes independentes no Drive (Dados Bancários + Currículo Lattes)
+  convergem em **136.882.271-15**, validado (dígito correto) — aplicado.
+- **Phellipe Di Mônaco Lima** (linha 571) — minuta trazia 022.469.081-64
+  (dígito inválido). Dados Bancários no Drive trazem **022.489.081-64**,
+  validado — aplicado.
+
+Isso fecha o item "(2)" da pendência de `pendencias.md` referente aos 2 CPFs
+com dígito inválido. As 7 pessoas da mesma pendência (Marta de Pinho
+Alcântara, Ianara Janaina de Araujo Tavares Xavier, Caroline Urzedo
+Severino, Kelly Vieira Prates, Julia Ceconello Coelho, Andrea dos Santos
+Carvalho, Leonardo Furno Petraglia — "confirmar CPF certo", não
+necessariamente inválido) **não foram tratadas nesta rodada** — não foi o
+que ficou combinado; seguem como pendência aberta se for necessário revisar.
+
+**Livro de Registro de Ações Nominativas — versão fechada:**
+[`2026-07-23-LIVRO-REGISTRO-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-REGISTRO-ACOES-NOMINATIVAS-H2SA.xlsx)
+— 2.197 acionistas, 22.820 ações ON, todos com CPF/CNPJ confirmado e
+validado. Formato de relação/mapa (art. 100, §3º, Lei 6.404/76 c/c IN DREI
+82/2021), nos moldes da versão de 2025-02-28 (única com respaldo contábil
+anterior). **Termo de Abertura e Termo de Encerramento** redigidos em
+[`2026-07-23-TERMO-ABERTURA-livro-registro-acoes.docx`](2026-07-23-TERMO-ABERTURA-livro-registro-acoes.docx)
+e
+[`2026-07-23-TERMO-ENCERRAMENTO-livro-registro-acoes.docx`](2026-07-23-TERMO-ENCERRAMENTO-livro-registro-acoes.docx)
+— **ainda não assinados**: faltam (a) confirmar nome completo e nº de CRC
+atual do contador (referência anterior: Wellington, MedFiscal) e (b) colher
+as duas assinaturas (Guilherme + contador) antes de considerar o livro
+efetivamente fechado.
+
+**Livro de Transferência de Ações Nominativas** (art. 100, II):
+[`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
+— reúne as 76 saídas históricas (pré-fev/2025) já reconciliadas + 5 Termos de
+Transferência/Cessão individuais achados incidentalmente no Drive nesta
+sessão (nº 240, 577, 2972, 3011, 3075).
+
+⚠️ **Achado que vira pendência nova**: os 5 termos achados têm numeração
+sequencial própria da Companhia indo de nº 240 (jan/2024) a nº 3075
+(mai/2026) — ou seja, a H2 S.A. já emitiu **~3.075 Termos de
+Transferência/Cessão**, dos quais este controle cataloga apenas 5. Há
+aparentemente **~2.400 termos emitidos entre jul/2024 (nº 577) e mai/2026
+(nº 2972) sem registro neste governança**. Um levantamento completo (varrer
+o Drive por "TERMO DE TRANSFERÊNCIA"/"TERMO DE CESSÃO", extrair
+cedente/cessionário/data/ações de cada um, numerar e reconciliar) é um
+projeto à parte — **não fazer o Livro de Transferência passar por "completo"
+sem esse levantamento**. Registrado como pendência nova em
+`H2/Governanca/pendencias.md`.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
