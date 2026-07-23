@@ -1180,6 +1180,31 @@ arquivo à parte e não processado nesta rodada por baixa prioridade),
 **Total acumulado (rodadas 1-20): 484 dos 533 pendentes resolvidos
 (~90,8%)**. Restam 49 pendentes.
 
+### Rodada 21 — HRDLEM + CDP + HRJL + UPA Pinhais/HMA + UPA Putim + UPA Picos + HRP/HRJL + HRSDA + sem unidade (2026-07-22)
+
+Mesma metodologia. 10 confirmados:
+
+Clinimed Serviços Médicos Ltda (HRDLEM — 49.910.709/0001-13), Lukas Moura
+Alves de Carvalho (CDP, ME — 33.428.382/0001-08), Ruth R L C S Cipriano
+Ltda (HRJL — 60.741.186/0001-61), Alana Danielski Serviços Médicos Ltda
+(UPA Pinhais/HMA — 48.743.685/0001-92), Clayre Karolinne Barros do
+Nascimento Ltda (UPA Putim — 62.297.126/0001-27), L C Rocha Serviços
+Médicos Ltda (UPA Picos — 64.261.000/0001-28), Vanderlei José de Sousa
+Junior Ltda (HRP/HRJL — 64.383.188/0001-87), Brambilla Emergências Ltda
+(UPA Pinhais/HMA — 48.224.261/0001-11), Larissa Maria R C S Ltda (HRSDA —
+58.528.766/0001-23), LB Almeida Gestão e Administração Ltda (sem unidade —
+66.840.642/0001-07).
+
+⚠️ Não resolvidos nesta rodada: **Cintra, Faria e Oliveira Ltda** (HEJ),
+**LTQV Serviocos Medicos Ltda** (Região Noroeste - UBS — confirmado via
+planilha interna que a sócia é Lorena Tassara Quirino Vieira, mas CNPJ não
+localizado no Drive), **T. J. F Serviços Médicos Ltda** (HMDAB), **Rodrigo
+e Menezes Serviços Médicos Ltda** (HRDLEM), **5 M E Serviços Ltda** (UPA
+Picos), **M&R Gonçalves Ltda** (HREP — busca não retornou resultado).
+
+**Total acumulado (rodadas 1-21): 494 dos 533 pendentes resolvidos
+(~92,7%)**. Restam 39 pendentes.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
