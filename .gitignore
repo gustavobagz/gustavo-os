@@ -4,6 +4,7 @@
 Relatorios/sync-log.txt
 Relatorios/erros*.log
 Relatorios/fechamento-log.md
+Relatorios/audit.log
 
 # Obsidian — config pessoal do vault, não versionar
 .obsidian/

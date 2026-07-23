@@ -26,6 +26,32 @@
         ]
       }
     ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PROJECT_DIR}/scripts/hooks/audit-log.js"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PROJECT_DIR}/scripts/hooks/guarda-datas.js"],
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PROJECT_DIR}/scripts/hooks/guarda-peticao.js"],
+            "timeout": 15,
+            "statusMessage": "Conferindo convencoes de redacao juridica..."
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "hooks": [
