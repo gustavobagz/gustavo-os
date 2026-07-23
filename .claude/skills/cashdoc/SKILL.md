@@ -73,7 +73,7 @@ Bruto = Líquido_desejado / 0,935
 Taxa  = Bruto × 0,065
 ```
 
-Arredondar taxa e líquido para 2 casas decimais.
+O valor com antecipação imediata (líquido) é sempre arredondado para **baixo**, sem deixar centavos quebrados (floor) — não usar arredondamento normal.
 
 ### 4. Gerar a mensagem WhatsApp
 
@@ -85,11 +85,11 @@ Usar o template abaixo. Adaptar a saudação ao contexto (se Gustavo indicar "bo
 Segue o resumo da sua antecipação:
 
 📋 Plantões – [Hospital Nome Completo] ([SIGLA]):
-• [Setor] – [Nº] plantão(ões) – [Xh] ([data(s)]) – R$ [valor unitário] cada
+• [Setor] – [Nº] plantão(ões) – [Xh] ([data(s)]) – R$ [valor unitário] x [Nº] = R$ [subtotal]
 [repetir linha acima para cada setor/tipo diferente dentro do mesmo hospital]
 
 📋 Plantões – [Hospital 2 Nome Completo] ([SIGLA]):
-• [Setor] – [Nº] plantão(ões) – [Xh] ([data(s)]) – R$ [valor unitário] cada
+• [Setor] – [Nº] plantão(ões) – [Xh] ([data(s)]) – R$ [valor unitário] x [Nº] = R$ [subtotal]
 
 💵 Valor normal de recebimento: R$ [bruto total]
 💰 Valor com antecipação imediata: R$ [líquido total]
@@ -105,7 +105,7 @@ _Ao confirmar, você declara que os plantões informados são verídicos e de su
 - Múltiplos setores da mesma unidade → mesma seção 📋, linhas separadas por setor
 - Múltiplas unidades → múltiplas seções 📋 na mesma mensagem, um único total no final
 - Plantões sem data → omitir a data da linha, não deixar campo vazio
-- Quando apenas 1 plantão de uma linha → "1 plantão" (singular)
+- Quando apenas 1 plantão de uma linha → "1 plantão" (singular), e a linha vira só "R$ [valor] (1 plantão)" sem multiplicação
 - Valores monetários: sempre `R$ X.XXX,XX` (ponto milhar, vírgula decimal)
 - Saudação: replicar a do médico se informada (Bom dia/Boa tarde/Boa noite); padrão = "Olá"
 
