@@ -10,8 +10,19 @@ frente: H2
 
 > **Como usar (Claude):** registro central de contratos, licitações e propostas da H2.
 > O `/briefing` alerta vigências a vencer em 30 dias e certames com sessão marcada.
-> **Fonte primária do pilar jurídico H2:** painel jurídico
-> (paineljuridicoh2.vercel.app) — contratos, SLAs, propostas e prazos completos lá.
+>
+> **⚖️ Hierarquia de fontes (decidida em 2026-07-22):** este repositório é a
+> **FONTE DA VERDADE**. O painel jurídico (paineljuridicoh2.vercel.app) é camada
+> **operacional complementar** — vale pelo que ele calcula e exibe (SLA das
+> demandas, workflow, trilha de auditoria, visão para a diretoria), não pelo
+> cadastro-mestre. **Onde os dois divergirem, o repo prevalece** e o painel deve
+> ser atualizado a partir daqui — nunca o contrário.
+>
+> ⚠️ Inverte o sentido anterior: o inventário abaixo foi originalmente *derivado*
+> do `data/seed.json` do painel em 2026-07-17. A varredura de 2026-07-22 mostrou
+> que o repo passou a ter mais informação (MHC Salvador, Mirassol, Manaus sem
+> contrato, S3 corrigido por OCR) — daí a inversão. **Próximo passo: regerar o
+> `seed.json` do painel a partir deste arquivo.**
 
 ## Contratos vigentes
 

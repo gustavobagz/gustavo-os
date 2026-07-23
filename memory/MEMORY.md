@@ -6,6 +6,8 @@
 
 ## 🔧 OS / infraestrutura
 - [Memória sincronizada](os-memoria-sincronizada.md) — memory/ é a fonte da verdade; sync bidirecional via sync-os.ps1; consolidação em 2026-07-22
+- [Hierarquia de fontes: repo × painel](hierarquia-fontes-repo-painel.md) — o repo gustavo-os é a fonte da verdade; o painel jurídico complementa (SLA/workflow/trilha); onde divergirem, o repo prevalece
+- [CashDoc — taxa é 6,5%](cashdoc-taxa-6-5.md) — confirmado por Gustavo; documentos com 7,5% ou valor fixo por plantão são legado e não devem alterar a skill
 
 ## 👤 Usuário / perfil
 - [Perfil H2](user-profile-h2.md) — Gustavo, gestor/dev interno da H2 (Goiânia/GO); pt-BR, respostas curtas e diretas
