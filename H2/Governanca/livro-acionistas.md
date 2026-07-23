@@ -1079,6 +1079,44 @@ trecho indexado), **BRMB Serviços Médicos Ltda** (HSM — encontrada apenas
 **Total acumulado (rodadas 1-17): 443 dos 533 pendentes resolvidos
 (~83,1%)**. Restam 90 pendentes.
 
+### Rodada 18 — Região Noroeste + HEMU + MNC + HRP + HSPPD (2026-07-22)
+
+Mesma metodologia. 13 confirmados via CNPJ + 1 aplicado como CPF pessoal
+(caso PF-tagueada-como-PJ):
+
+**Confirmados**: Letícia Lino da Silva Serviços Médicos Ltda
+(55.033.206/0001-00), GMF Atividades Médicas Ltda (52.865.676/0001-41),
+Fernanda Nascimento Neves Ltda (37.084.557/0001-68), J Araújo Serviços
+Médicos Ltda (52.307.637/0001-29), L T L Paresoto Serviços Médicos Ltda
+(39.879.296/0001-06), W Leal Serviços Médicos (04.339.100/0001-06),
+Welisson Conrado Carvalho Ltda (61.484.539/0001-58), Leal e Leal Atividade
+Médica Ltda (58.612.111/0001-39), Salvi e Frini Serviços Médicos Ltda
+(22.618.196/0001-15), André Victor Vian Garcia Clínica Médica Ltda
+(47.482.817/0001-07), Lucas More Ramos Clínica Médica Ltda
+(44.800.804/0001-40), LCAM Serviços Médicos Ltda (50.367.307/0001-01),
+Daniel Gonçalves de Freitas — Empresário Individual (43.124.642/0001-05).
+
+**Caso PF-tagueada-como-PJ**: Marília Lemes Santos Ltda (MNC) — só localizado
+o CPF pessoal dela (702.005.291-61) no Drive, sem CNPJ de empresa distinto.
+Aplicado o CPF pessoal com nota explicativa, seguindo o precedente já
+firmado com Edinélia F. da Silva, Sophia Kohler e Vilmar Rosa Lima.
+
+⚠️ Não resolvidos nesta rodada: **Carvalho Braz Serviços Médicos Ltda**
+(HEMU — busca só retornou empresa homônima não relacionada, "Braz Fonseca
+Serviços Médicos Ltda"; não aplicado), **Julia Sanches de Velasco Ltda**
+(MNC — nome da empresa confirmado via Contrato Social, mas número de CNPJ
+não capturado no trecho indexado), **Castro e Tavares Prestação de Serviços
+Ltda** (Região Noroeste, variante com espaço final — busca só retornou pasta
+vazia, sem conteúdo).
+
+Reconciliação do total pendente: um novo `list_pending.mjs` após esta rodada
+aponta **73 pendentes** (não 76, que seria 90-14) — confirma a pequena
+divergência de ~3 linhas já registrada na Rodada 17 entre o total citado no
+commit e a recontagem real; usando a recontagem como autoritativa.
+
+**Total acumulado (rodadas 1-18): 460 dos 533 pendentes resolvidos
+(~86,3%)**. Restam 73 pendentes.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
