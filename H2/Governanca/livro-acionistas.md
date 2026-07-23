@@ -1367,14 +1367,49 @@ nome) contra o livro fechado — não só as 74 já conhecidas.
   REGISTRADO; mantido assim, mas fica sinalizado como inconsistência a
   esclarecer com quem mantém a planilha, não revertido por conta própria.
 
-**Conclusão prática:** esta aba de controle está esgotada — não há mais
-zeragem a fazer a partir dela. O risco residual real não está aqui, e sim
-no mesmo achado já registrado acima: termos de saída/cessão emitidos
-diretamente (numeração sequencial, como os Termos de Transferência 240–3075
-achados) e nunca lançados nesta planilha de controle não seriam pegos por
-nenhuma reconciliação contra `TERMOS_SA.xlsx` — só um levantamento completo
-no Drive resolveria isso de vez (mesma pendência já aberta em
-`pendencias.md`).
+**Conclusão prática (revista na Rodada 26 abaixo — não estava certa):** esta
+aba de controle parecia esgotada, mas era uma cópia desatualizada.
+
+### Rodada 26 — reconciliação com arquivo atualizado do Downloads (2026-07-23)
+
+O Gustavo forneceu `C:\Users\Dell\Downloads\TERMOS SA (1).xlsx` — versão
+mais atual da planilha de controle, com uma única aba "Termos de Adesão à
+SA" (2.928 linhas) que mistura admissões e saídas na mesma lista, distintas
+pela coluna **VÍNCULO** (`S.A` = ativo, `SAIDA S.A.` = saiu — regra dada
+pelo Gustavo). A Rodada 25 tinha rodado contra uma cópia desatualizada
+(`TERMOS_SA.xlsx`, só até 2025-06-02) e por isso não achou nada novo.
+
+Filtrando por VÍNCULO contendo "SAIDA": **131 linhas**. Considerado
+"confirmado" (mesmo critério de sempre — status equivalente a
+arquivado/assinado, não só enviado/solicitado): **108 linhas**, com STATUS
+= `ASSINADO`, `ARQUIVADO` ou `ASSINADO E ARQUIVADO`, datadas até
+2026-07-01. As outras 23 (`ENVIADO PARA ASSINATURA`, `SOLICITADO CONTÁBIL`,
+`AGUARDANDO TERMO`, `Enviado`) ficam de fora por enquanto — saída ainda em
+andamento, não confirmada.
+
+Cruzando as 108 confirmadas contra o livro fechado: **83 encontradas**, das
+quais 19 já tinham sido zeradas na Rodada 24 (nomes que já estavam nas duas
+listas) e **64 estavam ativas com 10 ações, agora zeradas** (regra de ouro:
+linha mantida, só a posição zerada), com nota de auditoria referenciando
+esta planilha. 2 dos 108 (LTQV Serviocos Medicos Ltda, Rodrigo e Menezes
+Serviços Médicos Ltda) já estão fora do livro por integrarem os 35
+pendentes de CPF/CNPJ — nada a fazer para eles aqui.
+
+**Novo total após esta correção: 2.197 acionistas (linhas mantidas),
+21.620 ações** (22.260 − 640, referentes às 64 posições zeradas × 10
+ações). Livro fechado, livro oficial e Termos de Abertura/Encerramento
+regerados a partir da minuta corrigida.
+
+⚠️ **Ainda ficam de fora, por decisão consciente, as 23 saídas "em
+andamento"** (ver lista completa no commit/histórico) — production
+recomendada: reconsultar este mesmo arquivo periodicamente e zerar assim
+que o status virar `ASSINADO`/`ARQUIVADO`/`ASSINADO E ARQUIVADO`.
+
+⚠️ **Lição desta rodada**: a cópia de `TERMOS_SA.xlsx` usada nas Rodadas
+20-25 (scratchpad, baixada em 2026-07-22) estava desatualizada frente à
+fonte real. Antes de considerar qualquer reconciliação de saídas
+"completa" de novo, confirmar que se está usando a versão mais recente do
+arquivo de controle — não uma cópia já baixada.
 
 **Livro de Transferência de Ações Nominativas** (art. 100, II):
 [`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
