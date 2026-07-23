@@ -1411,6 +1411,49 @@ fonte real. Antes de considerar qualquer reconciliação de saídas
 "completa" de novo, confirmar que se está usando a versão mais recente do
 arquivo de controle — não uma cópia já baixada.
 
+### Rodada 27 — Jair Rodrigues de Oliveira Junior estava ausente + timbrado H2 (2026-07-23)
+
+**Achado crítico**: Jair Rodrigues de Oliveira Junior — Diretor Presidente,
+representante legal em dezenas de Atas de AGE e Termos de Transferência
+(cedente original de diversas ações distribuídas a médicos) — **estava
+100% ausente da minuta reconstruída**. Não é um caso de CPF pendente: ele
+simplesmente não tinha linha nenhuma no livro. Guilherme (o outro
+fundador/Diretor) estava presente (840 ações, linha 1 da reconstrução, base
+28/02/2025); Jair não.
+
+Adicionado por instrução do Gustavo: **JAIR RODRIGUES DE OLIVEIRA JUNIOR,
+CPF 055.640.941-82 (confirmado em múltiplas Atas de AGE e Termos), 2.060
+ações, status REGISTRADO**. CPF e identidade têm lastro forte nos
+documentos já vistos; **a quantidade de ações (2.060) foi informada pelo
+Gustavo e não foi re-verificada por mim em documento primário** — vale
+conferir contra o livro de 28/02/2025 ou ata societária antes de tratar
+como definitiva.
+
+⚠️ **Nota sobre percentual**: o Gustavo mencionou "20,60%" para essa
+posição — mas 2.060 ações sobre o total atual do livro (23.680, após
+incluí-lo) dá **8,70%**, não 20,60%. 2.060/10.000 = 20,60% exatamente, o
+que sugere que a referência do Gustavo usa uma base de 10.000 (a estrutura
+de capital ANTIGA, pré-aumento de nov/2024 — ver "capital subscrito de R$
+10.000" em `pendencias.md`), não a base de ~23-24 mil "ações" deste livro
+reconstruído (que parece ser uma escala interna de "10 ações por médico",
+não necessariamente 1:1 com as quotas de R$1 do capital social formal). O
+percentual usado neste livro foi recalculado contra o total atual (8,70%),
+consistente com o critério usado para todos os outros acionistas — **mas
+essa divergência de escala entre o livro reconstruído e a estrutura de
+capital formal (10.000 ou 500.000 quotas conforme a AGE) é uma questão
+estrutural maior, não resolvida aqui, que vale investigar separadamente**.
+
+**Novo total: 2.198 acionistas, 23.680 ações** (23.620 + 2.060 do Jair,
+conferir working: era 21.620 antes deste ajuste). Livro fechado, livro
+oficial e Termos regerados.
+
+**Timbrado H2**: por instrução do Gustavo, os três documentos oficiais
+(Termo de Abertura, Termo de Encerramento e o Livro Oficial consolidado)
+passaram a usar o timbrado padrão da H2 (`C:\Users\Dell\Downloads\TIMBRADO.docx`)
+— logo pequeno com linha teal no cabeçalho, "Página X de Y" no rodapé.
+Script reutilizável em `h2_timbrado.mjs` no scratchpad da sessão, caso
+outros documentos da H2 precisem do mesmo timbrado no futuro.
+
 **Livro de Transferência de Ações Nominativas** (art. 100, II):
 [`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
 — reúne as 76 saídas históricas (pré-fev/2025) já reconciliadas + 5 Termos de
