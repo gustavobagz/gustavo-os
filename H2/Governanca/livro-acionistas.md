@@ -1205,6 +1205,28 @@ Picos), **M&R Gonçalves Ltda** (HREP — busca não retornou resultado).
 **Total acumulado (rodadas 1-21): 494 dos 533 pendentes resolvidos
 (~92,7%)**. Restam 39 pendentes.
 
+### Rodada 22 — CPF pessoal de médicos (Região Noroeste + MNC) (2026-07-22)
+
+Mudança de abordagem: com a maioria das PJ resolvidas, os pendentes
+remanescentes são majoritariamente médicos sem empresa (CPF pessoal
+direto). Busca individual por nome, 4 confirmados via CRM/RG/diploma/dados
+bancários no Drive:
+
+Fernanda Moura Viana (Região Noroeste — 017.733.031-71), Martina Ascari
+(MNC — 010.233.661-00), Elisângela Ferreira Pires (MNC — 770.478.001-82),
+Eddy Marcos da Silveira (MNC — 825.776.251-20).
+
+⚠️ Não resolvidos nesta rodada (documentos localizados não continham CPF
+ou não bateram exatamente): Daniela Pereira Espanã, William Borges de
+Menezes Filho, Gustavo Machado Trigueiro (CRM localizado, sem CPF visível),
+Igor Pinheiro Lima (CRM localizado, sem CPF visível), Bruna de Castro
+Oliveira, Letícia Dias Faria Nava, Italo Leonel Fernandes Silva, Larissa
+Mello Brandão (Região Noroeste); Itallo de Almeida Pinheiro, Mateus Félix
+Lopes, Manoel Estevam de Avila Filho (HEMU); Valéria Rossi Duarte (HRE).
+
+**Total acumulado (rodadas 1-22): 498 dos 533 pendentes resolvidos
+(~93,4%)**. Restam 35 pendentes.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
