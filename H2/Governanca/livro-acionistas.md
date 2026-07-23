@@ -1274,6 +1274,19 @@ contador para este livro societário; a dupla assinatura da versão de
 2025-02-28 (Jair + Wellington/MedFiscal) foi prática da empresa, não
 exigência legal.
 
+**Livro oficial consolidado** (Gustavo, 2026-07-23): os três artefatos acima
+(capa + Termo de Abertura + relação de 2.197 acionistas + Termo de
+Encerramento) foram reunidos num único documento —
+[`2026-07-23-LIVRO-OFICIAL-REGISTRO-ACOES-NOMINATIVAS-H2SA.docx`](2026-07-23-LIVRO-OFICIAL-REGISTRO-ACOES-NOMINATIVAS-H2SA.docx)
+— no formato de arquivo único que os livros anteriores da Companhia sempre
+tiveram (ex.: `LIVRO DE REGISTRO DE AÇÕES ATÉ 28-02-2025.pdf`), em vez de
+arquivos soltos. A % de participação de cada acionista foi recalculada
+contra o novo total de 22.820 ações (excluídos os 35 pendentes) — não é mais
+a % da minuta original, que era contra 23.170 ações. **Este .docx é o que
+deve ser impresso/assinado pelo Guilherme para fechar oficialmente o livro**;
+os arquivos .xlsx separados continuam existindo como base de dados de
+trabalho/rastreabilidade.
+
 **Livro de Transferência de Ações Nominativas** (art. 100, II):
 [`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
 — reúne as 76 saídas históricas (pré-fev/2025) já reconciliadas + 5 Termos de
