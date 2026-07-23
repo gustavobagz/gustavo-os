@@ -40,7 +40,7 @@ frente: Escritorio
 > - **C-006** — nº correto é **5397322-04.2026.8.09.0007** (o registro traz "5397222-4"); valor **R$ 43.700,78**. Há impugnação e desistência coexistindo na pasta — confirmar o que foi efetivamente protocolado.
 > - **C-010 Bel Fiore** — valor da causa é **R$ 88.300** (constava ~R$ 70.000), o que eleva o êxito de 10% para **~R$ 8.830**.
 > - **C-002** — processo não listado: **0000370-61.2025.5.18.0006** (6ª VT Goiânia, reclamante Carla Michelle da Silva Melo). Outros IDPJs sem nome no OS: Joyce Luana (0000549-56.2025.5.18.0018) e Andreza Dayane (0001265-22.2025.5.18.0006). ⚠️ Petição de 2026-03-12 com **protocolo equivocado** (item pertencente a outro processo) — se não houver deferimento, a defesa pode ser tida por não apresentada.
-> - ⚠️ **A conferir no PJe:** Carta Precatória **0010535-88.2026.5.03.0156** consta aqui como precatória do cluster C-002, mas a varredura a descreve como reclamação autônoma contra Jair Jr., autor **Magno Alves da Silva, valor da causa R$ 200.000**. Um dos dois está errado.
+> - ✅ **RESOLVIDO (DataJud/CNJ, 2026-07-22):** **0010535-88.2026.5.03.0156** é mesmo **Carta Precatória Cível** (classe 261, assunto "Atos executórios"), TRT-3, Vara do Trabalho de Frutal, ajuizada em 2026-06-11 — **o registro do OS estava certo e a varredura errou** (não é reclamação autônoma do Magno Alves). Já houve **remessa por devolução ao deprecante em 2026-06-30**, com movimento "Definitivo" na mesma data: a diligência em Frutal terminou e voltou ao juízo deprecante. Acompanhar o desdobramento no processo principal.
 
 ## Auris Ltda. — carteira completa (descoberto em 2026-07-22)
 
