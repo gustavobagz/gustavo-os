@@ -22,6 +22,8 @@ frente: Escritorio
 | [[CL-010-bel-fiore\|Instituto Bel Fiore]] | C-010 — indenização ~R$ 70.000 (proc. 5075206-17.2025.8.09.0006) | R$ 5.000 inicial + **2 salários mínimos/ano** (manutenção) + 10% do proveito econômico | inicial: não registrado · manutenção: anual · êxito: a definir | ✅ **GANHO em 1º grau (improcedência total)** — êxito ≈ **R$ 7.000 devido**; confirmar se cobra na sentença ou no trânsito em julgado (apelação pendente) |
 | [[CL-001-lucas-andrade-gomes\|Lucas Andrade Gomes]] | C-001 — distrato Villa B / Garage 1000 | R$ 500 | não registrado | contratado (valor de amigo) |
 | [[CL-002-jair\|Jair Rodrigues de Oliveira Junior]] | C-002 — 8 contestações IDPJ + 1 êxito (TRT-18) | **permuta — pagamento em viagem** (valor não arbitrado) | — | acordado verbalmente — ⚠️ sem valor monetário atribuído |
+| SORVPAN (Goiás Machado Distribuidora, CNPJ 08.438.175/0001-97) | Contencioso cível recorrente (× Duarte Nogueira; × Fernando Luiz) | **R$ 350/mês** | mensal | recibo de 2026-02-03 — **menor ticket da carteira**, recuperado na varredura de 2026-07-22 |
+| Júlio Bastos Colle (CPF 111.527.018-43) | C-012 (IDPJ falimentar/DF) + C-013 (RENAJUD) | **não registrado** | — | ⚠️ cliente ativo com 2 processos e **nenhum honorário registrado** |
 
 > ⚠️ **Leitura de precificação (2026-07-22) — a carteira tem DOIS regimes:**
 >
@@ -54,7 +56,16 @@ frente: Escritorio
 
 | Cliente potencial | Escopo | Valor proposto | Enviada em | Status |
 |-------------------|--------|----------------|------------|--------|
-| — | — | — | — | — |
+| **Dr. Dalson Feitosa** (Assessoria Santé, c/ Sabrina Caixeta) | Assessoria jurídica recorrente | **R$ 2.000/mês + 7% de êxito** | não registrado | ⚠️ **venceu sem acompanhamento** — recuperada na varredura de 2026-07-22. Avaliar reenvio |
+
+> ⚠️ **Correção 2026-07-22:** o valor da causa do **C-010 Bel Fiore é R$ 88.300**
+> (não ~R$ 70.000), o que eleva o êxito de 10% para **~R$ 8.830** — e não R$ 7.000.
+>
+> ⚠️ **Não confundir valor de causa com honorário:** R$ 88.300 (Bel Fiore),
+> R$ 104.000 (Troller/C-008) e a carteira Auris (mais de R$ 180.000 em créditos)
+> são valores de causa/dívida, **não** receita do escritório. Isso importa para a
+> decisão de porte da futura PJ: pelos honorários reais registrados, o
+> enquadramento é **ME** (até R$ 360 mil/ano).
 
 ---
 *Referência de precificação: nicho vestibular — ticket padrão de **R$ 2.000/ação**
