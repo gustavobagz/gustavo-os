@@ -1267,10 +1267,12 @@ anterior). **Termo de Abertura e Termo de Encerramento** redigidos em
 [`2026-07-23-TERMO-ABERTURA-livro-registro-acoes.docx`](2026-07-23-TERMO-ABERTURA-livro-registro-acoes.docx)
 e
 [`2026-07-23-TERMO-ENCERRAMENTO-livro-registro-acoes.docx`](2026-07-23-TERMO-ENCERRAMENTO-livro-registro-acoes.docx)
-— **ainda não assinados**: faltam (a) confirmar nome completo e nº de CRC
-atual do contador (referência anterior: Wellington, MedFiscal) e (b) colher
-as duas assinaturas (Guilherme + contador) antes de considerar o livro
-efetivamente fechado.
+— **ainda não assinados**: falta colher a assinatura do Guilherme (Diretor)
+antes de considerar o livro efetivamente fechado. Decisão (Gustavo,
+2026-07-23): assinatura só do representante legal — a Lei 6.404/76 não exige
+contador para este livro societário; a dupla assinatura da versão de
+2025-02-28 (Jair + Wellington/MedFiscal) foi prática da empresa, não
+exigência legal.
 
 **Livro de Transferência de Ações Nominativas** (art. 100, II):
 [`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
