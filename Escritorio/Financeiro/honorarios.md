@@ -16,19 +16,32 @@ frente: Escritorio
 
 | Cliente | Caso/Serviço | Valor | Vencimento | Situação |
 |---------|--------------|-------|------------|----------|
-| [[CL-004-auris-ltda\|Auris Ltda.]] | C-004 — execuções (2 ações: Gracielle + Ronilda) | R$ 500/ação (R$ 1.000) + 15% dos honorários (**base a esclarecer**) | não registrado | contratado — alvarás em levantamento |
+| [[CL-004-auris-ltda\|Auris Ltda.]] | C-004 — execuções (2 ações: Gracielle + Ronilda) | R$ 500/ação (R$ 1.000) + **15% sobre o recuperado** (+ sucumbência, direito autônomo) | não registrado | contratado — alvarás em levantamento |
+| [[CL-008-bruno-meireles-silvestre\|Bruno Meireles Silvestre]] | C-011 — obrigação de fazer | R$ 2.000 (fixo) | não registrado | contratado |
+| Cliente DIFAL (**identificar**) | C-009 — DIFAL (tributário) | 10% sobre R$ 40.000 = **R$ 4.000** (êxito) | no êxito | contratado |
+| [[CL-010-bel-fiore\|Bel Fiore]] | C-010 — ação ~R$ 70.000 | R$ 5.000 inicial + **2 salários mínimos/ano** (manutenção) + 10% do proveito econômico (~R$ 7.000) | inicial: não registrado · manutenção: anual | contratado — ⚠️ sentença de improcedência total em 1º grau |
 | [[CL-001-lucas-andrade-gomes\|Lucas Andrade Gomes]] | C-001 — distrato Villa B / Garage 1000 | R$ 500 | não registrado | contratado (valor de amigo) |
 | [[CL-002-jair\|Jair Rodrigues de Oliveira Junior]] | C-002 — 8 contestações IDPJ + 1 êxito (TRT-18) | **permuta — pagamento em viagem** (valor não arbitrado) | — | acordado verbalmente — ⚠️ sem valor monetário atribuído |
 
-> ⚠️ **Alertas de precificação (2026-07-22):**
-> - Toda a carteira ativa está precificada em valor de amizade/família (R$500, R$500, permuta).
->   É a causa de o registro financeiro estar zerado — **não é falta de cobrança, é subprecificação**.
-> - **Auris:** conferir a base dos 15% (sobre o recuperado? sobre a sucumbência?) e comparar
->   com o piso da **Tabela de Honorários da OAB/GO** — cobrar muito abaixo do piso pode
->   configurar aviltamento de honorários (infração disciplinar), além do prejuízo econômico.
+> ⚠️ **Leitura de precificação (2026-07-22) — a carteira tem DOIS regimes:**
+>
+> **Regime relacional (amigo/família) — subprecificado:**
+> Lucas R$ 500 · Auris R$ 500/ação · Jair permuta. Trabalho pesado, receita simbólica.
+>
+> **Regime de mercado — precificação saudável:**
+> Bruno R$ 2.000 · DIFAL 10% de êxito · **Bel Fiore R$ 5.000 + 2 SM/ano + 10% de êxito**.
+>
+> 🎯 **O contrato Bel Fiore é o modelo a replicar**: entrada + recorrência anual de
+> manutenção + êxito. Cobre custo, remunera a espera do processo e captura o resultado.
+> Usar como base padrão em `/proposta-honorarios`.
+>
+> Pendências:
 > - **Jair:** permuta (serviço × viagem) precisa de (i) valor monetário atribuído para fins
->   fiscais (ISS/IR incidem sobre permuta) e (ii) registro escrito. Ver nota de conflito em
->   [[CL-002-jair]].
+>   fiscais (ISS/IR incidem sobre permuta) e (ii) registro escrito. Ver [[CL-002-jair]].
+> - **Piso:** comparar o fixo dos casos relacionais com a Tabela de Honorários da OAB/GO —
+>   contratar muito abaixo do piso pode configurar aviltamento (infração disciplinar).
+> - **Salário mínimo vigente:** confirmar o valor de 2026 para calcular a manutenção do Bel Fiore.
+> - **C-009 (DIFAL):** identificar o cliente nominalmente.
 
 ## Recebidos — 2026
 
