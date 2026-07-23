@@ -1334,6 +1334,48 @@ específica, o mesmo problema pode se repetir. Vale considerar uma
 reconciliação completa (toda a aba "Termos de Saída SA" × livro fechado)
 antes da próxima assinatura formal.
 
+### Rodada 25 — reconciliação completa da aba "Termos de Saída SA" (2026-07-23)
+
+A pedido do Gustavo ("acredito que tem mais saídas"), reconciliei a aba
+inteira **"Termos de Saída SA"** de `TERMOS_SA.xlsx` (162 linhas, 92 com
+nome) contra o livro fechado — não só as 74 já conhecidas.
+
+**Resultado: nenhuma saída CONFIRMADA nova encontrada.** Das 92 linhas:
+
+- **79 linhas** têm status ARQUIVADO (24) ou REGISTRADO (55) — mas,
+  descontadas linhas literalmente duplicadas na planilha de origem
+  (Eduardo Mendes Stoffels, Isabela Costa Borges e Thiago Marçal Costa
+  aparecem duas vezes, mesma data, mesmo status — dupe de lançamento; e
+  Karolinne Kássia Silva Barbosa/Italo Leonel Fernandes Silva aparecem em
+  datas diferentes, já registrado como possível duplicidade), são os
+  **mesmos 74/76 nomes já tratados na Rodada 24** — a aba não traz gente
+  confirmada nova.
+- **13 linhas são pedidos de saída EM ANDAMENTO, ainda não confirmados**
+  (status ENVIADO / FALTA MED ASSINAR / em branco / ASSINADO PELO MÉDICO /
+  ENVIADO PARA ASSINATURA), datados de 2024-06-15 a 2025-06-02 — **não
+  zerados**, seguindo a mesma regra já usada (só ARQUIVADO/REGISTRADO conta
+  como confirmado): Maria Luisa Borges Acioli, Letícia Souza Santana, Nabil
+  Maroun Obeid, Eduarda Arantes Gonçalves, Alessandra Paula Rosa da Silva,
+  Brenda Lilian de Oliveira Silva, Jessica Ferreira Sousa, Bruno Hernandez
+  Almeida de Araujo, Beatriz Fenner Costa, Joyce Martins Costa, Midiã
+  Fonseca Lima, Amanda Camargo Pantaleão Cardoso. **Ficam para
+  monitoramento** — se/quando o status virar ARQUIVADO/REGISTRADO,
+  zerar então.
+- **1 conflito de dado na planilha de origem**: Érica Lopes Castilho
+  aparece duas vezes com a mesma data (2024-11-28) — uma vez REGISTRADO,
+  outra FALTA MED ASSINAR. Já zerada na Rodada 24 com base no registro
+  REGISTRADO; mantido assim, mas fica sinalizado como inconsistência a
+  esclarecer com quem mantém a planilha, não revertido por conta própria.
+
+**Conclusão prática:** esta aba de controle está esgotada — não há mais
+zeragem a fazer a partir dela. O risco residual real não está aqui, e sim
+no mesmo achado já registrado acima: termos de saída/cessão emitidos
+diretamente (numeração sequencial, como os Termos de Transferência 240–3075
+achados) e nunca lançados nesta planilha de controle não seriam pegos por
+nenhuma reconciliação contra `TERMOS_SA.xlsx` — só um levantamento completo
+no Drive resolveria isso de vez (mesma pendência já aberta em
+`pendencias.md`).
+
 **Livro de Transferência de Ações Nominativas** (art. 100, II):
 [`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
 — reúne as 76 saídas históricas (pré-fev/2025) já reconciliadas + 5 Termos de
