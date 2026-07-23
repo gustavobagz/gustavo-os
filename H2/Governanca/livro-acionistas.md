@@ -1147,6 +1147,39 @@ de Saúde Ltda** (UPA Pinhais, não localizada).
 **Total acumulado (rodadas 1-19): 472 dos 533 pendentes resolvidos
 (~88,6%)**. Restam 61 pendentes.
 
+### Rodada 20 — HREP + UPA SRN + Tobias/Barreto + HRSJCF + HRCM + ESTÂNCIA + UPA RIO DOCE (2026-07-22)
+
+Mesma metodologia. 12 confirmados (11 empresas distintas, sendo que RV
+Medcare Serviços Médicos Ltda aparecia duplicada na minuta em duas linhas —
+Tobias/Barreto — e ambas foram resolvidas com o mesmo CNPJ):
+
+**HREP**: Faustino Portela Serviços Médicos Ltda (58.140.194/0001-00).
+
+**UPA SRN**: Laurivan de Sousa Oliveira Ltda (23.480.469/0001-70), Ana
+Isabel de Sousa Cabedo Ltda (64.165.519/0001-02).
+
+**Tobias/Barreto**: RV Medcare Serviços Médicos Ltda (58.754.860/0001-09 —
+2 linhas).
+
+**HRSJCF**: P A de O Ribeiro Ltda (46.470.636/0001-06).
+
+**HRCM**: G R Castro Medicina Ltda (65.316.734/0001-20), Alves Araújo e
+Bandeira Ltda (54.910.645/0001-90).
+
+**ESTÂNCIA**: LM Medicina Ltda (59.110.526/0001-77), CEMEFE
+(26.114.390/0001-14).
+
+**UPA RIO DOCE**: Heloísa Moreira Feijó Ltda (63.504.661/0001-74), João
+Guilherme Rattes Lima de Freitas Serviços Médicos Ltda (64.142.293/0001-24).
+
+⚠️ Não resolvidos nesta rodada: **M&R Gonçalves Ltda** (HREP — busca
+retornou resultado grande demais para o limite da ferramenta, salvo em
+arquivo à parte e não processado nesta rodada por baixa prioridade),
+**LR dos Santos Filho** (HRSJCF, não localizado).
+
+**Total acumulado (rodadas 1-20): 484 dos 533 pendentes resolvidos
+(~90,8%)**. Restam 49 pendentes.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
