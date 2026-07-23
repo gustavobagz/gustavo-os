@@ -1117,6 +1117,36 @@ commit e a recontagem real; usando a recontagem como autoritativa.
 **Total acumulado (rodadas 1-18): 460 dos 533 pendentes resolvidos
 (~86,3%)**. Restam 73 pendentes.
 
+### Rodada 19 — SCROO + HMNSLP + UNIMED + HMC + HRJL (2026-07-22)
+
+Mesma metodologia. 12 confirmados:
+
+**SCROO**: N. A. Danielides Serviços Médicos Ltda (55.451.569/0001-65), C3D
+Costa Serviços Médicos Ltda (55.551.533/0001-53).
+
+**HMNSLP**: MMR Médicos Associados Ltda (58.076.717/0001-05), ACK Clínica
+Pediátrica Ltda (35.771.686/0001-07), F & L Anestesia SS (33.492.973/0001-44).
+
+**UNIMED**: ISJ Medicina e Saúde Ltda (56.054.720/0001-94), APR Medicina
+Ltda (60.272.195/0001-50), Mariana Drummond Serviços Médicos Ltda
+(60.686.948/0001-74).
+
+**HMC**: B C M B R Serviços Médicos Ltda (51.196.620/0001-89), JBM Cuidados
+Médicos Ltda (65.643.882/0001-59 — minuta grafa "Cuiados", mantido o CNPJ
+correto sem corrigir a grafia da razão social na planilha).
+
+**HRJL**: Thadia Martins Neiva Eulálio Ltda (54.100.864/0001-04), Joyce
+Barroso Serviços Médicos Ltda (56.133.121/0001-66).
+
+⚠️ Não resolvidos nesta rodada: **Letícia Souza Santana** (SCROO — tagueada
+"(PJ)" na minuta, mas só localizado diploma pessoal sem CPF nem CNPJ
+visíveis no Drive), **Valéria Rossi Duarte** (HRE, não localizada),
+**A V Serviços Médicos Ltda** (HRE, não localizada), **Intelligen Serviços
+de Saúde Ltda** (UPA Pinhais, não localizada).
+
+**Total acumulado (rodadas 1-19): 472 dos 533 pendentes resolvidos
+(~88,6%)**. Restam 61 pendentes.
+
 ## Nova fonte de CPF/CNPJ (2026-07-21) — extraída direto do banco do h2-termos-web
 
 Puxei direto do Postgres (Neon) de produção do `h2-termos-web.vercel.app`
