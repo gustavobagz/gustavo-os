@@ -1281,11 +1281,58 @@ Encerramento) foram reunidos num único documento —
 — no formato de arquivo único que os livros anteriores da Companhia sempre
 tiveram (ex.: `LIVRO DE REGISTRO DE AÇÕES ATÉ 28-02-2025.pdf`), em vez de
 arquivos soltos. A % de participação de cada acionista foi recalculada
-contra o novo total de 22.820 ações (excluídos os 35 pendentes) — não é mais
-a % da minuta original, que era contra 23.170 ações. **Este .docx é o que
-deve ser impresso/assinado pelo Guilherme para fechar oficialmente o livro**;
-os arquivos .xlsx separados continuam existindo como base de dados de
-trabalho/rastreabilidade.
+contra o total confirmado (excluídos os 35 pendentes) — não é mais a % da
+minuta original. **Este .docx é o que deve ser impresso/assinado pelo
+Guilherme para fechar oficialmente o livro**; os arquivos .xlsx separados
+continuam existindo como base de dados de trabalho/rastreabilidade.
+
+### Rodada 24 — saídas confirmadas ainda ativas no livro + remoção da menção aos 35 pendentes (2026-07-23)
+
+Decisão (Gustavo): os livros que forem encaminhados **não mencionam mais os
+35 pendentes** — nenhuma "ressalva"/"observação" sobre eles nos Termos de
+Abertura/Encerramento, na capa do livro fechado ou no livro oficial
+consolidado. Os 35 continuam de pé (stand by), controlados só
+internamente em `H2/Governanca/pendencias.md` e na planilha
+`2026-07-23-PENDENTES-35-livro-acionistas.xlsx` — não em documento
+encaminhável.
+
+**Achado crítico, corrigido antes de considerar qualquer coisa "pronta para
+encaminhar":** ao perguntar se as saídas confirmadas constavam com 0 ações,
+cruzei as 74 saídas históricas (reconciliadas em 2026-07-20 contra
+`TERMOS SA.xlsx`) contra o livro fechado de 2.197 acionistas. **56 delas
+ainda estavam ativas, com 10 ações cada — não zeradas.** A reconciliação de
+2026-07-20 tinha checado essas saídas contra o livro de 2026-05-19 (onde de
+fato não constavam) e concluído "baixa feita corretamente" — mas a
+reconstrução de 2026-07-21 (que gerou a minuta atual, base de tudo daqui pra
+frente) puxou a lista de Termos de Adesão sem cruzar contra a lista de
+Termos de Saída, trazendo essas 56 pessoas de volta como ativas.
+
+Corrigido seguindo a regra de ouro já documentada acima (nunca apagar linha
+de quem sai — zerar a posição, manter o histórico): as 56 linhas foram
+zeradas (0 ações) diretamente na minuta-fonte, com nota de auditoria
+("Saída confirmada (Termo de Saída [status], [data]) — ações zeradas em
+2026-07-23, linha histórica mantida"), e o livro fechado + livro oficial
+foram regerados a partir daí.
+
+**Novo total após a correção: 2.197 acionistas (linhas mantidas), 22.260
+ações** (22.820 − 560, referentes às 56 posições zeradas × 10 ações).
+Participação de cada acionista recalculada contra esse novo total.
+
+8 dos 74 nomes da lista de saídas não foram zerados porque já estão dentro
+dos 35 pendentes (CPF/CNPJ ainda não confirmado — ex.: Daniela Pereira
+Espanã, William Borges de Menezes Filho, Gustavo Machado Trigueiro, Igor
+Pinheiro Lima, Bruna de Castro Oliveira, Letícia Dias Faria Nava, Italo
+Leonel Fernandes Silva, Larissa Mello Brandão); como esses 35 não integram
+o livro fechado, não há posição ativa incorreta a corrigir para eles. Outros
+2 nomes (Jullyana Ricelly Dias Silva, Amanda Tatiele Carneiro Alves) já
+estavam corretamente ausentes do livro.
+
+⚠️ **Isso não foi verificado ainda para os demais ~2.158 acionistas do
+livro** — a checagem cobriu só as 74 saídas já reconciliadas em 2026-07-20.
+Se houver outras saídas confirmadas em `TERMOS SA.xlsx` fora dessa lista
+específica, o mesmo problema pode se repetir. Vale considerar uma
+reconciliação completa (toda a aba "Termos de Saída SA" × livro fechado)
+antes da próxima assinatura formal.
 
 **Livro de Transferência de Ações Nominativas** (art. 100, II):
 [`2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx`](2026-07-23-LIVRO-TRANSFERENCIA-ACOES-NOMINATIVAS-H2SA.xlsx)
