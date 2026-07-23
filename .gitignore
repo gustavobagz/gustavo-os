@@ -14,3 +14,4 @@ Proposta-TESTE-*
 
 # Cache local de ferramentas (paths de máquina/sessão, não versionar)
 .impeccable/
+*.vsix
