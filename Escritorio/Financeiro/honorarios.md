@@ -19,7 +19,7 @@ frente: Escritorio
 | [[CL-004-auris-ltda\|Auris Ltda.]] | C-004 — execuções (2 ações: Gracielle + Ronilda) | R$ 500/ação (R$ 1.000) + **15% sobre o recuperado** (+ sucumbência, direito autônomo) | não registrado | contratado — alvarás em levantamento |
 | [[CL-008-bruno-meireles-silvestre\|Bruno Meireles Silvestre]] | C-011 — obrigação de fazer | R$ 2.000 (fixo) | não registrado | contratado |
 | Cliente DIFAL (**identificar**) | C-009 — DIFAL (tributário) | 10% sobre R$ 40.000 = **R$ 4.000** (êxito) | no êxito | contratado |
-| [[CL-010-bel-fiore\|Bel Fiore]] | C-010 — ação ~R$ 70.000 | R$ 5.000 inicial + **2 salários mínimos/ano** (manutenção) + 10% do proveito econômico (~R$ 7.000) | inicial: não registrado · manutenção: anual | contratado — ⚠️ sentença de improcedência total em 1º grau |
+| [[CL-010-bel-fiore\|Instituto Bel Fiore]] | C-010 — indenização ~R$ 70.000 (proc. 5075206-17.2025.8.09.0006) | R$ 5.000 inicial + **2 salários mínimos/ano** (manutenção) + 10% do proveito econômico | inicial: não registrado · manutenção: anual · êxito: a definir | ✅ **GANHO em 1º grau (improcedência total)** — êxito ≈ **R$ 7.000 devido**; confirmar se cobra na sentença ou no trânsito em julgado (apelação pendente) |
 | [[CL-001-lucas-andrade-gomes\|Lucas Andrade Gomes]] | C-001 — distrato Villa B / Garage 1000 | R$ 500 | não registrado | contratado (valor de amigo) |
 | [[CL-002-jair\|Jair Rodrigues de Oliveira Junior]] | C-002 — 8 contestações IDPJ + 1 êxito (TRT-18) | **permuta — pagamento em viagem** (valor não arbitrado) | — | acordado verbalmente — ⚠️ sem valor monetário atribuído |
 

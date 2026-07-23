@@ -10,16 +10,20 @@ frente: Escritorio
 > ⬅️ [[00-Mapa-Escritorio|⚖️ Escritório]] · [[INDEX|Clientes]] — Casos: [[casos|C-010]] · [[honorarios|Honorários]]
 
 - **ID:** CL-010
-- **Tipo:** não registrado (PF/PJ — confirmar; nome sugere PJ)
-- **CPF/CNPJ:** não registrado
+- **Razão social:** INSTITUTO BEL FIORE DE ESTÉTICA AVANÇADA LTDA
+- **Tipo:** PJ
+- **CNPJ:** 34.505.848/0001-94
+- **Sede:** Avenida JK, Qd. 17, Lt. 26, S/N, Bairro Jundiaí, Anápolis/GO, CEP 75.110-390
+- **Representante legal:** Jacqueline de Melo Filgueira Watanabe — sócia administradora,
+  brasileira, empresária, CPF 009.453.601-50
 - **Contato:** não registrado
 - **Origem:** não registrado
-- **Desde:** 2026-07-22 (registro no OS; data real de contratação a confirmar)
+- **Desde:** não registrado (processo autuado em 2025)
 
 ## Casos vinculados
 | ID caso | Tipo | Status |
 |---------|------|--------|
-| C-010 | Cível — ação na casa dos R$ 70.000 | ativo — sentença de improcedência total em 1º grau |
+| C-010 | Cível — indenização (danos materiais, morais e estéticos), ~R$ 70.000 | ✅ ganho em 1º grau; em grau de recurso |
 
 ## Honorários — ⭐ modelo de referência do escritório
 - **Modelo:** misto completo (entrada + recorrência + êxito)
@@ -30,16 +34,30 @@ frente: Escritorio
 - 🎯 Melhor contrato desenhado da carteira: cobre custo, remunera a duração do processo e
   captura resultado. **Usar como base padrão** em `/proposta-honorarios`. Ver [[honorarios]].
 
-## ⚠️ Situação processual — decidir com urgência
-Sentença de **improcedência total do pedido em 1º grau**. Duas leituras opostas, e a
-resposta muda tudo:
-1. **Se Bel Fiore é requerente** → perdeu. Prazo de **apelação: 15 dias úteis** da
-   intimação (CPC art. 1.003, §5º). O êxito de 10% não se realiza nesta fase.
-2. **Se Bel Fiore é requerida** → **ganhou** (pedido contra ela rejeitado). O proveito
-   econômico é o valor que deixou de pagar (~R$ 70.000) → **os 10% (~R$ 7.000) são devidos**.
+## ✅ Situação processual (confirmada em 2026-07-22)
+- **Processo:** 5075206-17.2025.8.09.0006 — UPJ das Varas Cíveis da Comarca de Anápolis/GO
+- **Posição:** Bel Fiore é a **REQUERIDA**
+- **Requerente:** Ana Carla Oliveira da Silva Vilarins
+- **Ação:** indenização por danos materiais, morais e estéticos (procedimento estético
+  realizado em 11/2022; ação proposta mais de 2 anos depois)
+- **Resultado 1º grau:** **improcedência total do pedido** → **vitória do cliente**
+- **Fase atual:** a requerente apelou; **contrarrazões já apresentadas**. Aguardando
+  julgamento em 2ª instância — nomenclatura: **apelante** (Ana Carla) / **apelada** (Bel Fiore)
 
-**Definir hoje:** posição processual + data da intimação da sentença.
-Em eventual recurso, aplicar nomenclatura de 2ª instância: **apelante/apelada**.
+**Consequência financeira:** o proveito econômico é o valor que o cliente deixou de pagar
+(~R$ 70.000) → **êxito de 10% ≈ R$ 7.000 devido**. Confirmar no contrato se a cobrança se
+dá com a sentença de 1º grau ou apenas no trânsito em julgado (recurso ainda pendente).
+
+## Teses vencedoras (reaproveitáveis)
+- Ausência de laudo pericial/prova técnica imparcial apta a demonstrar erro no procedimento.
+- Afastamento da tutela de urgência (art. 300, CPC): sem probabilidade do direito e sem
+  perigo de dano — procedimento em 11/2022 e ação ajuizada 2+ anos depois.
+- Contestação protocolada antes da audiência de conciliação (art. 335, I, CPC), com
+  tese de tempestividade antecipada.
 
 ## Notas
-- Comarca/vara e nº do processo pendentes de registro.
+- Documentos em `C:\Users\Gustavo\OneDrive\Documentos\ADVOGADO\ADVOGANDO\bel fiore\`
+  (contestação, contrarrazões, contrato social, procuração assinada, CNH da sócia).
+- 📌 Caso de **defesa de clínica de estética** — nicho adjacente ao regulatório em saúde
+  já declarado no [[Escritorio/CLAUDE|escopo do escritório]]. Vitória documentada serve
+  de credencial comercial para o segmento.
