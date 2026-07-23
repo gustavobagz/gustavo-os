@@ -1,8 +1,4 @@
-﻿Ao Juizo da 3a Vara Civel de Anapolis/GO
+Ao Juizo da 3a Vara Civel
 
-Excelentissimo Senhor Doutor Juiz de Direito,
-
-A autora vem, respeitosamente, perante Vossa Excelencia expor que o reu
-descumpriu o acordo. A autoria da obra nao se discute aqui.
-
-> "o autor da acao nao comprovou o dano" (TJ-GO, Ap. 123)
+A requerente pede a citacao da requerida.
+Em 2a instancia, a apelada foi intimada.
