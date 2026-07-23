@@ -126,6 +126,17 @@ gustavo/
 │   ├── Propostas/
 │   └── Financeiro/honorarios.md
 ├── Relatorios/                    # briefings/ + fechamentos AAAA/
+├── mcp/datajud/                   # servidor MCP da API Pública do DataJud/CNJ
 ├── scripts/                       # automação (briefing-diario.ps1)
 └── .claude/skills/                # 10 skills (produção + operação)
 ```
+
+### Consulta processual — MCP DataJud
+`mcp/datajud/` expõe a API Pública do CNJ ao Claude (`.mcp.json` na raiz).
+Ferramentas: `consultar_processo`, `movimentacoes`, `buscar_processos`,
+`tribunais`. O tribunal é deduzido do próprio número CNJ. Usar para conferir
+a fase real dos processos dos registros contra a base do CNJ.
+**Limites:** só metadados públicos — não há busca por nome de parte, não traz
+teor de decisão, omite segredo de justiça e a base tem defasagem de dias.
+Nunca tratar como fonte de prazo: conferir no PJe/Projudi/eproc.
+Instalação em máquina nova: `cd mcp/datajud && npm install`.
