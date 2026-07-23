@@ -2,7 +2,7 @@
 aliases: [Procedimentos]
 tags: [moc, procedimentos, os]
 tipo: mapa
-atualizado: 2026-07-17
+atualizado: 2026-07-22
 ---
 
 # 🧭 Procedimentos & Skills do OS

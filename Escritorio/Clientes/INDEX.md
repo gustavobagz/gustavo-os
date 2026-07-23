@@ -21,3 +21,7 @@ frente: Escritorio
 | CL-005 | Irmão de Ana Laura (Brasil Sucatas) | PF | C-006 (a reprotocolar) | prospecção/a reiniciar |
 | CL-006 | Cliente(s) nicho vestibular | PF | C-007 | ativo/recorrente — identificar nominalmente |
 | CL-007 | Coworking Diniz | PJ | — | encerrado |
+| CL-008 | [[CL-008-bruno-meireles-silvestre\|Bruno Meireles Silvestre]] | PF | C-011 (obrigação de fazer) | ativo |
+| CL-009 | Cliente DIFAL — **identificar nominalmente** | não registrado | C-009 (tributário/DIFAL) | ativo |
+| CL-010 | [[CL-010-bel-fiore\|Instituto Bel Fiore de Estética Avançada Ltda.]] | PJ | C-010 (indenização ~R$70k) | ativo — ✅ ganho em 1º grau, em recurso |
+| CL-011 | [[CL-011-bruno-torres\|Bruno Torres]] | não registrado | — (assessoria continuada) | ativo/recorrente — R$ 2.500/mês |

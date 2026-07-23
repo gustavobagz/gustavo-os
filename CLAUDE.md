@@ -34,7 +34,7 @@ Impacto → Soluções no plural → Gatilhos de revisão
 
 ## SISTEMA OPERACIONAL (Claude Code OS)
 
-Este repositório (`C:\Users\Dell\gustavo`) é o centro de operações das duas
+Este repositório (`C:\Users\Gustavo\gustavo-os`) é o centro de operações das duas
 frentes. Funciona em 4 camadas:
 
 ### Camada 1 — Núcleo
@@ -62,6 +62,12 @@ Datas nos registros sempre em AAAA-MM-DD. Alterações relevantes → commit.
 ### Camada 3 — Skills de operação
 - `/briefing` — o dia em 30s (registros + Gmail + Calendar), com seções
   separadas por frente. Filtros: `/briefing h2` e `/briefing escritorio`
+- `/vigilancia` — **camada de detecção** (criada 2026-07-22). Enquanto o
+  `/briefing` mostra o dia a partir do que ESTÁ registrado, a `/vigilancia`
+  caça o que DEVERIA estar e não está: vencimentos, paralisia, divergência
+  entre fontes e documentos que entraram sem registro. Existe porque uma
+  varredura em 2026-07-22 achou ~40 fatos críticos que nenhum registro
+  continha — todos por falha de detecção, nenhum por falha de geração.
 - `/novo-caso` e `/novo-cliente` — intake (SÓ escritório)
 - `/fechamento-semanal` — revisão semanal, uma seção por frente + snapshot + commit
 - Skills H2: `proposta-h2-tradicional`, `proposta-h2-editorial`, `cashdoc`
@@ -77,6 +83,12 @@ e fazem push no main. Horários em BRT:
 | Briefing Juridico Diario | seg–sex 06:30 | `trig_01WScY77LR1WLdZUJ5RaCYXK` | Notícias jurídicas BR (WebSearch) → DOCX na pasta "Briefings Juridicos" do Drive + rascunho no Gmail |
 | Briefing Operacional Diario | seg–sex 07:00 | `trig_01RH9Mr3HeoZx5BSyYf8wMLo` | Skill `/briefing` (registros + Gmail + Calendar) → `Relatorios/briefings/` + push + rascunho no Gmail |
 | Fechamento Semanal | sexta 16:00 | `trig_01LwvmDrAimSaZPfdHxmmned` | Skill `/fechamento-semanal` → snapshot em `Relatorios/AAAA/` + push + rascunho no Gmail |
+| **Vigilância Semanal do OS** | segunda 07:20 | `trig_01EKtT45vA5ew5NN7ALuSP57` | Skill `/vigilancia` → vencimentos, paralisia, divergência entre fontes e ingestão do delta → `Relatorios/vigilancia/AAAA-MM-DD.md` + push. Conectores: Google Drive + Gmail |
+
+> ⚠️ **Limite das rotinas na nuvem:** o servidor **h2-mcp é LOCAL** — não existe
+> no ambiente cloud. Rotinas não podem usar `mcp__h2__*` (inventario_drive,
+> ocr_pdf, dados_societarios). Na nuvem, usar os conectores Google Drive/Gmail
+> como substituto parcial. OCR de PDF escaneado só roda localmente.
 
 - Sincronização local: tarefa `GustavoOS-Sync` (logon) roda `scripts/sync-os.ps1`
   (git pull --rebase + push). Em qualquer outro computador: clonar o repo privado
@@ -84,6 +96,18 @@ e fazem push no main. Horários em BRT:
 - Tarefas locais antigas `GustavoOS-BriefingDiario` e `GustavoOS-FechamentoSemanal`
   ficaram DESATIVADAS no Agendador (reativar só se sair da nuvem, para não duplicar).
 - Gerenciar/pausar rotinas: https://claude.ai/code/routines
+
+### Camada 5 — Guardas locais (hooks do Claude Code)
+Configurados em `.claude/settings.json`, scripts em `scripts/hooks/` (Node puro,
+sem dependências). Rodam sozinhos, sem depender de eu lembrar:
+
+| Evento | Script | O que faz |
+|--------|--------|-----------|
+| `SessionStart` | `sessao-start.js` | `git pull --rebase --autostash` — puxa o que as rotinas da nuvem commitaram antes de a sessão local começar a escrever. Aborta se houver rebase/merge pela metade. |
+| `PreToolUse` (Write\|Edit) | `guarda-frente.js` | **Trava de frente.** Grava a primeira frente (H2 ou Escritorio) tocada na sessão; se um write posterior mirar a outra frente, pede confirmação. Não bloqueia — obriga decisão consciente. Materializa a regra de ouro. |
+| `Stop` | `sync-registros.js` | Commita e dá push nos **registros** alterados: só `.md` em `Escritorio/`, `H2/`, `Relatorios/`, `memory/`. Commit com pathspec — nunca leva junto o que outra sessão deixou no índice. Código, skills e config seguem com commit manual. |
+
+Ver/editar/desligar: `/hooks`.
 
 ### Estrutura de pastas
 ```
@@ -102,6 +126,17 @@ gustavo/
 │   ├── Propostas/
 │   └── Financeiro/honorarios.md
 ├── Relatorios/                    # briefings/ + fechamentos AAAA/
+├── mcp/datajud/                   # servidor MCP da API Pública do DataJud/CNJ
 ├── scripts/                       # automação (briefing-diario.ps1)
 └── .claude/skills/                # 10 skills (produção + operação)
 ```
+
+### Consulta processual — MCP DataJud
+`mcp/datajud/` expõe a API Pública do CNJ ao Claude (`.mcp.json` na raiz).
+Ferramentas: `consultar_processo`, `movimentacoes`, `buscar_processos`,
+`tribunais`. O tribunal é deduzido do próprio número CNJ. Usar para conferir
+a fase real dos processos dos registros contra a base do CNJ.
+**Limites:** só metadados públicos — não há busca por nome de parte, não traz
+teor de decisão, omite segredo de justiça e a base tem defasagem de dias.
+Nunca tratar como fonte de prazo: conferir no PJe/Projudi/eproc.
+Instalação em máquina nova: `cd mcp/datajud && npm install`.

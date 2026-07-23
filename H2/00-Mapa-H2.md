@@ -3,7 +3,7 @@ aliases: [Mapa-H2]
 tags: [moc, h2]
 tipo: mapa
 frente: H2
-atualizado: 2026-07-17
+atualizado: 2026-07-22
 ---
 
 # 🩺 Mapa — H2 Soluções em Saúde

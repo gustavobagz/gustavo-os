@@ -1,0 +1,88 @@
+{
+  "_leia_me": {
+    "gerado_em": "2026-07-22",
+    "origem": "H2/Operacoes/contratos.md (fonte da verdade — ver memory/hierarquia-fontes-repo-painel.md)",
+    "destino": "paineljuridicoh2.vercel.app — coleção 'operacoes' APENAS",
+    "AVISO": "Este arquivo é um PATCH, não um seed completo. O snapshot do painel tem 8 coleções (operacoes, pilar, editais, obrigacoes, demandas, processos, riscos, marcasAgenda). Substituir o snapshot inteiro por este arquivo APAGARIA demandas, obrigações, processos, riscos e trilha — que só existem no painel. Aplicar SOMENTE por merge dentro de 'operacoes', casando por 'id'.",
+    "como_aplicar": [
+      "1. GET https://paineljuridicoh2.vercel.app/api/snapshot  -> salvar backup",
+      "2. No JSON baixado, para cada item de 'adicionar': inserir em snapshot.operacoes",
+      "3. Para cada item de 'corrigir': localizar por 'id' e sobrescrever apenas os campos listados",
+      "4. PUT do snapshot completo de volta em /api/snapshot",
+      "5. Conferir na tela antes de considerar aplicado"
+    ],
+    "requer_autorizacao": "Escrever em produção precisa de OK do Gustavo a cada entrega (ver memory/feedback-deploy-autorizacao.md)."
+  },
+
+  "adicionar": [
+    {
+      "id": "instituto-gerir-hospitalar-igh__mhc-salvador",
+      "instituto": "IGH - Instituto Gerir Hospitalar",
+      "operacao": "MHC - Salvador (contrato nº 13607)",
+      "estado": "BA",
+      "cidade": "Salvador",
+      "status": "verde",
+      "status_sugerido": "verde",
+      "tem_contrato": true,
+      "tem_distrato": false,
+      "qtd_contratos": 1,
+      "qtd_aditivos": 0,
+      "qtd_distratos": 0,
+      "cnpj_situacao": "ativa",
+      "crm_situacao": "ativo",
+      "cnpj_observacoes": "Valor mensal R$ 1.596.654,00 (Ginecologia/Obstetrícia R$ 893.116,00 + Neonatologia R$ 703.538,00). MAIOR CONTRATO DO ACERVO — estava ausente do inventário do painel; incluído a partir do repo em 2026-07-22.",
+      "documentos": []
+    },
+    {
+      "id": "sem-contratante-formalizado__manaus-oftalmologia",
+      "instituto": "A FORMALIZAR",
+      "operacao": "Manaus - Oftalmologia (Hosp. João Lúcio + PS Criança Zona Leste)",
+      "estado": "AM",
+      "cidade": "Manaus",
+      "status": "vermelho",
+      "status_sugerido": "vermelho",
+      "tem_contrato": false,
+      "tem_distrato": false,
+      "qtd_contratos": 0,
+      "qtd_aditivos": 0,
+      "qtd_distratos": 0,
+      "cnpj_situacao": "ativa",
+      "crm_situacao": "pendente",
+      "cnpj_observacoes": "CRÍTICO: R$ 611.111,58 faturados em 11/2025 SEM CONTRATO — o próprio relatório de faturamento marca 'Contrato Nº: Sem Contrato'. Regularização prioritária.",
+      "documentos": []
+    }
+  ],
+
+  "corrigir": [
+    {
+      "id_atual_provavel": "s3-gestao-em-saude__upa-pinhais",
+      "operacao": "UPA Pinhais — Contrato 286/2025",
+      "instituto": "Associação de Proteção à Maternidade e Infância Ubaíra - S3 Gestão em Saúde",
+      "estado": "PR",
+      "cidade": "Pinhais",
+      "qtd_aditivos": 2,
+      "cnpj_observacoes": "CNPJ contratante 14.284.483/0001-08. CONTRATADA = H2 SOLUÇÕES EM SAÚDE S.A. (não a Ltda). Valor mensal R$ 565.810,06 (Aditivo 002/2025, assinado 01/09/2025). Valor-hora R$ 116,41 (plantão 12h = R$ 1.396,92). Base: Edital 001/2025. Fonte: OCR do contrato escaneado em 2026-07-22."
+    },
+    {
+      "id_atual_provavel": "s3-gestao-em-saude__hma-hospital-municipal-de-araucaria",
+      "_correcao": "O painel e o repo registravam 'HMA - Hospital Municipal de Araucária'. Essa operação NÃO EXISTE. O contrato 287/2025 é do HMNSLP.",
+      "operacao": "HMNSLP - Hospital Municipal Nossa Senhora da Luz — Contrato 287/2025",
+      "instituto": "Associação de Proteção à Maternidade e Infância Ubaíra - S3 Gestão em Saúde",
+      "estado": "PR",
+      "qtd_aditivos": 1,
+      "cnpj_observacoes": "CNPJ contratante 14.284.483/0001-08. CONTRATADA = H2 SOLUÇÕES EM SAÚDE S.A. Valor mensal R$ 763.156,56 (Aditivo 001/2025). Escopo: anestesia, clínica médica, GO, pediatria, fonoaudiologia, radiologia, USG, direção técnica e clínica, coordenações. Fonte: OCR em 2026-07-22."
+    },
+    {
+      "id_atual_provavel": "alsf__uti-mirassol",
+      "operacao": "UTI Mirassol - Hospital São Pedro",
+      "estado": "SP",
+      "cidade": "Mirassol",
+      "cnpj_observacoes": "R$ 139.500,00/mês, 10 leitos de UTI. Vigência desde 20/10/2025. AVISO DE RENOVAÇÃO ATÉ 21/08/2026. Foro: Mirassol/SP. ATENÇÃO: cláusula 13.11 VEDA FACTORING — conflita com a operação CashDoc sobre plantões desta unidade."
+    }
+  ],
+
+  "_divergencias_nao_aplicadas": [
+    "A S.A. figura como CONTRATADA nos contratos S3 286 e 287/2025 (~R$ 1,33 mi/mês), embora o desenho societário diga que a S.A. 'não celebra contratos operacionais diretamente'. Decisão societária, não correção de cadastro — não aplicar sem definição do Gustavo.",
+    "Endereço da S.A. nos contratos S3: Av. Dep. Jamel Cecílio 2929, Ed. Brookfield Tower, Sala 13 — diferente do QS Tower usado no cadastro. Há 4 endereços em circulação; padronizar antes de propagar."
+  ]
+}

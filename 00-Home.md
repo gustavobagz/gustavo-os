@@ -2,7 +2,7 @@
 aliases: [Home]
 tags: [home, moc, os]
 tipo: mapa
-atualizado: 2026-07-17
+atualizado: 2026-07-22
 ---
 
 # 🏠 Home — Gustavo OS
@@ -20,6 +20,7 @@ atualizado: 2026-07-17
 E-mails: `ggsoliveira35@gmail.com` (escritório/pessoal) · `controladoria@h2saude.com.br` (H2).
 
 ## Como o OS funciona
+- 💵 **Renda recorrente consolidada** (as duas frentes) → [[renda-recorrente]]
 - 🧭 **Procedimentos, skills e automação** → [[Procedimentos]]
 - 📜 **Núcleo comum** (framework analítico, convenções de redação) → [[CLAUDE]]
 - 📄 **README do repositório** → [[README]]

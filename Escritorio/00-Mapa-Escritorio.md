@@ -3,7 +3,7 @@ aliases: [Mapa-Escritorio]
 tags: [moc, escritorio]
 tipo: mapa
 frente: Escritorio
-atualizado: 2026-07-17
+atualizado: 2026-07-22
 ---
 
 # ⚖️ Mapa — Escritório / Prática Independente
@@ -16,6 +16,7 @@ atualizado: 2026-07-17
 - 📁 [[casos]] — casos ativos, prazos e encerrados
 - 👤 [[INDEX]] — índice de clientes (1 arquivo por cliente)
 - 💰 [[honorarios]] — a receber, recebidos e propostas em aberto
+- 📈 [[plano-receita]] — plano de crescimento (3 vetores) · [[renda-recorrente|renda consolidada]]
 
 ## Clientes
 [[CL-001-lucas-andrade-gomes]] · [[CL-002-jair]] · [[CL-003-marciel]] ·

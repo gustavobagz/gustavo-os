@@ -4,6 +4,7 @@
 Relatorios/sync-log.txt
 Relatorios/erros*.log
 Relatorios/fechamento-log.md
+Relatorios/audit.log
 
 # Obsidian — config pessoal do vault, não versionar
 .obsidian/
@@ -17,3 +18,9 @@ Proposta-TESTE-*
 
 # Config pessoal do Claude Code (permissões locais) — não versionar
 .claude/settings.local.json
+
+# Instaladores de extensao (nao versionar)
+*.vsix
+
+# Dependencias de MCP servers locais — reinstalaveis via package.json
+node_modules/

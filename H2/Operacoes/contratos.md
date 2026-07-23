@@ -10,8 +10,19 @@ frente: H2
 
 > **Como usar (Claude):** registro central de contratos, licitações e propostas da H2.
 > O `/briefing` alerta vigências a vencer em 30 dias e certames com sessão marcada.
-> **Fonte primária do pilar jurídico H2:** painel jurídico
-> (paineljuridicoh2.vercel.app) — contratos, SLAs, propostas e prazos completos lá.
+>
+> **⚖️ Hierarquia de fontes (decidida em 2026-07-22):** este repositório é a
+> **FONTE DA VERDADE**. O painel jurídico (paineljuridicoh2.vercel.app) é camada
+> **operacional complementar** — vale pelo que ele calcula e exibe (SLA das
+> demandas, workflow, trilha de auditoria, visão para a diretoria), não pelo
+> cadastro-mestre. **Onde os dois divergirem, o repo prevalece** e o painel deve
+> ser atualizado a partir daqui — nunca o contrário.
+>
+> ⚠️ Inverte o sentido anterior: o inventário abaixo foi originalmente *derivado*
+> do `data/seed.json` do painel em 2026-07-17. A varredura de 2026-07-22 mostrou
+> que o repo passou a ter mais informação (MHC Salvador, Mirassol, Manaus sem
+> contrato, S3 corrigido por OCR) — daí a inversão. **Próximo passo: regerar o
+> `seed.json` do painel a partir deste arquivo.**
 
 ## Contratos vigentes
 
@@ -75,6 +86,38 @@ frente: H2
 | HEMNSL (HMTJ) — Pediatria/Neonatologia | tradicional | 2026-07 | R$ 319.789,00/mês | enviada |
 | HRSDA (SBCD) — Clínica/UTI/Especialidades (Concorrência 002/2026) | tradicional | não registrado | R$ 478.050,00/mês | enviada — validade 90 dias (exigência do edital) |
 | HEAPA (HMTJ) — Infectologia Clínica e SCIH (Edital 021/2026) | tradicional | 2026-07-22 | R$ 19.750,00/mês (R$ 237.000,00/ano — teto do edital) | gerada — validade 60 dias — **pendente envio via portal Fluig até 31/07/2026 23h59, condicionado a RT com RQE em infectologia + certidões fiscais** |
+
+## Descobertos em 2026-07-22 (varredura documental + OCR)
+
+| Instituto | Unidade/Operação | Valor | Observação |
+|-----------|------------------|-------|------------|
+| **IGH** | **MHC — Salvador/BA (contrato nº 13607)** | **R$ 1.596.654,00/mês** (GO R$ 893.116 + Neo R$ 703.538) | 🔴 **Maior contrato do acervo e ausente do inventário das 28 operações** |
+| ALSF | Hospital São Pedro — UTI Mirassol/SP (10 leitos) | **R$ 139.500/mês** | Vigência desde 2025-10-20 · ⏰ **aviso de renovação até 2026-08-21** · foro Mirassol/SP · ⚠️ **cláusula 13.11 VEDA FACTORING** (conflita com a CashDoc) |
+| — | **Manaus — Oftalmologia** (Hosp. João Lúcio + PS Criança Zona Leste) | R$ 611.111,58 faturados em 11/2025 | 🔴 **SEM CONTRATO** — o próprio relatório marca "Contrato Nº: Sem Contrato". Regularizar |
+
+### S3 — corrigido por OCR dos contratos escaneados (2026-07-22)
+- **Contratante real:** Associação de Proteção à Maternidade e Infância Ubaíra — "S3 Gestão em Saúde", CNPJ **14.284.483/0001-08**, Ubaíra/BA (repres. Yurgan Targe Passos de Santana).
+- **Contratada: H2 Soluções em Saúde S.A.** — ⚠️ contraria o desenho societário, pelo qual a S.A. "não celebra contratos operacionais diretamente".
+- **Contrato 286/2025 — UPA Pinhais: R$ 565.810,06/mês** (Aditivo 002/2025, assinado em Pinhais/PR, 01/09/2025, com 2 testemunhas).
+- **Contrato 287/2025 — HMNSLP (Hosp. Mun. N. Sra. da Luz): R$ 763.156,56/mês** (Aditivo 001/2025). ⚠️ **Não existe "HMA Araucária"** — a linha 13 da tabela acima precisa ser corrigida.
+- Base: Edital 001/2025. Valor-hora R$ 116,41 (plantão 12h = R$ 1.396,92).
+- ⚠️ **4º endereço em circulação:** nos dois contratos a S.A. figura em **Av. Dep. Jamel Cecílio 2929, Ed. Brookfield Tower, Sala 13** — não no QS Tower.
+
+### Licitações e propostas descobertas
+
+| Certame/Proposta | Órgão/Unidade | Valor | Status |
+|---|---|---|---|
+| Edital 022/2026 | HMTJ — HEI, UTI | R$ 5.978.220 | vigência iniciada 2026-06-01 |
+| Edital 031/2026 | HMTJ — HEI, Enfermaria Pediátrica | R$ 1.257.967,20 (proposta R$ 97.360/mês) | proposta feita · vigência 2026-07-01 |
+| Edital 032/2026 | HMTJ — HEI, Lavanderia | R$ 3.308.918,88 | 🔴 **sem proposta** |
+| Edital 039/2025 | HEAL | R$ 966.110/mês ⚠️ (outra versão: R$ 975.609,76) | divergência a resolver |
+| Edital 086/2025 | HEMU | R$ 115.797 | — |
+| Edital 018 | HEI | R$ 123.495 | 2026-01-22 |
+| Concorrência 003/2026 | UPA São Raimundo Nonato | R$ 323.640 | 2026-01-30 |
+| Edital 046/2025 | HEAPA | — | ✅ **H2 vencedora** — recursos de GAMA e RPC negados em 2025-09-23 |
+| Contrato de Gestão 19/2025 | Itapuí/SP (contratante SBCD) | — | Anexos V–X assinados 2026-04-15 · nº do edital e sessão não constam |
+| Proposta | **Hospital Geral do Grajaú — IRSSL** (UTI Adulto, 24 leitos) | a precificar | formulário de 2026-02-09 — **oportunidade não trabalhada** |
+| Propostas | IDEAS Neuro R$ 1,32 mi · IDEAS Oftalmo ~R$ 612 mil/mês · INTECS · Health 360 | — | em aberto |
 
 ## Alertas operacionais
 

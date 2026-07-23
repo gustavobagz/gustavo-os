@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "datajud": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "mcp/datajud/server.js"
+      ],
+      "env": {}
+    }
+  }
+}
