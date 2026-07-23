@@ -35,6 +35,7 @@ frente: Escritorio
 | C-017 | Reinaldo Braga Montalvão Junior | consumidor/leilão | TJDFT | não registrado | não registrado | Toyota Corolla — irregularidade em leilão | confirmar situação |
 | C-018 | JF Machado | societário/patrimonial | extrajudicial | — | não registrado | Holding familiar / proteção patrimonial | confirmar situação |
 | C-019 | Cliente a identificar — porte de drogas | criminal | não registrado | não registrado | — | Tese STF RE 635.659 (Tema 506) | confirmar situação |
+| C-020 | Lusterfon Rodrigues do Couto (CPF 055.413.811-50) — **possível cliente** | cível — indenização (cumprimento de sentença, réu solidário) | Vara Cível de Abadiânia/GO | 0080970-36.2015.8.09.0001 | débito exequendo R$ 20.481,27 (mov. 299) | Réu solidário (8 réus originais) que **não integrou** o acordo de parcelamento fechado por outros 4 (Wallace, Sebastião, Erineas, Johnathan) em 2026-06-09. Sentença de 2026-07-22/23 homologou esse acordo e **extinguiu TODO O PROCESSO** (art. 487, III, "b", CPC), trânsito em julgado imediato, com baixa de restrições. Prazo do Lusterfon já havia decorrido em 2026-06-23 sem contestar/pagar; SISBAJUD contra ele retornou R$ 0; CPF negativado (SPC/Serasa). **Diagnosticar se a extinção o beneficia por arrastamento ou se ficará exposto a cobrança em separado pelo saldo solidário** | avaliação preliminar — sem contrato |
 
 > **Correções de 2026-07-22 (varredura documental):**
 > - **C-006** — nº correto é **5397322-04.2026.8.09.0007** (o registro traz "5397222-4"); valor **R$ 43.700,78**. Há impugnação e desistência coexistindo na pasta — confirmar o que foi efetivamente protocolado.
@@ -64,7 +65,7 @@ frente: Escritorio
 | C-001 | Cláusula 4 — crédito contra Laiza | — | A "cláusula 4" pendente é o crédito contra **Laiza Maria Alves Lagares** (CPF 036.896.261-02), R$ 12.901,00, **50% do Lucas** | não |
 | C-014 | ~~Protocolar MS ProUni — João Pedro~~ | ~~2026-08-15~~ | Decadência afastada — **MS protocolado (confirmado 2026-07-22)**. Próximo passo: registrar o nº do processo e acompanhar a liminar | **sim (2026-07-22)** |
 | C-016 | ~~RHC / EDcl — Tercília e Paulo~~ | — | **Decisão de 2026-07-22: não recorrer.** Item encerrado por opção, não por perda de prazo | **sim — decidido não recorrer** |
-| — | 🔴 **OAB — PED 202536815/2025 (Gustavo é 2º Representado)** | verificar | **Revelia decretada em 2026-03-18** (Despacho 452/2026-TED). Defesa prévia em causa própria de 2026-04-28 alega nulidade da notificação (Ofício 3618/2025-TED voltou fechado). **Sem comprovante de protocolo na pasta — confirmar** | **não** |
+| — | ~~OAB — PED 202536815/2025 (Gustavo é 2º Representado)~~ | — | **Revelia decretada em 2026-03-18** (Despacho 452/2026-TED). Defesa prévia protocolada em 2026-04-28. **Processo concluso (confirmado 2026-07-23)** — aguardando decisão | **sim — concluso (2026-07-23)** |
 | C-004 | ⏰ Parcelas do acordo Ronilda (R$ 4.885,67, todo dia 1º) | mensal desde 07/2026 | Conferir pagamento de 01/07 e de 01/08. Atraso > 10 dias = vencimento antecipado do saldo | não |
 | Villa B | Protocolar ação × Laiza Lagares | — | Minuta pronta; cálculo atualizado para **R$ 19.236,63** (a inicial traz R$ 18.998,62). Segue **sem protocolo** | não |
 | C-001 | Ajuste do distrato | não registrado | Complementar cláusulas de execução 4.3 e 4.4 | não |
@@ -78,6 +79,8 @@ frente: Escritorio
 | C-010 | 💰 **Cobrar êxito de 10%** do proveito econômico | a definir | Cliente deixou de pagar ~R$ 70.000 → êxito ~R$ 7.000. Confirmar se o contrato prevê cobrança na sentença de 1º grau ou só no trânsito em julgado (recurso pendente) | não |
 | C-010 | Acompanhar julgamento da apelação (2ª instância) | contínuo | Nomenclatura: **apelante** (Ana Carla) / **apelada** (Bel Fiore) | não |
 | C-009 | Acompanhamento | não registrado | Identificar cliente nominalmente e registrar nº do processo | não |
+| C-020 | 🔴 Avaliar efeito da extinção do processo sobre a posição do Lusterfon | imediato | Processo extinto por acordo homologado de outros 4 réus (2026-07-22/23) sem a anuência do Lusterfon. Verificar se cabe alguma medida (esclarecer alcance da extinção, embargos de declaração, ou preparar defesa caso a exequente tente cobrá-lo em separado pelo saldo solidário). Confirmar se ele quer contratar antes de agir | não |
+| C-020 | Prazo já decorrido (2026-06-23) sem contestação/pagamento | passado | Fato histórico — CPF do Lusterfon já havia sido negativado por essa dívida antes do acordo dos outros 4 réus | sim (registrado) |
 
 ## Casos encerrados
 
