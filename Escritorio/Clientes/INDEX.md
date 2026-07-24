@@ -25,3 +25,5 @@ frente: Escritorio
 | CL-009 | Cliente DIFAL — **identificar nominalmente** | não registrado | C-009 (tributário/DIFAL) | ativo |
 | CL-010 | [[CL-010-bel-fiore\|Instituto Bel Fiore de Estética Avançada Ltda.]] | PJ | C-010 (indenização ~R$70k) | ativo — ✅ ganho em 1º grau, em recurso |
 | CL-011 | [[CL-011-bruno-torres\|Bruno Torres]] | não registrado | — (assessoria continuada) | ativo/recorrente — R$ 2.500/mês |
+| CL-012 | [[CL-012-lusterfon-rodrigues-do-couto\|Lusterfon Rodrigues do Couto]] | PF | C-020 (cível — indenização, cumprimento de sentença) | avaliação preliminar — possível cliente |
+| CL-013 | [[CL-013-joao-marcos\|João Marcos]] | não registrado | — (instrumento contratual de investimento) | proposta enviada 2026-07-24 — aguardando aceite |
