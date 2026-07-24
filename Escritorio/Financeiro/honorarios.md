@@ -24,6 +24,7 @@ frente: Escritorio
 | [[CL-002-jair\|Jair Rodrigues de Oliveira Junior]] | C-002 — 8 contestações IDPJ + 1 êxito (TRT-18) | **permuta — pagamento em viagem** (valor não arbitrado) | — | acordado verbalmente — ⚠️ sem valor monetário atribuído |
 | SORVPAN (Goiás Machado Distribuidora, CNPJ 08.438.175/0001-97) | Contencioso cível recorrente (× Duarte Nogueira; × Fernando Luiz) | **R$ 350/mês** | mensal | recibo de 2026-02-03 — **menor ticket da carteira**, recuperado na varredura de 2026-07-22 |
 | Júlio Bastos Colle (CPF 111.527.018-43) | C-012 (IDPJ falimentar/DF) + C-013 (RENAJUD) | **não registrado** | — | ⚠️ cliente ativo com 2 processos e **nenhum honorário registrado** |
+| [[CL-013-joao-marcos\|João Marcos]] | Instrumento contratual de investimento com conversão em participação societária (20%) | R$ 750,00 (50% + 50%) | proposta válida até 2026-08-08 | proposta enviada em 2026-07-24 — aguardando aceite |
 
 > ⚠️ **Leitura de precificação (2026-07-22) — a carteira tem DOIS regimes:**
 >
